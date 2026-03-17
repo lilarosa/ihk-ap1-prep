@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AP1 Physik Trainer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="tag">AP1 Physik</p>
+        <h1>Elektrizitaet Trainer</h1>
+        <p class="lead">Interaktive Vorbereitung: Begriffe, Einheiten, Umrechnungen und Rechenaufgaben.</p>
+      </div>
+      <div class="stats">
+        <div>
+          <span>Module</span>
+          <strong>3</strong>
+        </div>
+        <div>
+          <span>Aufgaben</span>
+          <strong>15</strong>
+        </div>
+        <div>
+          <span>Formeln</span>
+          <strong>6</strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>1) Begriffe Check</h2>
+      <div class="card">
+        <p>Elektrischer Strom ist ...</p>
+        <div class="choices" data-answer="B">
+          <button data-choice="A">eine gespeicherte Ladung</button>
+          <button data-choice="B">bewegte Ladungstraeger</button>
+          <button data-choice="C">nur Spannung</button>
+        </div>
+        <p class="feedback" data-feedback></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2) Einheiten Umrechner</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>mA → A</h3>
+          <input type="number" id="mA" placeholder="mA">
+          <button data-convert="mA">Umrechnen</button>
+          <p class="result" id="mAResult">A =</p>
+        </div>
+        <div class="card">
+          <h3>kΩ → Ω</h3>
+          <input type="number" id="kOhm" placeholder="kΩ">
+          <button data-convert="kOhm">Umrechnen</button>
+          <p class="result" id="kOhmResult">Ω =</p>
+        </div>
+        <div class="card">
+          <h3>kWh → J</h3>
+          <input type="number" id="kWh" placeholder="kWh">
+          <button data-convert="kWh">Umrechnen</button>
+          <p class="result" id="kWhResult">J =</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3) Formel Rechner</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Ohm (I = U / R)</h3>
+          <input type="number" id="U" placeholder="U (V)">
+          <input type="number" id="R" placeholder="R (Ω)">
+          <button data-calc="ohm">Berechnen</button>
+          <p class="result" id="ohmResult">I =</p>
+        </div>
+        <div class="card">
+          <h3>Leistung (P = U · I)</h3>
+          <input type="number" id="U2" placeholder="U (V)">
+          <input type="number" id="I2" placeholder="I (A)">
+          <button data-calc="power">Berechnen</button>
+          <p class="result" id="powerResult">P =</p>
+        </div>
+        <div class="card">
+          <h3>Energie (E = P · t)</h3>
+          <input type="number" id="P" placeholder="P (W)">
+          <input type="number" id="t" placeholder="t (s)">
+          <button data-calc="energy">Berechnen</button>
+          <p class="result" id="energyResult">E =</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>4) Schnelltest (10 Fragen)</h2>
+      <div class="card">
+        <ol id="quiz"></ol>
+        <button id="grade">Auswerten</button>
+        <p class="result" id="score"></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>AP1 Physik Trainer | Elektrizitaet | 2026</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
