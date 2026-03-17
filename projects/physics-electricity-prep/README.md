@@ -6,6 +6,7 @@
 - `modules/01_current_basics.md`
 - `modules/02_units.md`
 - `modules/03_calculations.md`
+- `modules/04_application_calculations.md`
 - `exercises/problem-set-01.md`
 - `solutions/problem-set-01-solution.md`
 
