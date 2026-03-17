@@ -305,16 +305,17 @@ const quizItems = [
 
 const quiz = document.getElementById('quiz');
 const quizDisplayCount = 10;
+let currentQuizSet = [];
 
 function renderQuiz() {
-  const pool = shuffle(quizItems).slice(0, quizDisplayCount);
+  currentQuizSet = shuffle(quizItems).slice(0, quizDisplayCount);
   quiz.innerHTML = '';
-  pool.forEach((item, index) => {
-  const li = document.createElement('li');
-  li.innerHTML = `<p>${item.q}</p>` + item.choices.map((c) =>
-    `<label><input type="radio" name="q${index}" value="${c}"> ${c}</label>`
-  ).join('<br>');
-  quiz.appendChild(li);
+  currentQuizSet.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `<p>${item.q}</p>` + item.choices.map((c) =>
+      `<label><input type="radio" name="q${index}" value="${c}"> ${c}</label>`
+    ).join('<br>');
+    quiz.appendChild(li);
   });
 }
 
@@ -324,10 +325,11 @@ document.getElementById('grade').addEventListener('click', () => {
   let score = 0;
   const questions = quiz.querySelectorAll('li');
   questions.forEach((item, index) => {
-    const prompt = item.querySelector('p').textContent;
-    const def = quizItems.find((q) => q.q === prompt);
+    const def = currentQuizSet[index];
     const checked = item.querySelector('input:checked');
-    if (def && checked && checked.value === def.a) score += 1;
+    if (def && checked && checked.value === def.a) {
+      score += 1;
+    }
   });
   document.getElementById('score').textContent = `Score: ${score} / ${quizDisplayCount}`;
   renderQuiz();
