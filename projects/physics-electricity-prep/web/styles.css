@@ -116,34 +116,6 @@ body {
   min-width: 220px;
 }
 
-.slide-list {
-  display: grid;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.slide-item {
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid #e8dfd4;
-  background: #fffaf3;
-  font-size: 14px;
-}
-
-.slide-meta {
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: var(--accent);
-}
-
-.spotlight {
-  padding: 14px;
-  border-radius: 12px;
-  border: 1px dashed #c7b8a8;
-  background: #fff7ec;
-  margin: 10px 0;
-}
-
 .question-card {
   margin-top: 14px;
   padding: 16px;
