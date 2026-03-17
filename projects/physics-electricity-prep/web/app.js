@@ -162,7 +162,7 @@ function renderConcepts() {
   const list = document.getElementById('conceptList');
   if (!list) return;
   list.innerHTML = '';
-  const shuffled = shuffle(conceptQuestions).slice(0, 30);
+  const shuffled = shuffle(conceptQuestions).slice(0, 10);
   shuffled.forEach((q, index) => {
     const li = document.createElement('li');
     li.className = 'concept-item';
@@ -304,21 +304,33 @@ const quizItems = [
 ];
 
 const quiz = document.getElementById('quiz');
-quizItems.forEach((item, index) => {
+const quizDisplayCount = 10;
+
+function renderQuiz() {
+  const pool = shuffle(quizItems).slice(0, quizDisplayCount);
+  quiz.innerHTML = '';
+  pool.forEach((item, index) => {
   const li = document.createElement('li');
   li.innerHTML = `<p>${item.q}</p>` + item.choices.map((c) =>
     `<label><input type="radio" name="q${index}" value="${c}"> ${c}</label>`
   ).join('<br>');
   quiz.appendChild(li);
-});
+  });
+}
+
+renderQuiz();
 
 document.getElementById('grade').addEventListener('click', () => {
   let score = 0;
-  quizItems.forEach((item, index) => {
-    const checked = document.querySelector(`input[name="q${index}"]:checked`);
-    if (checked && checked.value === item.a) score += 1;
+  const questions = quiz.querySelectorAll('li');
+  questions.forEach((item, index) => {
+    const prompt = item.querySelector('p').textContent;
+    const def = quizItems.find((q) => q.q === prompt);
+    const checked = item.querySelector('input:checked');
+    if (def && checked && checked.value === def.a) score += 1;
   });
-  document.getElementById('score').textContent = `Score: ${score} / ${quizItems.length}`;
+  document.getElementById('score').textContent = `Score: ${score} / ${quizDisplayCount}`;
+  renderQuiz();
 });
 
 let questionBank = [];
