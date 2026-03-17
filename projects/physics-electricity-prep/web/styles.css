@@ -147,6 +147,37 @@ body {
   display: none;
 }
 
+.cps {
+  margin-top: 16px;
+}
+
+.cps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.cps-card {
+  background: #f7f2ea;
+  border: 1px solid #e6d8c6;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.cps-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 .footer {
   margin-top: 40px;
   text-align: center;
