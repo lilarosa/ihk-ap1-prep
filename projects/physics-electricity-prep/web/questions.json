@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "source_files": [
+      "/Users/tao/Downloads/07_Lernen/07: cyber security/16_ETechnik_Übungsaufgaben_23022026.pptx",
+      "/Users/tao/Downloads/07_Lernen/07: cyber security/14_E-Technik Sckript Stand 27.05.25 - Trier_17022026.pptx"
+    ],
+    "slide_count": 188,
+    "topics_detected": [
+      "Energie",
+      "Frequenz",
+      "Ladung",
+      "Leistung",
+      "Spannung",
+      "Strom",
+      "Widerstand"
+    ]
+  },
+  "questions": [
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Energie am besten?",
+      "choices": [
+        "Leistung mal Zeit",
+        "Strom mal Zeit",
+        "Spannung mal Zeit"
+      ],
+      "answer": "Leistung mal Zeit",
+      "topic": "Energie"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Frequenz am besten?",
+      "choices": [
+        "Schwingungen pro Sekunde",
+        "Energie pro Sekunde",
+        "Spannung pro Sekunde"
+      ],
+      "answer": "Schwingungen pro Sekunde",
+      "topic": "Frequenz"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Ladung am besten?",
+      "choices": [
+        "Strom mal Zeit",
+        "Spannung mal Zeit",
+        "Widerstand mal Zeit"
+      ],
+      "answer": "Strom mal Zeit",
+      "topic": "Ladung"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Leistung am besten?",
+      "choices": [
+        "Energie pro Zeit",
+        "Strom pro Zeit",
+        "Spannung pro Zeit"
+      ],
+      "answer": "Energie pro Zeit",
+      "topic": "Leistung"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Spannung am besten?",
+      "choices": [
+        "Potentialdifferenz",
+        "Ladungsmenge pro Zeit",
+        "Widerstand gegen Strom"
+      ],
+      "answer": "Potentialdifferenz",
+      "topic": "Spannung"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Strom am besten?",
+      "choices": [
+        "bewegte Ladungstraeger",
+        "gespeicherte Energie",
+        "elektrische Leistung"
+      ],
+      "answer": "bewegte Ladungstraeger",
+      "topic": "Strom"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Aussage beschreibt Widerstand am besten?",
+      "choices": [
+        "Hemmung des Stromflusses",
+        "Energie pro Zeit",
+        "Ladung pro Zeit"
+      ],
+      "answer": "Hemmung des Stromflusses",
+      "topic": "Widerstand"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Ohm): U = R · I",
+      "answer": "U = R * I",
+      "topic": "Ohm"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Ohm): I = U / R",
+      "answer": "I = U / R",
+      "topic": "Ohm"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Ohm): R = U / I",
+      "answer": "R = U / I",
+      "topic": "Ohm"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Leistung): P = U · I",
+      "answer": "P = U * I",
+      "topic": "Leistung"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Leistung): P = W / t",
+      "answer": "P = W / t",
+      "topic": "Leistung"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Energie): E = P · t",
+      "answer": "E = P * t",
+      "topic": "Energie"
+    },
+    {
+      "type": "fill",
+      "prompt": "Ergaenze die Formel (Ladung): Q = I · t",
+      "answer": "Q = I * t",
+      "topic": "Ladung"
+    },
+    {
+      "type": "calc",
+      "prompt": "U=12 V, R=6 Ω. Berechne I.",
+      "answer": "2 A",
+      "topic": "Ohm"
+    },
+    {
+      "type": "calc",
+      "prompt": "I=0.2 A, R=50 Ω. Berechne U.",
+      "answer": "10 V",
+      "topic": "Ohm"
+    },
+    {
+      "type": "calc",
+      "prompt": "U=5 V, I=0.1 A. Berechne P.",
+      "answer": "0.5 W",
+      "topic": "Leistung"
+    },
+    {
+      "type": "calc",
+      "prompt": "P=10 W, t=120 s. Berechne E.",
+      "answer": "1200 J",
+      "topic": "Energie"
+    },
+    {
+      "type": "calc",
+      "prompt": "I=0.5 A, t=30 s. Berechne Q.",
+      "answer": "15 C",
+      "topic": "Ladung"
+    },
+    {
+      "type": "unit",
+      "prompt": "250 mA = ? A",
+      "answer": "0.25 A",
+      "topic": "Einheiten"
+    },
+    {
+      "type": "unit",
+      "prompt": "4.7 kΩ = ? Ω",
+      "answer": "4700 Ω",
+      "topic": "Einheiten"
+    },
+    {
+      "type": "unit",
+      "prompt": "0.5 kWh = ? J",
+      "answer": "1.8e6 J",
+      "topic": "Einheiten"
+    }
+  ]
+}

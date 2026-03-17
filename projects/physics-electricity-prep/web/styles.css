@@ -144,6 +144,20 @@ body {
   margin: 10px 0;
 }
 
+.question-card {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e8dfd4;
+  background: #fff;
+}
+
+.question-meta {
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
 .footer {
   margin-top: 40px;
   text-align: center;

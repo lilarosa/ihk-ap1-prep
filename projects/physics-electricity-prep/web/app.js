@@ -98,6 +98,72 @@ document.getElementById('grade').addEventListener('click', () => {
   document.getElementById('score').textContent = `Score: ${score} / ${quizItems.length}`;
 });
 
+let questionBank = [];
+
+function loadQuestionBank() {
+  return fetch('questions.json')
+    .then((resp) => resp.json())
+    .then((data) => {
+      questionBank = data.questions || [];
+    });
+}
+
+function filterQuestions(type) {
+  if (type === 'all') return questionBank;
+  return questionBank.filter((q) => q.type === type);
+}
+
+function renderQuestion(question) {
+  if (!question) return;
+  document.getElementById('questionMeta').textContent = `${question.type.toUpperCase()} · ${question.topic}`;
+  document.getElementById('questionPrompt').textContent = question.prompt;
+  const choices = document.getElementById('questionChoices');
+  const answer = document.getElementById('questionAnswer');
+  choices.innerHTML = '';
+  answer.textContent = '';
+
+  if (question.type === 'mcq' && question.choices) {
+    question.choices.forEach((choice) => {
+      const btn = document.createElement('button');
+      btn.textContent = choice;
+      btn.addEventListener('click', () => {
+        if (choice === question.answer) {
+          answer.textContent = '正确';
+        } else {
+          answer.textContent = `错误，正确答案：${question.answer}`;
+        }
+      });
+      choices.appendChild(btn);
+    });
+  } else {
+    const hint = document.createElement('p');
+    hint.className = 'muted';
+    hint.textContent = '点击“显示答案”查看。';
+    choices.appendChild(hint);
+  }
+}
+
+function pickRandomQuestion() {
+  const type = document.getElementById('questionType').value;
+  const pool = filterQuestions(type);
+  if (!pool.length) return null;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+document.getElementById('newQuestion').addEventListener('click', () => {
+  const q = pickRandomQuestion();
+  renderQuestion(q);
+});
+
+document.getElementById('showAnswer').addEventListener('click', () => {
+  const prompt = document.getElementById('questionPrompt').textContent;
+  const q = questionBank.find((item) => item.prompt === prompt);
+  const answer = document.getElementById('questionAnswer');
+  if (q) answer.textContent = `答案：${q.answer}`;
+});
+
+loadQuestionBank();
+
 let slideData = [];
 
 function flattenSlides(sourceFiles) {
