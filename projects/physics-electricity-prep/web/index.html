@@ -95,7 +95,31 @@
     </section>
 
     <section class="section">
-      <h2>4) Schnelltest (10 Fragen)</h2>
+      <h2>4) Schaltplan Markieren</h2>
+      <div class="card">
+        <p>Wähle die richtige Stromrichtung (technische Stromrichtung) und markiere Plus/Minus.</p>
+        <div class="diagram">
+          <div class="battery">
+            <div class="battery__label">+</div>
+            <div class="battery__body"></div>
+            <div class="battery__label">-</div>
+          </div>
+          <div class="wire"></div>
+          <div class="resistor">R</div>
+          <div class="wire"></div>
+          <div class="led">LED</div>
+          <div class="wire"></div>
+        </div>
+        <div class="choices" data-answer="A">
+          <button data-choice="A">Stromrichtung: + → -</button>
+          <button data-choice="B">Stromrichtung: - → +</button>
+        </div>
+        <p class="feedback" data-feedback></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>5) Schnelltest (10 Fragen)</h2>
       <div class="card">
         <ol id="quiz"></ol>
         <button id="grade">Auswerten</button>
