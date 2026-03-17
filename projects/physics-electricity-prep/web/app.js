@@ -163,3 +163,56 @@ document.getElementById('showAnswer').addEventListener('click', () => {
 });
 
 loadQuestionBank();
+
+let applicationData = [];
+let currentAppIndex = 0;
+let showSolution = false;
+
+function renderApplication() {
+  if (!applicationData.length) return;
+  const item = applicationData[currentAppIndex];
+  const title = document.getElementById('appTitle');
+  const prompt = document.getElementById('appPrompt');
+  const solution = document.getElementById('appSolution');
+  if (title) title.textContent = item.title;
+  if (prompt) {
+    prompt.innerHTML = item.prompt.map((line) => `<div>${line}</div>`).join('');
+  }
+  if (solution) {
+    solution.innerHTML = item.solution.map((line) => `<div>${line}</div>`).join('');
+    solution.classList.toggle('hidden', !showSolution);
+  }
+}
+
+function toggleSolution() {
+  showSolution = !showSolution;
+  renderApplication();
+}
+
+function nextApplication() {
+  if (!applicationData.length) return;
+  currentAppIndex = (currentAppIndex + 1) % applicationData.length;
+  showSolution = false;
+  renderApplication();
+}
+
+function prevApplication() {
+  if (!applicationData.length) return;
+  currentAppIndex = (currentAppIndex - 1 + applicationData.length) % applicationData.length;
+  showSolution = false;
+  renderApplication();
+}
+
+fetch('application-questions.json')
+  .then((resp) => resp.json())
+  .then((data) => {
+    applicationData = data.items || [];
+    renderApplication();
+  });
+
+const appPrev = document.getElementById('appPrev');
+if (appPrev) appPrev.addEventListener('click', prevApplication);
+const appNext = document.getElementById('appNext');
+if (appNext) appNext.addEventListener('click', nextApplication);
+const appToggle = document.getElementById('appToggle');
+if (appToggle) appToggle.addEventListener('click', toggleSolution);
