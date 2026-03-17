@@ -85,6 +85,19 @@ body {
   cursor: pointer;
 }
 
+#conceptList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.concept-item {
+  margin-bottom: 16px;
+}
+
+.concept-item .choices {
+  margin-top: 6px;
+}
+
 .card input {
   width: 100%;
   margin: 6px 0;

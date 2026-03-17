@@ -1,17 +1,196 @@
-const choices = document.querySelectorAll('.choices');
-choices.forEach((group) => {
-  group.addEventListener('click', (event) => {
-    if (event.target.tagName !== 'BUTTON') return;
-    const answer = group.dataset.answer;
-    const picked = event.target.dataset.choice;
-    const feedback = group.parentElement.querySelector('[data-feedback]');
-    if (picked === answer) {
-      feedback.textContent = 'Richtig.';
-    } else {
-      feedback.textContent = 'Falsch. Tipp: Strom ist bewegte Ladung.';
-    }
+const conceptQuestions = [
+  {
+    q: 'Elektrischer Strom ist ...',
+    a: 'bewegte Ladungstraeger',
+    c: ['bewegte Ladungstraeger', 'gespeicherte Energie', 'nur Spannung']
+  },
+  {
+    q: 'Technische Stromrichtung zeigt von ...',
+    a: '+ nach -',
+    c: ['+ nach -', '- nach +', 'von unten nach oben']
+  },
+  {
+    q: 'Elektronenfluss ist von ...',
+    a: '- nach +',
+    c: ['+ nach -', '- nach +', 'von rechts nach links']
+  },
+  {
+    q: 'Einheit der Spannung ist ...',
+    a: 'Volt (V)',
+    c: ['Volt (V)', 'Ampere (A)', 'Ohm (Ω)']
+  },
+  {
+    q: 'Einheit der Stromstaerke ist ...',
+    a: 'Ampere (A)',
+    c: ['Ampere (A)', 'Watt (W)', 'Coulomb (C)']
+  },
+  {
+    q: 'Einheit des Widerstands ist ...',
+    a: 'Ohm (Ω)',
+    c: ['Ohm (Ω)', 'Volt (V)', 'Joule (J)']
+  },
+  {
+    q: 'Leistung ist ...',
+    a: 'Energie pro Zeit',
+    c: ['Energie pro Zeit', 'Strom pro Zeit', 'Spannung pro Zeit']
+  },
+  {
+    q: 'Energie ist ...',
+    a: 'Leistung mal Zeit',
+    c: ['Leistung mal Zeit', 'Strom mal Zeit', 'Spannung mal Zeit']
+  },
+  {
+    q: 'Ladung berechnet man mit ...',
+    a: 'Q = I * t',
+    c: ['Q = I * t', 'Q = U * I', 'Q = R * I']
+  },
+  {
+    q: 'Ohmsches Gesetz lautet ...',
+    a: 'U = R * I',
+    c: ['U = R * I', 'P = U * I', 'E = P * t']
+  },
+  {
+    q: 'Ein Leiter ist ...',
+    a: 'ein Material mit frei beweglichen Elektronen',
+    c: ['ein Material mit frei beweglichen Elektronen', 'ein Material ohne Elektronen', 'ein Isolator']
+  },
+  {
+    q: 'Kupfer ist ein ...',
+    a: 'guter Leiter',
+    c: ['guter Leiter', 'Isolator', 'Halbleiter']
+  },
+  {
+    q: 'Aluminium wird oft verwendet wegen ...',
+    a: 'geringem Gewicht und guter Leitfaehigkeit',
+    c: ['geringem Gewicht und guter Leitfaehigkeit', 'sehr hohem Widerstand', 'nicht magnetisch']
+  },
+  {
+    q: 'Widerstand bedeutet ...',
+    a: 'Hemmung des Stromflusses',
+    c: ['Hemmung des Stromflusses', 'Erhoehung der Spannung', 'Speicherung von Ladung']
+  },
+  {
+    q: 'Spannung ist ...',
+    a: 'Potentialdifferenz',
+    c: ['Potentialdifferenz', 'Ladung pro Zeit', 'Leistung pro Zeit']
+  },
+  {
+    q: 'Stromstaerke ist ...',
+    a: 'Ladung pro Zeit',
+    c: ['Ladung pro Zeit', 'Energie pro Zeit', 'Spannung pro Weg']
+  },
+  {
+    q: '1 A entspricht ...',
+    a: '1 C/s',
+    c: ['1 C/s', '1 V', '1 Ω']
+  },
+  {
+    q: '1 W entspricht ...',
+    a: '1 J/s',
+    c: ['1 J/s', '1 V/A', '1 C/s']
+  },
+  {
+    q: '1 Ω entspricht ...',
+    a: '1 V/A',
+    c: ['1 V/A', '1 A/V', '1 J/s']
+  },
+  {
+    q: 'kWh ist eine Einheit fuer ...',
+    a: 'Energie',
+    c: ['Energie', 'Leistung', 'Stromstaerke']
+  },
+  {
+    q: 'Frequenz beschreibt ...',
+    a: 'Schwingungen pro Sekunde',
+    c: ['Schwingungen pro Sekunde', 'Spannung pro Sekunde', 'Energie pro Sekunde']
+  },
+  {
+    q: 'Eine Batterie liefert ...',
+    a: 'Gleichspannung',
+    c: ['Gleichspannung', 'Wechselspannung', 'Frequenz']
+  },
+  {
+    q: 'Das Minuspol-Symbol zeigt ...',
+    a: 'Elektronenquelle',
+    c: ['Elektronenquelle', 'Elektronenfang', 'Energieverbraucher']
+  },
+  {
+    q: 'Ein Isolator hat ...',
+    a: 'sehr wenige freie Elektronen',
+    c: ['sehr wenige freie Elektronen', 'sehr viele freie Elektronen', 'keine Atome']
+  },
+  {
+    q: 'Leistung berechnet man mit ...',
+    a: 'P = U * I',
+    c: ['P = U * I', 'P = U / R', 'P = R * I']
+  },
+  {
+    q: 'Energie berechnet man mit ...',
+    a: 'E = P * t',
+    c: ['E = P * t', 'E = U * I', 'E = R * I']
+  },
+  {
+    q: 'Spannung berechnet man aus ...',
+    a: 'U = R * I',
+    c: ['U = R * I', 'U = P * t', 'U = Q / t']
+  },
+  {
+    q: 'Strom berechnet man aus ...',
+    a: 'I = U / R',
+    c: ['I = U / R', 'I = P * t', 'I = R / U']
+  },
+  {
+    q: 'Elektrische Arbeit ist ...',
+    a: 'Energie',
+    c: ['Energie', 'Strom', 'Spannung']
+  },
+  {
+    q: 'Ein Widerstand in Reihe ...',
+    a: 'erhoeht den Gesamtwiderstand',
+    c: ['erhoeht den Gesamtwiderstand', 'verringert die Spannung', 'erhoeht die Frequenz']
+  }
+];
+
+function shuffle(list) {
+  return list
+    .map((item) => ({ item, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map((entry) => entry.item);
+}
+
+function renderConcepts() {
+  const list = document.getElementById('conceptList');
+  if (!list) return;
+  list.innerHTML = '';
+  const shuffled = shuffle(conceptQuestions).slice(0, 30);
+  shuffled.forEach((q, index) => {
+    const li = document.createElement('li');
+    li.className = 'concept-item';
+    li.innerHTML = `<strong>${index + 1}. ${q.q}</strong>`;
+    const choicesDiv = document.createElement('div');
+    choicesDiv.className = 'choices';
+    const feedback = document.createElement('p');
+    feedback.className = 'feedback';
+    q.c.forEach((choice) => {
+      const btn = document.createElement('button');
+      btn.textContent = choice;
+      btn.addEventListener('click', () => {
+        feedback.textContent = choice === q.a ? 'Richtig.' : `Falsch. Richtig ist: ${q.a}`;
+      });
+      choicesDiv.appendChild(btn);
+    });
+    li.appendChild(choicesDiv);
+    li.appendChild(feedback);
+    list.appendChild(li);
   });
-});
+}
+
+const conceptShuffle = document.getElementById('conceptShuffle');
+if (conceptShuffle) {
+  conceptShuffle.addEventListener('click', renderConcepts);
+}
+
+renderConcepts();
 
 const converters = {
   mA: (value) => value / 1000,
