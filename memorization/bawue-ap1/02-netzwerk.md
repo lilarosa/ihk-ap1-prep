@@ -74,3 +74,50 @@
 
 „Ein Switch verbindet Geräte innerhalb eines LAN und leitet Frames anhand von MAC-Adressen weiter. Ein Router verbindet unterschiedliche IP-Netze und entscheidet anhand von Routinginformationen über den nächsten Weg. Ein Access Point bindet WLAN-Clients an ein kabelgebundenes Netz an.“
 
+## 11. WLAN sicher konfigurieren
+
+**Prüfungsantwort:**
+
+„Der Access Point soll WPA3 oder mindestens WPA2 mit einem starken Passwort verwenden. Das Standardpasswort des Geräts wird geändert. Firmware-Updates werden regelmäßig installiert. WPS wird deaktiviert, wenn es nicht benötigt wird. Gäste erhalten ein getrenntes WLAN ohne Zugriff auf das interne Netz.“
+
+## 12. Firewall - Aufgaben und Position
+
+**Prüfungsantwort:**
+
+„Eine Firewall prüft den Netzwerkverkehr nach festen Regeln. Sie kann Verbindungen nach IP-Adresse, Port und Protokoll erlauben oder sperren. Eine Stateful Firewall erkennt auch den Zustand einer Verbindung. Die Firewall wird zwischen internem Netz und Internet platziert, damit der ein- und ausgehende Verkehr kontrolliert wird.“
+
+## 13. MAC-Adresse und OSI-Schicht
+
+**Prüfungsantwort:**
+
+„Eine MAC-Adresse hat normalerweise 48 Bit. Sie wird auf Schicht 2 des OSI-Modells verwendet. Ein Switch nutzt MAC-Adressen, um Ethernet-Frames an den richtigen Port weiterzuleiten.“
+
+## 14. Logischer und physikalischer Netzwerkplan
+
+**Prüfungsantwort:**
+
+„Ein logischer Netzwerkplan zeigt IP-Netze, VLANs und Kommunikationswege. Ein physikalischer Plan zeigt reale Geräte, Kabel, Ports und Standorte. Der logische Plan erklärt die Funktion. Der physikalische Plan hilft bei Installation und Fehlersuche vor Ort.“
+
+## 15. Öffentliche und private IPv4-Adresse
+
+**Prüfungsantwort:**
+
+„Eine öffentliche IPv4-Adresse ist im Internet eindeutig und routingfähig. Eine private IPv4-Adresse wird nur im lokalen Netz verwendet. Private Adressen werden im Internet nicht geroutet. Für den Internetzugang setzt der Router sie meist mit NAT auf eine öffentliche Adresse um.“
+
+## 16. Wi-Fi 6 / aktueller WLAN-Standard
+
+**Prüfungsantwort:**
+
+„Wi-Fi 6 entspricht IEEE 802.11ax. OFDMA und MU-MIMO verbessern die Nutzung bei vielen Geräten. Wi-Fi 6E nutzt zusätzlich das 6-GHz-Band. Vor einer Empfehlung müssen Access Point und Clients den Standard unterstützen.“
+
+## 17. Ping-Werte beurteilen
+
+**Prüfungsantwort:**
+
+„Hohe oder stark schwankende Antwortzeiten weisen auf Latenz oder Jitter hin. Paketverlust zeigt, dass Daten nicht zuverlässig ankommen. Folgen können Ruckeln, Aussetzer und Verbindungsabbrüche sein. Danach prüft man Verbindung, Auslastung, WLAN-Signal und Netzwerkgeräte.“
+
+## 18. Kein Standardpasswort
+
+**Prüfungsantwort:**
+
+„Ohne Standardpasswort muss bei der ersten Einrichtung ein eigenes Passwort vergeben werden. Dadurch kann ein bekanntes Herstellerpasswort nicht missbraucht werden. Die Inbetriebnahme dauert etwas länger, die Sicherheit ist aber höher.“

@@ -14,7 +14,7 @@
 
 **Prüfungsantwort:**
 
-„Der Schutzbedarf ist als hoch einzustufen. Eine Offenlegung würde personenbezogene bzw. geschäftskritische Informationen betreffen, eine Manipulation könnte zu fehlerhaften Entscheidungen führen und ein Ausfall würde den zentralen Geschäftsprozess unterbrechen. Daher sind starke Zugriffskontrollen, Protokollierung, Verschlüsselung und ein getestetes Wiederherstellungskonzept erforderlich.“
+„Der Schutzbedarf ist hoch. Unbefugte dürfen die Daten nicht lesen. Falsche Daten können zu falschen Entscheidungen führen. Ein Ausfall kann wichtige Arbeitsprozesse stoppen. Deshalb sind Zugriffsschutz, Verschlüsselung, Protokollierung und ein getestetes Backup nötig.“
 
 ## 3. Technische und organisatorische Maßnahmen (TOM)
 
@@ -26,7 +26,7 @@
 
 **Prüfungsantwort:**
 
-„Vorbeugend sind zeitnahe Sicherheitsupdates, restriktive Rechte, E-Mail- und Webfilter, Awareness-Schulungen, Netzwerksegmentierung und offline bzw. unveränderbar gespeicherte Backups erforderlich. Bei einem Verdacht wird das betroffene System sofort vom Netz getrennt, der Vorfall gemeldet und Beweismaterial gesichert. Danach werden Ausbreitung und Ursache analysiert, Systeme aus vertrauenswürdigen Quellen neu aufgebaut und Daten aus einem geprüften Backup wiederhergestellt.“
+„Zur Vorbeugung braucht man Updates, wenige Benutzerrechte, E-Mail-Filter, Schulungen und getrennte Netzbereiche. Backups müssen offline oder unveränderbar gespeichert werden. Bei einem Angriff trennt man das Gerät sofort vom Netz und meldet den Vorfall. Danach wird die Ursache geprüft. Das System wird sauber neu installiert und aus einem geprüften Backup wiederhergestellt.“
 
 **Schlüsselwörter:** isolieren, melden, nicht unkontrolliert löschen, Ursache, sauberes Restore, dokumentieren.
 
@@ -46,13 +46,13 @@
 
 **Prüfungsantwort:**
 
-„Bei symmetrischer Verschlüsselung wird derselbe geheime Schlüssel zum Ver- und Entschlüsseln verwendet; sie ist schnell, erfordert aber einen sicheren Schlüsselaustausch. Asymmetrische Verfahren verwenden ein öffentliches und ein privates Schlüsselpaar und vereinfachen Schlüsselaustausch sowie Signaturen, sind jedoch rechenaufwendiger. Hybride Verfahren tauschen einen Sitzungsschlüssel asymmetrisch aus und verschlüsseln die Nutzdaten effizient symmetrisch.“
+„Bei symmetrischer Verschlüsselung wird derselbe geheime Schlüssel zum Ver- und Entschlüsseln genutzt. Das Verfahren ist schnell, aber der Schlüssel muss sicher übertragen werden. Asymmetrische Verschlüsselung nutzt einen öffentlichen und einen privaten Schlüssel. Hybride Verfahren verbinden beide Methoden.“
 
 ## 8. Hash, digitale Signatur und Zertifikat
 
 **Prüfungsantwort:**
 
-„Eine kryptografische Hashfunktion erzeugt aus Daten einen festen Prüfwert und dient der Integritätsprüfung; sie ist keine Verschlüsselung. Bei einer digitalen Signatur wird ein Hashwert mit dem privaten Schlüssel signiert. Die Prüfung mit dem zugehörigen öffentlichen Schlüssel bestätigt Integrität und Urheberschaft. Ein Zertifikat bindet einen öffentlichen Schlüssel an eine Identität und wird von einer vertrauenswürdigen Zertifizierungsstelle bestätigt.“
+„Eine Hashfunktion erzeugt aus Daten einen Prüfwert. Damit kann man Änderungen erkennen. Ein Hash ist keine Verschlüsselung. Bei einer digitalen Signatur wird der Hash mit dem privaten Schlüssel signiert. Der öffentliche Schlüssel prüft die Signatur. Ein Zertifikat verbindet einen öffentlichen Schlüssel mit einer Identität.“
 
 ## 9. Datenschutzgrundsätze
 
@@ -78,3 +78,20 @@
 
 „Warnzeichen sind ungewöhnlicher Zeitdruck, abweichende Absenderdomänen, unerwartete Anhänge, verkürzte Links und Aufforderungen zur Preisgabe von Zugangsdaten. Links werden nicht direkt geöffnet; die Echtheit wird über einen unabhängigen Kommunikationsweg geprüft. Verdächtige Nachrichten werden gemeldet. Nach einer Eingabe von Zugangsdaten sind Passwortwechsel, Sperrung aktiver Sitzungen und Prüfung der Protokolle erforderlich.“
 
+## 13. Schutzbedarf - Maximumprinzip
+
+**Prüfungsantwort:**
+
+„Beim Maximumprinzip bestimmt der höchste Schutzbedarf das Gesamtergebnis. Hat eine Anwendung bei Vertraulichkeit den Wert hoch, bei Integrität sehr hoch und bei Verfügbarkeit normal, ist der gesamte Schutzbedarf sehr hoch. So wird das wichtigste Schutzziel nicht zu niedrig bewertet.“
+
+## 14. Gefährdungen der Verfügbarkeit und Maßnahmen
+
+**Prüfungsantwort:**
+
+„Mögliche Gefährdungen sind Stromausfall, Hardwaredefekt, Feuer, Schadsoftware und menschliche Fehler. Eine USV hilft bei kurzem Stromausfall. RAID und Ersatzgeräte reduzieren Ausfallzeiten bei Hardwaredefekten. Backups ermöglichen die Wiederherstellung. Brandschutz, Monitoring und Notfallpläne ergänzen die Maßnahmen.“
+
+## 15. Geschäftsgeheimnis oder personenbezogene Daten
+
+**Prüfungsantwort:**
+
+„Personenbezogene Daten beziehen sich auf eine natürliche Person, zum Beispiel Geburtsdatum oder Sozialversicherungsnummer. Geschäftsgeheimnisse sind vertrauliche Informationen eines Unternehmens, zum Beispiel Konstruktionspläne oder geheime Lieferverträge. Öffentliche Preise sind normalerweise keine schutzwürdigen Daten.“

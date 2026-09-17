@@ -46,3 +46,14 @@
 
 „Das Lastenheft beschreibt aus Sicht des Auftraggebers, **was** und **wofür** benötigt wird. Das Pflichtenheft beschreibt aus Sicht des Auftragnehmers, **wie** und **womit** diese Anforderungen umgesetzt werden. Beide Dokumente schaffen eine prüfbare Grundlage für Umsetzung und Abnahme.“
 
+## 8. Sofortumstellung und Parallelbetrieb
+
+**Prüfungsantwort:**
+
+„Bei der Sofortumstellung wird das alte System direkt abgeschaltet. Das ist schnell und günstig, aber ein Fehler kann sofort den gesamten Betrieb stören. Beim Parallelbetrieb laufen altes und neues System eine Zeit lang gleichzeitig. Das ist sicherer, verursacht aber mehr Arbeit und Kosten.“
+
+## 9. Organigramm beurteilen
+
+**Prüfungsantwort:**
+
+„Eine klare Organisation zeigt Zuständigkeiten und Weisungswege. Das reduziert Missverständnisse. Lange Entscheidungswege und zu viele Vorgesetzte können die Arbeit bremsen. Für ein kleines Unternehmen sollte die Struktur deshalb einfach bleiben.“

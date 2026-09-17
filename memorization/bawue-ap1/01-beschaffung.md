@@ -8,7 +8,7 @@
 
 **Prüfungsantwort:**
 
-„Neben dem Preis sind insbesondere die Produktqualität, die Lieferzeit und Lieferzuverlässigkeit sowie Service- und Garantieleistungen zu bewerten. Eine hohe Lieferzuverlässigkeit verhindert Produktions- oder Projektausfälle. Ein erreichbarer Support und klare Reaktionszeiten reduzieren die Ausfallzeit bei Störungen. Zusätzlich können nachhaltige Produktion, kurze Transportwege und faire Zahlungsbedingungen in die Entscheidung einfließen.“
+„Neben dem Preis sind auch Qualität, Lieferzeit und Service wichtig. Eine zuverlässige Lieferung verhindert Verzögerungen. Ein guter Support hilft bei Störungen. Auch Garantie, Zahlungsbedingungen und Nachhaltigkeit können wichtig sein.“
 
 **Schlüsselwörter:** Muss-Kriterien, Nutzwert, Lieferzuverlässigkeit, Qualität, Service/SLA, Garantie, Nachhaltigkeit.
 
@@ -22,7 +22,7 @@
 
 **Prüfungsantwort:**
 
-„Bei einer Nutzwertanalyse werden entscheidungsrelevante Kriterien festgelegt, nach ihrer Bedeutung gewichtet und die Alternativen einheitlich bewertet. Dadurch werden auch nicht monetäre Aspekte transparent und vergleichbar. Das Ergebnis unterstützt die Entscheidung, ersetzt aber nicht die Prüfung zwingender Muss-Kriterien.“
+„Bei einer Nutzwertanalyse werden zuerst wichtige Kriterien festgelegt. Jedes Kriterium erhält eine Gewichtung. Danach werden alle Angebote nach denselben Kriterien bewertet. So kann man auch Qualität und Service vergleichen. Muss-Kriterien müssen trotzdem erfüllt sein.“
 
 **Schlüsselwörter:** Kriterien, Gewichtung, Bewertung, Transparenz, Muss-Kriterium.
 
@@ -32,7 +32,7 @@
 
 **Prüfungsantwort:**
 
-„Zunächst werden Empfänger, Anzahl der Packstücke und äußerlich erkennbare Transportschäden geprüft. Schäden werden dokumentiert und möglichst vom Frachtführer bestätigt. Danach werden Lieferschein und Bestellung hinsichtlich Artikel, Menge und Identität abgeglichen. Anschließend erfolgt eine Sicht- und gegebenenfalls Funktionsprüfung. Abweichungen werden im Prüfprotokoll festgehalten und unverzüglich an Einkauf bzw. Lieferant gemeldet.“
+„Zuerst prüft man Empfänger, Anzahl der Pakete und sichtbare Schäden. Schäden werden sofort dokumentiert und vom Fahrer bestätigt. Danach vergleicht man Ware, Lieferschein und Bestellung. Man prüft Artikel, Menge und Funktion. Fehler werden notiert und sofort an Einkauf oder Lieferant gemeldet.“
 
 **Schlüsselwörter:** Sichtprüfung, Transportschaden, Lieferschein, Bestellung, Menge/Identität, Funktion, Dokumentation, Mängelanzeige.
 
@@ -50,7 +50,7 @@
 
 **Prüfungsantwort:**
 
-„Eine Anfrage ist grundsätzlich unverbindlich und dient der Informationsbeschaffung. Ein Angebot ist grundsätzlich bindend, soweit die Bindung nicht ausgeschlossen oder zeitlich begrenzt wurde. Durch die rechtzeitige Annahme kommt der Vertrag zustande. Eine Bestellung ist die Willenserklärung des Käufers; weicht sie vom Angebot ab, gilt sie rechtlich als neuer Antrag. Die Auftragsbestätigung bestätigt die Annahme beziehungsweise konkretisiert den Auftrag.“
+„Eine Anfrage ist unverbindlich. Sie dient nur dazu, Informationen zu erhalten. Ein Angebot ist normalerweise bindend. Nimmt der Kunde das Angebot rechtzeitig an, entsteht ein Kaufvertrag. Eine Bestellung ist der Auftrag des Käufers. Die Auftragsbestätigung bestätigt den Auftrag.“
 
 **Schlüsselwörter:** unverbindliche Anfrage, bindendes Angebot, Annahme, Willenserklärung, Vertrag.
 
@@ -60,7 +60,7 @@
 
 **Prüfungsantwort:**
 
-„Lieferverzug setzt eine fällige Leistung, Nichtleistung trotz Möglichkeit und grundsätzlich eine Mahnung voraus; bei kalendermäßig bestimmtem Termin kann die Mahnung entbehrlich sein. Der Käufer kann weiterhin Lieferung verlangen und bei Verschulden Ersatz des Verzögerungsschadens fordern. Nach erfolgloser angemessener Nachfrist kann er vom Vertrag zurücktreten oder Schadensersatz statt der Leistung verlangen.“
+„Ein Lieferverzug liegt vor, wenn der Liefertermin überschritten wurde. Gibt es keinen festen Termin, muss der Käufer den Lieferanten normalerweise mahnen. Der Käufer kann weiterhin die Lieferung verlangen. Nach einer erfolglosen Nachfrist kann er vom Vertrag zurücktreten oder Schadensersatz verlangen.“
 
 ## 7. Nachhaltige Beschaffung
 
@@ -68,7 +68,7 @@
 
 **Prüfungsantwort:**
 
-„Zu berücksichtigen sind Energieeffizienz im Betrieb, Reparierbarkeit und Ersatzteilverfügbarkeit, eine lange Nutzungsdauer, recyclingfähige Verpackung sowie Rücknahme- und Entsorgungskonzepte. Diese Kriterien senken Ressourcenverbrauch und Abfallmenge über den gesamten Lebenszyklus. Regionale Lieferwege und anerkannte Umwelt- oder Sozialzertifikate können zusätzlich einbezogen werden.“
+„Wichtige Kriterien sind ein niedriger Energieverbrauch, eine lange Nutzungsdauer und gute Reparierbarkeit. Ersatzteile sollten lange verfügbar sein. Auch Recycling, Rücknahme und kurze Transportwege sind wichtig. Dadurch werden Energie, Rohstoffe und Abfall reduziert.“
 
 **Schlüsselwörter:** Lebenszyklus, Energieeffizienz, Reparierbarkeit, Recycling, Rücknahme, Transportwege.
 
@@ -76,5 +76,42 @@
 
 **Prüfungsantwort:**
 
-„Die Entscheidung darf nicht nur anhand des Anschaffungspreises erfolgen. Zu vergleichen sind Gesamtbetriebskosten, Nutzungsdauer, Auslastung, Wartung, Know-how, Flexibilität und Abhängigkeit vom Anbieter. Kauf eignet sich eher bei langfristiger, hoher Nutzung; Miete oder Fremdbezug erhöht häufig die Flexibilität und verlagert Wartungsrisiken, kann langfristig aber teurer sein.“
+„Man darf nicht nur den Kaufpreis vergleichen. Wichtig sind auch Betriebskosten, Nutzungsdauer, Wartung und Flexibilität. Ein Kauf passt oft bei langer und regelmäßiger Nutzung. Miete ist flexibler und enthält oft Service, kann aber auf Dauer teurer sein.“
 
+## 9. Interne und externe Bezugsquellen
+
+**Prüfungsantwort:**
+
+„Interne Bezugsquellen sind zum Beispiel Lieferantenlisten, frühere Bestellungen und Erfahrungen anderer Abteilungen. Externe Bezugsquellen sind Suchmaschinen, Herstellerseiten, Messen und Branchenverzeichnisse. Interne Quellen sind schnell verfügbar. Externe Quellen helfen, neue Lieferanten zu finden.“
+
+## 10. Bestandteile eines Angebots
+
+**Prüfungsantwort:**
+
+„Ein vollständiges Angebot enthält Anbieter und Kunde, genaue Warenbeschreibung, Menge, Preis, Lieferzeit, Lieferbedingungen und Zahlungsbedingungen. Wichtig sind außerdem Gültigkeitsdauer, Umsatzsteuer und mögliche Rabatte oder Skonto.“
+
+## 11. Lieferant trotz höherem Preis auswählen
+
+**Prüfungsantwort:**
+
+„Der billigste Lieferant ist nicht immer die beste Wahl. Ein höherer Preis kann durch bessere Qualität, kürzere Lieferzeit, längere Garantie oder besseren Support gerechtfertigt sein. Die Entscheidung muss zu den Anforderungen des Kunden passen.“
+
+## 12. Anforderungsanalyse
+
+**Prüfungsantwort:**
+
+„Zuerst werden Muss- und Kann-Anforderungen getrennt. Danach werden technische, wirtschaftliche und organisatorische Anforderungen notiert. Jede Anforderung soll eindeutig und prüfbar sein. Beispiele sind Leistung, Schnittstellen, Betriebssystem, Ergonomie, Budget und Liefertermin.“
+
+## 13. e.K. und GmbH vergleichen
+
+**Prüfungsantwort:**
+
+„Bei einem eingetragenen Kaufmann haftet der Inhaber grundsätzlich auch mit seinem Privatvermögen. Die Gründung ist einfach und es gibt kein festes Mindestkapital. Eine GmbH ist eine eigene juristische Person. Die Haftung ist normalerweise auf das Gesellschaftsvermögen begrenzt. Dafür sind Stammkapital, ein Gesellschaftsvertrag und mehr Verwaltungsaufwand nötig.“
+
+**Merksatz:** e.K. = einfach, aber persönliche Haftung. GmbH = begrenzte Haftung, aber mehr Aufwand.
+
+## 14. Imageverlust durch schlechte Lieferung
+
+**Prüfungsantwort:**
+
+„Durch häufige Lieferprobleme verlieren Kunden das Vertrauen. Bestehende Kunden können wechseln. Neue Kunden sind schwerer zu gewinnen. Dadurch können Umsatz und Gewinn sinken.“

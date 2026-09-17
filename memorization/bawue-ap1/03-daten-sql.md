@@ -100,3 +100,20 @@ JOIN auftrag a ON a.kunde_id = k.kunde_id;
 
 „Eingaben müssen serverseitig auf Datentyp, Wertebereich, Pflichtfelder, Länge und erlaubtes Format geprüft werden. Parametrisierte Abfragen verhindern, dass Eingaben als SQL-Code interpretiert werden. Datenbank-Constraints wie `NOT NULL`, `UNIQUE` und Fremdschlüssel sichern Regeln zusätzlich auf Datenbankebene.“
 
+## 12. Fehler wegen doppeltem Primärschlüssel
+
+**Prüfungsantwort:**
+
+„Ein Primärschlüssel muss eindeutig sein. Der Datensatz kann nicht eingefügt werden, wenn derselbe Schlüssel schon vorhanden ist. Man muss einen neuen freien Schlüssel verwenden oder eine automatisch erzeugte ID einsetzen.“
+
+## 13. REST-API
+
+**Prüfungsantwort:**
+
+„Eine REST-API stellt Daten oder Funktionen über HTTP bereit. Ein Client sendet eine Anfrage an eine URL. Der Server antwortet oft mit JSON-Daten. Häufig verwendete Methoden sind GET zum Lesen, POST zum Anlegen, PUT oder PATCH zum Ändern und DELETE zum Löschen.“
+
+## 14. Relationenmodell aus unstrukturierten Daten
+
+**Prüfungsantwort:**
+
+„Zuerst werden die Objekte als eigene Tabellen erkannt, zum Beispiel Bestellung, Artikel und Hersteller. Danach erhält jede Tabelle einen Primärschlüssel. Beziehungen werden mit Fremdschlüsseln hergestellt. Wiederholte Daten werden ausgelagert. So werden Redundanzen und widersprüchliche Werte reduziert.“

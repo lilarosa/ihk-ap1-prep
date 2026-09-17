@@ -23,6 +23,7 @@ Diese Sammlung fasst die **nicht rechenlastigen Aufgaben** aus zehn BaWü-orient
 | 06 | [Organisation und Arbeit](06-organisation-arbeit.md) | Organisation, Change, Ergonomie, Netzplan |
 | 07 | [Programmierung und UML](07-programmierung-uml.md) | OOP, UML, Fehlerarten, Tests, Algorithmen |
 | 08 | [Trend- und Transferfragen](08-trend-transfer.md) | Daisy Chain, Dual Stack, PoE, Video, Transfer |
+| 09 | [Prüfungsabdeckung und Trends](09-pruefungsabdeckung-trends.md) | BaWü-Jahrgänge, Lückenprüfung, Prioritäten, Prognose |
 
 ## Antwortformat für fast jede offene Aufgabe
 
@@ -33,6 +34,7 @@ Beispiel: „Ein falsches Standardgateway verhindert die Weiterleitung in fremde
 ## Wichtig
 
 - Rechenergebnisse wurden bewusst nicht aufgenommen.
+- Die Sprache ist bewusst einfach gehalten: kurze Sätze, ein Gedanke pro Satz, notwendige Fachbegriffe.
 - Bei Aufgaben mit „nennen“ reicht ein Stichpunkt; bei „erläutern“ braucht jeder Punkt eine Wirkung oder Begründung.
 - Fachbegriffe bringen nur dann sicher Punkte, wenn sie zum beschriebenen Fall passen.
 - Bei mehreren geforderten Aspekten nummeriert antworten. So erkennt die Korrektur jeden Einzelpunkt.
@@ -45,4 +47,3 @@ Beispiel: „Ein falsches Standardgateway verhindert die Weiterleitung in fremde
 - Donnerstag: Sicherheit und Datenschutz
 - Freitag: Service, Organisation und Programmierung im Wechsel
 - Wochenende: eine gemischte Simulation unter Zeitdruck
-

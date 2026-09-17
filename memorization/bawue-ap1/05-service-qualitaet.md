@@ -56,3 +56,26 @@
 
 „Dokumentiert werden Zeitpunkt, betroffene Benutzer und Systeme, Symptome, Fehlermeldungen, Priorität, bereits durchgeführte Prüfungen, Änderungen, Ergebnisse, Ursache, Lösung und Abschlussbestätigung. Eine vollständige Dokumentation verhindert Doppelarbeit und macht die Lösung für ähnliche Störungen wiederverwendbar.“
 
+## 10. Verfügbarkeit erhöhen
+
+**Prüfungsantwort:**
+
+„Die Verfügbarkeit kann durch redundante Server, Netzteile und Netzwerkwege erhöht werden. Eine USV schützt bei Stromausfall. Monitoring erkennt Fehler früh. Ersatzgeräte und Wartungsverträge verkürzen die Reparaturzeit. Ein Notfallplan und getestete Backups ermöglichen einen schnellen Wiederanlauf.“
+
+## 11. RAID 5 und RAID 10
+
+**Prüfungsantwort:**
+
+„RAID 5 verteilt Daten und Paritätsinformationen auf mehrere Festplatten. Der Ausfall einer Festplatte kann ausgeglichen werden. RAID 10 verbindet Spiegelung und Striping. Es bietet gute Leistung und kann je nach Ausfall mehrere defekte Platten verkraften. Dafür wird nur etwa die Hälfte der Rohkapazität genutzt.“
+
+## 12. RAID ersetzt kein Backup
+
+**Prüfungsantwort:**
+
+„RAID schützt hauptsächlich vor dem Ausfall einer Festplatte. Es schützt nicht sicher vor versehentlichem Löschen, Schadsoftware, Diebstahl oder Brand. Deshalb wird zusätzlich ein getrenntes Backup benötigt. Die Wiederherstellung muss getestet werden.“
+
+## 13. SLA-Verstoß beurteilen
+
+**Prüfungsantwort:**
+
+„Zuerst werden tatsächliche Ausfallzeit, Reaktionszeit und Entstörzeit mit den SLA-Werten verglichen. Wartungszeiten werden nur dann abgezogen, wenn dies im Vertrag steht. Wird ein vereinbarter Grenzwert überschritten, ist das Service Level nicht eingehalten. Das Ergebnis muss mit Zahlen und Vertragsstelle begründet werden.“

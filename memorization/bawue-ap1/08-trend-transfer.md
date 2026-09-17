@@ -4,13 +4,13 @@
 
 **Prüfungsantwort:**
 
-„Beim Daisy Chaining werden mehrere Monitore hintereinander verbunden, anstatt jeden Monitor direkt mit dem Rechner zu verkabeln. DisplayPort Multi-Stream Transport überträgt mehrere Bildströme über eine Verbindung. Rechner, Grafikausgang, Kabel und Monitore müssen MST unterstützen; außerdem muss die verfügbare Bandbreite für Auflösung, Farbtiefe und Bildwiederholrate ausreichen. Vorteil ist weniger Verkabelung, Nachteil ist die gemeinsame Bandbreite und die Abhängigkeit der Kette.“
+„Beim Daisy Chaining werden mehrere Monitore hintereinander verbunden. Dadurch braucht der Computer weniger einzelne Kabel. Computer, Anschluss, Kabel und Monitore müssen DisplayPort MST unterstützen. Die gemeinsame Bandbreite muss für alle Monitore reichen.“
 
 ## 2. Power over Ethernet
 
 **Prüfungsantwort:**
 
-„Power over Ethernet überträgt Daten und elektrische Leistung über dasselbe Ethernet-Kabel. Dadurch benötigen Geräte wie Access Points, IP-Telefone oder Kameras keine lokale Steckdose und können zentral über einen PoE-Switch bzw. Injector versorgt werden. Zu prüfen sind PoE-Standard, Leistungsbudget des Switches, benötigte Leistung des Endgeräts, Kabellänge und Wärmeentwicklung.“
+„Power over Ethernet überträgt Daten und Strom über dasselbe Netzwerkkabel. Access Points, Telefone und Kameras brauchen dann keine eigene Steckdose. Der PoE-Standard und die Leistung des Switches müssen zum Gerät passen.“
 
 ## 3. Latenz, Bandbreite und Jitter
 
@@ -59,3 +59,14 @@ Wenn ein unbekanntes Produkt oder Verfahren erscheint, strukturiert nach denselb
 
 „Für den beschriebenen Betrieb ist nicht der höchste Einzelwert entscheidend, sondern die Kombination aus Anforderungserfüllung, zuverlässigem Betrieb, Sicherheit, Folgekosten und Wartbarkeit. Zwingende Muss-Kriterien werden zuerst geprüft. Anschließend werden die verbleibenden Alternativen anhand transparenter Kriterien verglichen und die Entscheidung mit Bezug zum Nutzungsszenario dokumentiert.“
 
+## 9. Video-Erfassung im Betrieb
+
+**Prüfungsantwort:**
+
+„Eine Kamera kann Ankunft, Kennzeichen oder Ladebereich erfassen. Das System kann danach automatisch eine Lieferung zuordnen oder eine freie Ladestelle anzeigen. Dadurch sinken Wartezeiten und manuelle Eingaben. Datenschutz und zulässiger Aufnahmebereich müssen beachtet werden.“
+
+## 10. Wirtschaftlichen Nutzen nennen
+
+**Prüfungsantwort:**
+
+„Ein schneller Ablauf reduziert Wartezeit und Personalkosten. Fahrzeuge und Ladestellen werden besser ausgelastet. Fehler und verspätete Lieferungen werden reduziert. Dadurch können Kosten sinken und Kunden zufriedener werden.“

@@ -54,3 +54,20 @@
 
 „Versionsverwaltung dokumentiert Änderungen nachvollziehbar, ermöglicht parallele Entwicklung und erlaubt die Wiederherstellung früherer Stände. Kleine, inhaltlich geschlossene Commits mit aussagekräftiger Nachricht erleichtern Review und Fehlersuche. Branches trennen Änderungen, bevor sie nach Prüfung zusammengeführt werden.“
 
+## 10. Array durchsuchen
+
+**Prüfungsantwort:**
+
+„Die Schleife prüft jedes Element des Arrays. Bei einem Treffer wird sofort `true` zurückgegeben. Wird bis zum Ende kein Treffer gefunden, gibt die Methode `false` zurück. Wichtig ist, dass alle Elemente geprüft werden und die Rückgabe an der richtigen Stelle steht.“
+
+## 11. CSV-Zeile prüfen
+
+**Prüfungsantwort:**
+
+„Jede CSV-Zeile wird mit dem Trennzeichen aufgeteilt. Danach wird zuerst die Artikel-ID verglichen. Passt die ID, wird das Preisfeld geprüft. Ist es leer oder enthält es `NULL`, gibt die Methode `true` zurück. Nach der vollständigen Prüfung ohne Treffer wird `false` zurückgegeben.“
+
+## 12. Logischen Fehler beschreiben
+
+**Prüfungsantwort:**
+
+„Der Code läuft, aber die Bedingung oder Berechnung ist fachlich falsch. Deshalb entsteht ein falsches Ergebnis. Man nennt die fehlerhafte Stelle, beschreibt die Folge und gibt die richtige Bedingung oder Reihenfolge an.“
