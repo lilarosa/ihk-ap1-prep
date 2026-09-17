@@ -8,6 +8,7 @@ Gezielte Vorbereitung auf die IHK AP1 mit Fokus auf Kernbereiche: SQL, Java-Grun
 - `solutions/`: eigene Loesungswege
 - `mock-exams/`: Probepruefungen mit Zeitlimit
 - `cheatsheets/`: kompakte Zusammenfassungen
+- [`memorization/bawue-ap1/`](memorization/bawue-ap1/README.md): BaWue-AP1-Musterantworten zum Auswendiglernen
 - `weekly/`: Wochenplaene und Fortschritt
 
 ## DE: Week 1
