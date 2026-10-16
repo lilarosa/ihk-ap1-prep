@@ -1,0 +1,1364 @@
+[
+  {
+    "slug": "01-programmierung",
+    "title": "Programmierung, Algorithmen und Tests",
+    "basis": [
+      "BW22S",
+      "BW22W",
+      "BW23S",
+      "BW23W",
+      "BW24S",
+      "BW26M",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "01.01",
+        "title": "Lineare Suche mit Rückgabewert",
+        "prompt": "Entwickeln Sie die Funktion enthaelt(seriennummern, gesucht). Das Array enthält Zeichenketten. Die Funktion gibt genau dann true zurück, wenn gesucht exakt einem Eintrag entspricht. Für ein leeres Array ist false zurückzugeben. Verwenden Sie detaillierten Pseudocode oder eine im Unterricht gelernte Sprache. Die Daten sind nicht null.",
+        "answer": "```text\nFUNKTION enthaelt(seriennummern, gesucht)\n    FÜR JEDE nummer IN seriennummern\n        WENN nummer = gesucht DANN\n            RÜCKGABE true\n        ENDE WENN\n    ENDE FÜR\n    RÜCKGABE false\nENDE FUNKTION\n```\nDie Rückgabe false steht nach der Schleife. Innerhalb der Schleife würde sie die Suche nach dem ersten nicht passenden Eintrag abbrechen.",
+        "anchors": [
+          "alle Elemente erreichbar",
+          "exakter Vergleich",
+          "true beim Treffer",
+          "false erst nach der Schleife, auch für leeres Array"
+        ],
+        "oral": "Wie suchen Sie in einem Array nach einer Seriennummer und geben einen Wahrheitswert zurück?",
+        "spoken": "Ich durchlaufe alle Einträge und vergleiche jeden Eintrag mit dem Suchwert. Bei einem Treffer gebe ich sofort wahr zurück. Nur wenn die gesamte Suche ohne Treffer endet, gebe ich falsch zurück. Diese letzte Rückgabe steht außerhalb der Schleife. Dadurch funktioniert auch das leere Array korrekt.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "01.02",
+        "title": "Durchschnitt: drei typische Fehler",
+        "prompt": "Die Methode soll den exakten Durchschnitt als Gleitkommazahl liefern. Ein leeres Array soll 0.0 ergeben. Finden und erklären Sie drei Fehler und schreiben Sie die korrigierte Methode.\n```java\nstatic double mittelwert(int[] daten) {\n    int summe = 0;\n    for (int i = 0; i <= daten.length; i++) {\n        summe = daten[i];\n    }\n    return summe / daten.length;\n}\n```\nZusätzlich: Welchen korrekten Wert erwarten Sie für [3, 6, 8, 9]?",
+        "answer": "```java\nstatic double mittelwert(int[] daten) {\n    if (daten.length == 0) return 0.0;\n    int summe = 0;\n    for (int i = 0; i < daten.length; i++) {\n        summe += daten[i];\n    }\n    return (double) summe / daten.length;\n}\n```\nFehler: <= führt zum ungültigen Index daten.length; die Zuweisung überschreibt statt zu addieren; zwei Integer werden ganzzahlig dividiert. Die Leereingabe wird vor der Division behandelt. Für die Testdaten: 26 / 4 = 6.5. Annahme: Die Summe passt in int.",
+        "anchors": [
+          "Indexgrenze erklären und korrigieren",
+          "Akkumulation erklären und korrigieren",
+          "Gleitkommadivision erklären und korrigieren",
+          "Leereingabe und Ergebnis 6.5"
+        ],
+        "oral": "Welche Fehler müssen Sie bei einer Durchschnittsberechnung mit Schleife besonders prüfen?",
+        "spoken": "Erstens muss der Index kleiner als die Arraylänge sein, weil die Zählung bei null beginnt. Zweitens wird jeder Wert zur bisherigen Summe addiert. Drittens muss vor der Division mindestens ein Operand in eine Gleitkommazahl umgewandelt werden. Das leere Array wird vorab abgefangen. Drei, sechs, acht und neun ergeben zusammen sechsundzwanzig; geteilt durch vier ergibt das sechs Komma fünf.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "01.03",
+        "title": "Schreibtischtest",
+        "prompt": "Führen Sie den folgenden Code von Hand aus. Arrayindizes beginnen bei 0. Notieren Sie nach jeder Runde i, werte[i], summe und anzahl sowie die Endausgabe.\n```text\nwerte = [7, 14, 20, 5]\nsumme = 0\nanzahl = 0\nFÜR i = 0 BIS 3 EINSCHLIESSLICH\n    WENN werte[i] >= 10\n        summe = summe + werte[i]\n        anzahl = anzahl + 1\nAUSGABE summe, anzahl\n```",
+        "answer": "|i|werte[i]|summe nach der Runde|anzahl nach der Runde|\n|---|---|---|---|\n|0|7|0|0|\n|1|14|14|1|\n|2|20|34|2|\n|3|5|34|2|\n\nEndausgabe: 34 und 2. Es werden nur Werte von mindestens 10 berücksichtigt.",
+        "anchors": [
+          "Runde 0 korrekt",
+          "Runde 1 korrekt",
+          "Runden 2 und 3 korrekt",
+          "Endausgabe mit Erklärung"
+        ],
+        "oral": "Beim Handtest werden sieben, vierzehn, zwanzig und fünf geprüft. Nur Werte ab zehn zählen. Was sind Summe und Anzahl?",
+        "spoken": "Sieben wird übersprungen. Vierzehn erhöht die Summe auf vierzehn und die Anzahl auf eins. Zwanzig erhöht die Summe auf vierunddreißig und die Anzahl auf zwei. Fünf wird übersprungen. Das Ergebnis lautet vierunddreißig und zwei. Ein Schreibtischtest zeigt den Variablenzustand nach jeder Schleifenrunde.",
+        "priority": "P1",
+        "sources": [
+          "UNT",
+          "BW22W"
+        ]
+      },
+      {
+        "id": "01.04",
+        "title": "CSV: fehlenden Preis erkennen",
+        "prompt": "Jede Zeile hat exakt vier Felder: position_id;artikel_id;menge;preis. Es gibt keine Kopfzeile und keine Trennzeichen innerhalb von Feldinhalten. Leere Felder müssen beim Aufteilen erhalten bleiben. Leerzeichen am Feldrand werden entfernt. Fehlend bedeutet: Preis ist leer oder exakt NULL. Alle Zeilen sind strukturell gültig.\n```text\nP1;A17;2;49.90\nP2;A18;1;NULL\nP3;A17;3;\nP4;A19;1;0\n```\nSchreiben Sie fehltPreis(zeilen, artikelId). Die Funktion soll true liefern, sobald eine passende Artikel-ID einen fehlenden Preis hat, sonst false. Nennen Sie die Ergebnisse für A17, A18 und A19.",
+        "answer": "```text\nFUNKTION fehltPreis(zeilen, artikelId)\n    FÜR JEDE zeile IN zeilen\n        felder = SPLIT_MIT_LEERFELDERN(zeile, \";\")\n        id = TRIM(felder[1])\n        preis = TRIM(felder[3])\n        WENN id = artikelId UND (preis = \"\" ODER preis = \"NULL\")\n            RÜCKGABE true\n    RÜCKGABE false\n```\nErgebnisse: A17 true, A18 true, A19 false. 0 ist ein vorhandener Preis. In Java erhält split(\";\", -1) leere Endfelder. Ein Produktionsimport benötigt weitere Format- und Plausibilitätsprüfungen.",
+        "anchors": [
+          "Split mit erhaltenen Leerfeldern und richtigen Indizes",
+          "Artikelvergleich mit geklammerter Preisbedingung",
+          "Rückgaben an richtiger Stelle",
+          "drei Ergebnisse; null nicht mit Zahl 0 verwechseln"
+        ],
+        "oral": "Wie erkennen Sie für eine gesuchte Artikelnummer einen fehlenden Preis in einer einfachen CSV-Datei?",
+        "spoken": "Ich teile jede Zeile am Semikolon und erhalte leere Endfelder. Danach entferne ich Rand-Leerzeichen. Nur bei passender Artikelnummer prüfe ich, ob das Preisfeld leer ist oder das Wort null enthält. In diesen Fällen gebe ich wahr zurück. Die Zeichenfolge null bezeichnet hier einen CSV-Inhalt, nicht automatisch den Datenbankwert. Ein Preis von null Euro ist vorhanden. Ohne passenden Fehler folgt falsch nach der Schleife.",
+        "priority": "P1",
+        "sources": [
+          "BW26M",
+          "UNT"
+        ]
+      },
+      {
+        "id": "01.05",
+        "title": "Loginlogik ohne vorzeitige Fehlerrückgabe",
+        "prompt": "Ein Array enthält Benutzerobjekte mit name und aktiv. Entwickeln Sie darfAnmelden(benutzer, name): true genau dann, wenn ein Benutzer mit exakt diesem Namen gefunden wird und aktiv=true ist. Benutzernamen sind eindeutig. Leeres Array: false. Schreiben Sie Pseudocode und erläutern Sie, warum eine Rückgabe false beim ersten fremden Namen falsch wäre. Eine Passwortprüfung ist nicht Teil dieser vereinfachten Aufgabe.",
+        "answer": "```text\nFUNKTION darfAnmelden(benutzer, name)\n    FÜR JEDE person IN benutzer\n        WENN person.name = name\n            RÜCKGABE person.aktiv\n    RÜCKGABE false\n```\nEin fremder Name sagt nichts darüber aus, ob der gesuchte Benutzer später im Array vorkommt. Die Suche muss weiterlaufen. Die Aufgabe prüft nur die Freigabelogik, nicht sichere Authentifizierung.",
+        "anchors": [
+          "alle Benutzer erreichbar",
+          "Name exakt vergleichen",
+          "Aktivstatus des Treffers zurückgeben",
+          "false nach der Suche und Fehlerbegründung"
+        ],
+        "oral": "Warum darf eine Benutzersuche beim ersten anderen Namen noch nicht falsch zurückgeben?",
+        "spoken": "Der gesuchte Benutzer kann an einer späteren Position stehen. Deshalb wird nur bei einem passenden Namen entschieden. Bei einem Treffer wird dessen Aktivstatus zurückgegeben. Erst nach einer vollständig erfolglosen Suche folgt falsch. Sichere Anmeldung benötigt zusätzlich eine geeignete Authentifizierung; diese vereinfachte Aufgabe prüft die Suchlogik.",
+        "priority": "P1",
+        "sources": [
+          "BW23S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "01.06",
+        "title": "Älteste Dateien mit minimaler Löschanzahl",
+        "prompt": "Eine Liste ist bereits nach Aufnahmezeit aufsteigend sortiert: älteste Datei zuerst. Gesamtgröße: 1000 MB, Dateigrößen: [120, 180, 250, 450] MB. Es gilt dezimale Rechnung. Ziel: verbleibende Größe strikt kleiner als 700 MB. Sie dürfen jeweils nur die älteste verbleibende Datei löschen. Alle Größen sind positiv.\na) Welche Dateien werden gelöscht, wie viel bleibt?\nb) Schreiben Sie einen Algorithmus für diese Regel. Verfügbare Funktionen: gesamtgroesse(), istLeer(), aeltesteDatei(), groesse(datei), loeschen(datei).",
+        "answer": "Die ersten beiden Dateien reichen nicht: 1000 - 120 - 180 = 700 MB ist noch nicht strikt kleiner als 700. Daher werden auch 250 MB gelöscht; 450 MB bleiben.\n```text\ngesamt = gesamtgroesse()\nSOLANGE gesamt >= 700 UND NICHT istLeer()\n    datei = aeltesteDatei()\n    bytes = groesse(datei)\n    loeschen(datei)\n    gesamt = gesamt - bytes\n```\nDie Größenvariable und der Grenzwert verwenden dieselbe Einheit. Erst nach erfolgreichem Löschen wird subtrahiert. Weil die Löschreihenfolge vorgegeben ist, wird beim ersten zulässigen Rest gestoppt.",
+        "anchors": [
+          "drei älteste Dateien und 450 MB",
+          "Schleifenbedingung >= und Leerprüfung",
+          "jeweils älteste Datei löschen",
+          "Größe aktualisieren und Einheiten beachten"
+        ],
+        "oral": "Warum reicht es bei einem Ziel strikt unter siebenhundert Megabyte nicht, genau siebenhundert übrig zu lassen?",
+        "spoken": "Strikt kleiner schließt den Grenzwert aus. Bei tausend Megabyte lösche ich zuerst einhundertzwanzig, dann einhundertachtzig. Jetzt bleiben genau siebenhundert. Deshalb muss auch die nächste älteste Datei mit zweihundertfünfzig Megabyte weg. Vierhundertfünfzig bleiben. Die Schleife läuft, solange die Gesamtgröße mindestens dem Grenzwert entspricht.",
+        "priority": "P1",
+        "sources": [
+          "BW24S"
+        ]
+      },
+      {
+        "id": "01.07",
+        "title": "Tarif in ein Struktogramm übersetzen",
+        "prompt": "Ein Vor-Ort-Service ist für Entfernungen von 0 bis einschließlich 40 km möglich. Außerhalb dieses Bereichs wird -1 zurückgegeben. Grundpreis: 20 EUR bis einschließlich 10 km, darüber 35 EUR. Hinzu kommen bei gültigen Eingaben 0.60 EUR je Kilometer.\nErstellen Sie ein Struktogramm oder detaillierten Pseudocode für preis(km). Bestimmen Sie die Ergebnisse für 10, 11 und 41 km.",
+        "answer": "```text\nFUNKTION preis(km)\n    WENN km < 0 ODER km > 40\n        RÜCKGABE -1\n    WENN km <= 10\n        basis = 20\n    SONST\n        basis = 35\n    RÜCKGABE basis + 0.60 * km\n```\nErgebnisse: 10 km = 26.00 EUR; 11 km = 41.60 EUR; 41 km = -1. Im Struktogramm folgen auf die Gültigkeitsprüfung die Tarifverzweigung und die Berechnung.",
+        "anchors": [
+          "Gültigkeitsprüfung mit ODER",
+          "korrekte Tarifgrenze einschließlich 10",
+          "Zusatzpreis addieren und zurückgeben",
+          "drei Ergebnisse korrekt"
+        ],
+        "oral": "Wie setzen Sie eine gestaffelte Preisregel mit zulässiger Höchstentfernung um?",
+        "spoken": "Zuerst prüfe ich ungültige Entfernungen. Weniger als null oder mehr als vierzig Kilometer führen zu minus eins. Danach wähle ich den Grundpreis: bis einschließlich zehn Kilometer zwanzig Euro, darüber fünfunddreißig. Dazu kommen sechzig Cent je Kilometer. Für zehn Kilometer sind es sechsundzwanzig Euro, für elf Kilometer einundvierzig Euro sechzig.",
+        "priority": "P1",
+        "sources": [
+          "BW23W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "01.08",
+        "title": "Grenzwerttest und Fehlerarten",
+        "prompt": "Verwenden Sie die Funktion aus 01.07. Geben Sie für die Eingaben -1, 0, 10, 11, 40 und 41 die erwarteten Ergebnisse an. Ordnen Sie außerdem zu: fehlende schließende Klammer; Zugriff auf Index array.length; falscher Vergleich km < 10 statt km <= 10. Unterscheiden Sie Syntax-, Laufzeit- und logischen Fehler.",
+        "answer": "Erwartungen: -1 -> -1; 0 -> 20.00; 10 -> 26.00; 11 -> 41.60; 40 -> 59.00; 41 -> -1. Die Paare -1/0, 10/11 und 40/41 prüfen Bereichs- und Tarifgrenzen.\nFehlende Klammer: Syntaxfehler. Zugriff auf array.length als Index: Laufzeitfehler bei Ausführung, z. B. ArrayIndexOutOfBoundsException in Java. Falscher Vergleich: logischer Fehler, weil genau 10 km falsch eingestuft werden.",
+        "anchors": [
+          "untere Bereichsgrenze -1 und 0",
+          "Tarifgrenze 10 und 11",
+          "obere Bereichsgrenze 40 und 41",
+          "drei Fehlerarten korrekt zuordnen"
+        ],
+        "oral": "Welche Testfälle decken die Grenzen des Servicepreises ab, und welche Fehlerarten unterscheiden Sie?",
+        "spoken": "Ich teste direkt an und neben den Grenzen: minus eins und null, zehn und elf, vierzig und einundvierzig Kilometer. Eine fehlende Klammer ist ein Syntaxfehler. Ein ungültiger Arrayindex erzeugt bei Ausführung einen Laufzeitfehler. Ein falscher Vergleich ist ein logischer Fehler: Das Programm kann laufen, liefert aber für bestimmte Eingaben falsche Ergebnisse.",
+        "priority": "P1",
+        "sources": [
+          "UNT",
+          "BW23W"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "02-datenbanken-sql",
+    "title": "Datenmodellierung und SQL",
+    "basis": [
+      "BW22S",
+      "BW22W",
+      "BW23S",
+      "BW23W",
+      "BW24S",
+      "BW26M",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "02.01",
+        "title": "CSV in ein relationales Modell überführen",
+        "prompt": "Gegeben ist eine flache Datei mit position_id, bestellung_id, bestelldatum, artikel_id, artikelname, hersteller_id, herstellername, menge und einzelpreis. Jede Position gehört zu genau einer Bestellung und genau einem Artikel. Eine Bestellung hat mehrere Positionen. Ein Artikel gehört zu einem Hersteller. Der Einzelpreis ist der historische Verkaufspreis dieser Position und kann je Bestellung abweichen.\nEntwerfen Sie vier Tabellen mit Attributen, Primär- und Fremdschlüsseln. Begründen Sie den Speicherort des Einzelpreises.",
+        "answer": "Hersteller(hersteller_id PK, herstellername).\nArtikel(artikel_id PK, artikelname, hersteller_id FK -> Hersteller).\nBestellung(bestellung_id PK, bestelldatum).\nPosition(position_id PK, bestellung_id FK -> Bestellung, artikel_id FK -> Artikel, menge, einzelpreis).\nHersteller 1:n Artikel; Bestellung 1:n Position; Artikel 1:n Position. Der historische Einzelpreis gehört zur Position, da spätere Artikelpreisänderungen frühere Verkäufe nicht verändern dürfen. Für Geld eignet sich DECIMAL(10,2).",
+        "anchors": [
+          "Hersteller und Artikel korrekt getrennt",
+          "Bestellung und Position korrekt getrennt",
+          "PK und drei FK mit Zielen",
+          "historischen Preis an der Position begründen"
+        ],
+        "oral": "Wie zerlegen Sie wiederholte Bestell-, Artikel- und Herstellerdaten in Tabellen?",
+        "spoken": "Ich lege Hersteller, Artikel, Bestellung und Position getrennt an. Die Position verweist auf Bestellung und Artikel; der Artikel verweist auf den Hersteller. Jede Tabelle hat einen eindeutigen Primärschlüssel. Der bei einem Verkauf tatsächlich vereinbarte Preis bleibt in der Position. So verändert ein späterer Artikelpreis nicht die historische Rechnung.",
+        "priority": "P1",
+        "sources": [
+          "BW26M",
+          "BW23S"
+        ]
+      },
+      {
+        "id": "02.02",
+        "title": "Schlüssel, Kardinalität und doppelter Wert",
+        "prompt": "Es gelten Mitarbeiter(m_id PK, name) und Geraet(g_id PK, bezeichnung, m_id FK NOT NULL). Ein Mitarbeiter kann mehrere Geräte oder keines besitzen; ein Gerät gehört genau einer Person. Die Kennung g_id=17 ist bereits vorhanden.\na) Erklären Sie Primär- und Fremdschlüssel und die Beziehung.\nb) Warum scheitert ein zweites INSERT mit g_id=17? Nennen Sie eine fachlich passende Korrektur.",
+        "answer": "Der Primärschlüssel identifiziert jeden Datensatz eindeutig und ist nicht NULL. Der Fremdschlüssel m_id verweist auf Mitarbeiter.m_id und sichert referenzielle Integrität. Mitarbeiter zu Geraet ist 1:n; pro Mitarbeiter sind 0 bis n Geräte möglich, pro Gerät genau ein Mitarbeiter. Ein erneutes INSERT mit g_id=17 verletzt die Primärschlüsseleindeutigkeit. Für ein neues Gerät wird eine freie Kennung verwendet; soll das vorhandene Gerät geändert werden, ist ein gezieltes UPDATE passend.",
+        "anchors": [
+          "PK: eindeutig und nicht NULL",
+          "FK: Ziel und referenzielle Integrität",
+          "Beziehung mit Optionalität",
+          "Duplikat erklären und passende Korrektur"
+        ],
+        "oral": "Was unterscheidet Primärschlüssel und Fremdschlüssel, und warum scheitert eine doppelte Gerätekennung?",
+        "spoken": "Der Primärschlüssel identifiziert einen Datensatz eindeutig und darf nicht fehlen. Der Fremdschlüssel verweist auf einen vorhandenen Datensatz einer referenzierten Tabelle. Eine Person kann viele Geräte haben, jedes Gerät gehört hier genau einer Person. Eine bereits vorhandene Primärschlüsselkennung darf nicht erneut eingefügt werden. Ein neues Gerät braucht eine freie Kennung; Änderungen am bestehenden Gerät erfolgen mit Update.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW22S"
+        ]
+      },
+      {
+        "id": "02.03",
+        "title": "SELECT, LIKE und Sortierung",
+        "prompt": "Verwenden Sie Kunde(k_id, name, email, ort_id). Schreiben Sie zwei Abfragen:\na) k_id, name und email aller Kunden, deren name mit B beginnt, nach k_id aufsteigend.\nb) Nur name aller Kunden aus ort_id=4, alphabetisch absteigend.\nAlle Namen sind nicht NULL. Groß-/Kleinschreibung und Sortierreihenfolge folgen der Datenbankkonfiguration.",
+        "answer": "```sql\nSELECT k_id, name, email\nFROM Kunde\nWHERE name LIKE 'B%'\nORDER BY k_id ASC;\n\nSELECT name\nFROM Kunde\nWHERE ort_id = 4\nORDER BY name DESC;\n```",
+        "anchors": [
+          "erste Feldauswahl und Tabelle",
+          "LIKE mit korrektem Präfixmuster",
+          "zweite Feldauswahl und Ortsfilter",
+          "beide Sortierrichtungen"
+        ],
+        "oral": "Wie suchen und sortieren Sie Kunden nach Namensanfang und Ort?",
+        "spoken": "Select legt die auszugebenden Spalten fest, From die Tabelle und Where die Zeilenbedingung. Für Namen mit Anfangsbuchstaben B verwende ich Like mit B und anschließendem Prozentzeichen. Das Prozentzeichen steht für beliebig viele weitere Zeichen. Order by bestimmt die Sortierung: Asc ist aufsteigend, Desc absteigend.",
+        "priority": "P1",
+        "sources": [
+          "BW23W",
+          "BW26M"
+        ]
+      },
+      {
+        "id": "02.04",
+        "title": "COUNT und fehlende E-Mail",
+        "prompt": "In Kunde stehen vier Datensätze: (1,'Berg','a@beispiel.test',4), (2,'Blau',NULL,4), (3,'Cem','',7), (4,'Dora','d@beispiel.test',4). Spaltenfolge wie in 02.03.\na) Zählen Sie alle Kunden mit SQL.\nb) Listen Sie Kunden ohne E-Mail auf; in dieser Aufgabe gelten NULL und leerer Text beide als fehlend.\nc) Welchen Wert liefern COUNT(*) und COUNT(email)?",
+        "answer": "```sql\nSELECT COUNT(*) AS anzahl FROM Kunde;\nSELECT k_id, name FROM Kunde\nWHERE email IS NULL OR email = '';\n```\nCOUNT(*) ergibt 4. COUNT(email) ergibt 3: SQL-NULL wird nicht gezählt, der leere Text ist ein vorhandener Nicht-NULL-Wert. Die zweite Abfrage liefert 2 und 3. SQL verwendet für die NULL-Prüfung IS NULL statt = NULL.",
+        "anchors": [
+          "COUNT(*) für alle Zeilen",
+          "IS NULL korrekt",
+          "leerer Text mit ODER berücksichtigt",
+          "COUNT-Ergebnisse 4/3 und Erklärung"
+        ],
+        "oral": "Was ist der Unterschied zwischen null, leerem Text und der Zählung aller Zeilen?",
+        "spoken": "In SQL bezeichnet null einen fehlenden beziehungsweise unbekannten Wert. Ich prüfe ihn mit Is null. Leerer Text ist ein eigener vorhandener Wert und wird mit zwei einfachen Anführungszeichen verglichen. Count Stern zählt alle vier Datensätze, Count der E-Mail-Spalte nur die drei Werte ohne SQL-null. Wenn beide Arten als fehlend gelten, verbinde ich die Prüfungen mit Oder.",
+        "priority": "P1",
+        "sources": [
+          "BW24S",
+          "BW26M"
+        ]
+      },
+      {
+        "id": "02.05",
+        "title": "Bildverwaltung mit fünf SQL-Anweisungen",
+        "prompt": "Tabelle Bild(dateiname PK, bytes, aufgenommen_am INTEGER). Zeitstempel sind ganze Sekunden; dateiname ist eindeutig.\nSchreiben Sie jeweils eine unabhängige SQL-Anweisung: Datei probe.png aus der Tabelle entfernen; Gesamtgröße ermitteln; Anzahl ermitteln; alle Bilder mit neuestem zuerst auflisten; Datei neu.png mit 64000 Byte und Zeitstempel 1800000123 ergänzen. Die Tabelle ist für die Summenfrage nicht leer. Erklären Sie, ob ein DELETE hier automatisch die Bilddatei auf dem Datenträger löscht.",
+        "answer": "```sql\nDELETE FROM Bild WHERE dateiname = 'probe.png';\nSELECT SUM(bytes) AS gesamtbytes FROM Bild;\nSELECT COUNT(*) AS anzahl FROM Bild;\nSELECT * FROM Bild ORDER BY aufgenommen_am DESC;\nINSERT INTO Bild (dateiname, bytes, aufgenommen_am)\nVALUES ('neu.png', 64000, 1800000123);\n```\nDELETE entfernt nur den Datenbankeintrag. Eine Datei wird nur gelöscht, wenn zusätzliche Anwendungslogik dies ausdrücklich veranlasst.",
+        "anchors": [
+          "gezieltes DELETE und Grenze Dateisystem",
+          "SUM und COUNT",
+          "Sortierung nach Zeit absteigend",
+          "INSERT mit expliziten Spalten und richtigen Werten"
+        ],
+        "oral": "Welche SQL-Bausteine brauchen Sie für eine einfache Bildverwaltung?",
+        "spoken": "Delete mit einer eindeutigen Where-Bedingung entfernt den Datenbankeintrag. Sum summiert die Größen. Count Stern zählt die Bilder. Absteigendes Sortieren nach dem Zeitstempel zeigt die neuesten Bilder zuerst. Insert fügt einen Datensatz hinzu. Wichtig ist die Trennung: Das Löschen eines Metadatensatzes entfernt nicht automatisch die Bilddatei auf dem Datenträger.",
+        "priority": "P1",
+        "sources": [
+          "BW24S"
+        ]
+      },
+      {
+        "id": "02.06",
+        "title": "JOIN und eindeutiges UPDATE",
+        "prompt": "Es gelten Mitarbeiter(m_id PK, name, abteilung) und Geraet(g_id PK, bezeichnung, m_id FK). Schreiben Sie:\na) Gerätebezeichnung und Mitarbeitername für Geräte der Abteilung Support mit JOIN.\nb) Ändern Sie ausschließlich bei Gerät 71 die Bezeichnung auf Notebook mobil.\nc) Erklären Sie die Folge, wenn bei b) WHERE entfällt.",
+        "answer": "```sql\nSELECT g.bezeichnung, m.name\nFROM Geraet AS g\nJOIN Mitarbeiter AS m ON g.m_id = m.m_id\nWHERE m.abteilung = 'Support';\n\nUPDATE Geraet\nSET bezeichnung = 'Notebook mobil'\nWHERE g_id = 71;\n```\nOhne WHERE würde das UPDATE alle Geräte umbenennen. Vor einer Änderung kann dieselbe WHERE-Bedingung mit SELECT geprüft werden.",
+        "anchors": [
+          "JOIN mit passender Schlüsselbedingung",
+          "Spaltenauswahl und Abteilungsfilter",
+          "gezieltes UPDATE",
+          "Folge des fehlenden WHERE erläutern"
+        ],
+        "oral": "Wie verbinden Sie Gerät und Mitarbeiter, und wie begrenzen Sie eine Änderung auf ein Gerät?",
+        "spoken": "Ich verbinde den Fremdschlüssel im Gerät mit dem Primärschlüssel im Mitarbeiter. Danach filtere ich die gewünschte Abteilung. Für eine einzelne Geräteänderung nutze ich Update mit der eindeutigen Gerätekennung in der Where-Bedingung. Fehlt diese Bedingung, betrifft die Änderung alle Zeilen der Tabelle.",
+        "priority": "P2",
+        "sources": [
+          "UNT"
+        ]
+      },
+      {
+        "id": "02.07",
+        "title": "Gruppierung als Aufbauübung",
+        "prompt": "Aufbauübung: Ticket(t_id PK, g_id FK, status, minuten). Ermitteln Sie je g_id die Anzahl geschlossener Tickets und deren gesamte Bearbeitungszeit. Es sollen nur Geräte mit mindestens zwei geschlossenen Tickets erscheinen. Verwenden Sie GROUP BY und HAVING. Nicht als belegte Häufigkeit in den BaWü-Kernprüfungen werten.",
+        "answer": "```sql\nSELECT g_id, COUNT(*) AS anzahl, SUM(minuten) AS gesamt_min\nFROM Ticket\nWHERE status = 'geschlossen'\nGROUP BY g_id\nHAVING COUNT(*) >= 2;\n```\nWHERE filtert vor der Gruppierung einzelne Zeilen. HAVING filtert die gebildeten Gruppen anhand der Aggregation.",
+        "anchors": [
+          "Statusfilter vor Gruppierung",
+          "GROUP BY g_id",
+          "COUNT und SUM",
+          "HAVING mit >= 2 und Erklärung"
+        ],
+        "oral": "Worin unterscheiden sich Where und Having bei einer Ticketstatistik?",
+        "spoken": "Where wählt zunächst die einzelnen geschlossenen Tickets aus. Group by fasst sie nach Gerätekennung zusammen. Count zählt, Sum addiert die Minuten. Having prüft anschließend die fertigen Gruppen, etwa mindestens zwei geschlossene Tickets. Das ist eine Aufbauübung, keine Behauptung über die Häufigkeit dieser Syntax in den alten Landesprüfungen.",
+        "priority": "P2",
+        "sources": [
+          "UNT"
+        ]
+      },
+      {
+        "id": "02.08",
+        "title": "JSON, XML, CSV und n:m-Beziehung",
+        "prompt": "a) Stellen Sie Gerät mit g_id=71, bezeichnung=Notebook und ram_gb=16 als gültiges JSON dar.\nb) Nennen Sie je ein Merkmal von CSV und XML.\nc) Ein Mitarbeiter kann viele Projekte bearbeiten, ein Projekt viele Mitarbeiter. Entwerfen Sie die zusätzliche Zuordnungstabelle mit Schlüsseln. Jeder Mitarbeiter soll je Projekt nur einmal zugeordnet werden.",
+        "answer": "```json\n{\"g_id\": 71, \"bezeichnung\": \"Notebook\", \"ram_gb\": 16}\n```\nCSV speichert typischerweise tabellarische Datensätze mit vereinbartem Trennzeichen; komplexe Inhalte erfordern geeignete Maskierung. XML strukturiert Daten durch Elemente und Attribute und kann hierarchische Inhalte abbilden. Die n:m-Beziehung wird durch Mitarbeit(m_id FK -> Mitarbeiter, p_id FK -> Projekt, PRIMARY KEY(m_id,p_id)) umgesetzt. Der zusammengesetzte Schlüssel verhindert doppelte Zuordnungen.",
+        "anchors": [
+          "gültiges JSON mit Datentypen",
+          "CSV und XML sinnvoll unterscheiden",
+          "Zuordnungstabelle mit beiden FK",
+          "zusammengesetzter PK verhindert Duplikate"
+        ],
+        "oral": "Wie unterscheiden sich Datenformate und wie bilden Sie viele Mitarbeiter in vielen Projekten ab?",
+        "spoken": "JSON verwendet Schlüssel und Werte, Text steht in doppelten Anführungszeichen. CSV ist ein tabellarisches Austauschformat mit vereinbartem Trennzeichen. XML verwendet strukturierende Elemente und Attribute. Eine Viele-zu-viele-Beziehung braucht eine Zuordnungstabelle. Sie enthält beide Fremdschlüssel; ihre Kombination kann der Primärschlüssel sein, damit jede Zuordnung nur einmal vorkommt.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW23S",
+          "BW23W",
+          "UNT"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "03-netzwerk",
+    "title": "Netzwerkkonfiguration und Diagnose",
+    "basis": [
+      "BW22S",
+      "BW22W",
+      "BW23S",
+      "BW23W",
+      "BW24S",
+      "BW26M"
+    ],
+    "tasks": [
+      {
+        "id": "03.01",
+        "title": "Vollständige IPv4-Konfiguration",
+        "prompt": "Ein LAN verwendet 192.168.40.0/24. Router: 192.168.40.1, DNS: 192.168.40.53. Die Adresse 192.168.40.80 ist garantiert frei und für den neuen Client reserviert. Geben Sie IP-Adresse, Subnetzmaske, Standardgateway und DNS-Server an und erläutern Sie die Aufgaben der letzten beiden Werte.",
+        "answer": "IP 192.168.40.80; Maske 255.255.255.0; Gateway 192.168.40.1; DNS 192.168.40.53. Das Gateway leitet Pakete in andere Netze weiter. DNS löst Namen in passende Ressourceninformationen wie IP-Adressen auf. Die Clientadresse liegt im richtigen Subnetz und ist nicht Netz- oder Broadcastadresse.",
+        "anchors": [
+          "IP und Maske",
+          "Gatewaywert und Funktion",
+          "DNS-Wert und Funktion",
+          "Subnetzzugehörigkeit und keine Sonderadresse"
+        ],
+        "oral": "Welche vier Angaben benötigen Sie für eine statische IPv4-Konfiguration mit Namensauflösung?",
+        "spoken": "Ich benötige eine eindeutige freie Hostadresse, die Subnetzmaske, das Standardgateway und den DNS-Server. Das Gateway ist der nächste Router für fremde Netze. DNS ermöglicht insbesondere die Auflösung von Rechner- und Webnamen. Eine beliebige freie Adresse reicht nicht: Sie muss zum vorgesehenen lokalen Subnetz passen.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW22W",
+          "BW23S",
+          "BW23W",
+          "BW24S",
+          "BW26M"
+        ]
+      },
+      {
+        "id": "03.02",
+        "title": "Subnetz berechnen",
+        "prompt": "Für 192.168.50.150/26 sind Subnetzmaske, Netzadresse, Broadcastadresse, nutzbarer Hostbereich und Anzahl nutzbarer Hostadressen zu bestimmen. Gehen Sie von einem gewöhnlichen IPv4-Broadcast-Subnetz aus. Geben Sie den Rechenweg an.",
+        "answer": "Maske 255.255.255.192. Hostbits: 32-26=6. Blockgröße: 256-192=64. 150 liegt im Block 128 bis 191. Netzadresse 192.168.50.128; Broadcast 192.168.50.191. Hosts 192.168.50.129 bis 192.168.50.190. Nutzbare Hosts: 2^6-2=62.",
+        "anchors": [
+          "Maske und Hostbits",
+          "Blockgröße und Netzadresse",
+          "Broadcast und Hostbereich",
+          "Hostanzahl mit Rechnung"
+        ],
+        "oral": "Wie berechnen Sie das Subnetz der Adresse mit letztem Oktett einhundertfünfzig und Präfix sechsundzwanzig?",
+        "spoken": "Das Präfix lässt sechs Hostbits. Die Maske endet auf einhundertzweiundneunzig, also beträgt die Blockgröße vierundsechzig. Einhundertfünfzig liegt zwischen einhundertachtundzwanzig und einhunderteinundneunzig. Der erste Wert ist die Netzadresse, der letzte der Broadcast. Dazwischen liegen zweiundsechzig nutzbare Hosts.",
+        "priority": "P2",
+        "sources": [
+          "UNT",
+          "NAT26"
+        ]
+      },
+      {
+        "id": "03.03",
+        "title": "DNS oder Gateway?",
+        "prompt": "a) Ein Client erreicht einen bekannten externen Testserver über seine IP, aber nicht über dessen korrekten Hostnamen. Nennen Sie eine naheliegende Ursache, ein Prüfwerkzeug und eine Maßnahme.\nb) Ein anderer Client erreicht lokale Geräte, aber keine externen IP-Adressen. Als Gateway ist fälschlich seine eigene Client-IP eingetragen. Erklären und beheben Sie diesen Fehler.",
+        "answer": "a) Naheliegend ist ein DNS-Problem, etwa ein falscher DNS-Server. Mit nslookup oder dig die Auflösung und den konfigurierten DNS prüfen; korrekten erreichbaren DNS konfigurieren beziehungsweise den DNS-Dienst reparieren. Danach erneut testen. Ein fehlgeschlagener Namenszugriff allein beweist DNS noch nicht; hier ist es die naheliegende Diagnose.\nb) Die eigene IP ist kein Router für fremde Netze. Das gültige Routerinterface im lokalen Subnetz als Gateway eintragen und den externen Zugriff erneut prüfen.",
+        "anchors": [
+          "DNS-Ursache als Hypothese",
+          "Werkzeug und gezielte Maßnahme",
+          "Gatewayfehler technisch erklären",
+          "korrektes Gateway und erneuter Test"
+        ],
+        "oral": "Wie unterscheiden Sie ein Namensauflösungsproblem von einem falschen Gateway?",
+        "spoken": "Wenn eine externe IP funktioniert, aber der korrekte Name nicht, prüfe ich zuerst DNS, zum Beispiel mit nslookup. Wenn nur lokale Geräte erreichbar sind und das Gateway auf die eigene Adresse zeigt, korrigiere ich das Gateway auf das Routerinterface im lokalen Netz. Nach jeder Änderung wiederhole ich den passenden Test.",
+        "priority": "P1",
+        "sources": [
+          "BW23W",
+          "BW24S",
+          "BW22W"
+        ]
+      },
+      {
+        "id": "03.04",
+        "title": "MAC und IP auf dem Weg zum Internet",
+        "prompt": "Ein PC sendet ein IPv4-Paket zu einem Webserver außerhalb seines Subnetzes. Betrachten Sie den Ethernet-Frame auf dem ersten LAN-Abschnitt zwischen PC und Default-Router, vor NAT. Unterscheiden Sie Quell-MAC, Ziel-MAC, Quell-IP und Ziel-IP. Erklären Sie, ob als Ziel-MAC die MAC des Webservers oder des lokalen Routers verwendet wird.",
+        "answer": "Quell-MAC: lokale Netzwerkkarte des PCs. Ziel-MAC: LAN-Interface des nächsten Routers. Quell-IP: PC-IP. Ziel-IP: IP des entfernten Webservers. Ethernet adressiert den nächsten lokalen Hop; die IP-Zieladresse bezeichnet das entfernte Ziel. Ein Switch ist nicht automatisch der MAC-Empfänger jedes transportierten Frames. NAT kann später die Quell-IP verändern.",
+        "anchors": [
+          "Quell-MAC und Quell-IP",
+          "Ziel-MAC Router",
+          "Ziel-IP Webserver",
+          "lokaler Hop versus entferntes Ziel erklären"
+        ],
+        "oral": "Warum ist die Ziel-MAC bei einem Internetzugriff normalerweise die des lokalen Routers?",
+        "spoken": "Die MAC-Adresse gilt für die Übertragung im aktuellen lokalen Abschnitt. Der entfernte Webserver liegt außerhalb dieses Ethernetnetzes. Daher wird der Frame an den nächsten Router adressiert, während die IP-Zieladresse weiter den Webserver bezeichnet. Der PC bleibt auf diesem ersten Abschnitt die Quelle für MAC und IP. Eine spätere Adressumsetzung wird getrennt betrachtet.",
+        "priority": "P1",
+        "sources": [
+          "BW22S"
+        ]
+      },
+      {
+        "id": "03.05",
+        "title": "IPv6: Typ, Kurzform und Konfiguration",
+        "prompt": "a) Kürzen Sie 2001:0db8:0042:0007:0000:0000:0000:0080.\nb) Ordnen Sie fe80::a und 2001:db8:42:7::80 den Adressarten zu. Der Bereich 2001:db8::/32 ist hier ausdrücklich ein Dokumentationsbereich und wird nicht im öffentlichen Internet geroutet.\nc) Im Beispiel-LAN 2001:db8:42:7::/64 sind ::80 für den Client und ::1 für den Router reserviert; DNS ist 2001:db8:42:7::53. Geben Sie die vollständige Beispielkonfiguration an.",
+        "answer": "a) 2001:db8:42:7::80.\nb) fe80::a ist Link-Local und nur auf dem lokalen Link nutzbar. Die zweite Adresse hat die Form einer Global-Unicast-Adresse, liegt hier aber im reservierten Dokumentationspräfix. Sie ist nicht real öffentlich routbar.\nc) Client 2001:db8:42:7::80/64; Gateway 2001:db8:42:7::1; DNS 2001:db8:42:7::53. Gateway- und DNS-Adressen werden als Adresswerte angegeben; die Präfixlänge gehört zur Client-Interfacekonfiguration.",
+        "anchors": [
+          "korrekte einmalige Nullkompression",
+          "Link-Local erklären",
+          "Dokumentationspräfix korrekt einordnen",
+          "Client mit /64 sowie Gateway und DNS"
+        ],
+        "oral": "Welche IPv6-Punkte sollten Sie sicher beherrschen?",
+        "spoken": "Führende Nullen in einem Block können entfallen. Eine zusammenhängende Nullfolge darf einmal durch einen doppelten Doppelpunkt ersetzt werden. Link-Local-Adressen beginnen im Bereich fe achtzig und gelten nur auf dem lokalen Link. Adressen mit zweitausendeins Doppelpunkt db acht gehören in unseren Übungen zum Dokumentationsbereich und sind nicht tatsächlich öffentlich routbar. Zur Clientkonfiguration gehören Adresse und Präfix, dazu Gateway und DNS.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW23S",
+          "BW24S",
+          "BW26M"
+        ]
+      },
+      {
+        "id": "03.06",
+        "title": "Dual Stack und WLAN-Segmentierung",
+        "prompt": "Erläutern Sie Dual Stack und Tunneling. Begründen Sie anschließend zwei Vorteile eines eigenen Gast-WLAN-Subnetzes. Nennen Sie zusätzlich die technische Maßnahme, ohne die ein eigenes Subnetz allein noch keine wirksame Zugriffssperre garantiert.",
+        "answer": "Dual Stack betreibt IPv4 und IPv6 parallel. Tunneling kapselt ein Protokoll in einem anderen, um ein nicht direkt unterstützendes Transportnetz zu überbrücken. Ein eigenes Gastnetz trennt die Adressverwaltung und ermöglicht eigene Regeln beziehungsweise eine getrennte Broadcast-Domäne. Den Zugriff auf interne Systeme verhindern erst passende Firewallregeln/ACLs zwischen den Netzen. VLANs können die logische Trennung auf der Infrastruktur umsetzen; Subnetznummern allein erzwingen keine Sicherheitsrichtlinie.",
+        "anchors": [
+          "Dual Stack",
+          "Tunneling",
+          "zwei Segmentierungsvorteile",
+          "Firewall/ACL als tatsächliche Zugriffskontrolle"
+        ],
+        "oral": "Was leisten Dual Stack und ein eigenes Gastnetz?",
+        "spoken": "Dual Stack betreibt beide IP-Versionen parallel. Ein Tunnel verpackt Pakete in ein anderes Protokoll. Ein Gastnetz vereinfacht getrennte Verwaltung und Sicherheitsregeln. Die bloße Vergabe eines anderen Subnetzes verhindert Zugriffe aber noch nicht. Zwischen den Netzen müssen passende Firewallregeln oder Zugriffskontrolllisten durchgesetzt werden.",
+        "priority": "P1",
+        "sources": [
+          "BW26M",
+          "NAT26",
+          "UNT"
+        ]
+      },
+      {
+        "id": "03.07",
+        "title": "WLAN-Leistung und Frequenzwahl",
+        "prompt": "Ein Access Point wirbt mit einer Bruttodatenrate. Im Alltag wird nur ungefähr die Hälfte gemessen. Erläutern Sie zwei mögliche Gründe. Vergleichen Sie 2.4 und 5 GHz bezüglich Reichweite und Störanfälligkeit. Begründen Sie eine Auswahl für einen dicht belegten Besprechungsraum mit ausreichender AP-Abdeckung. Wi-Fi 6 entspricht hier IEEE 802.11ax; die Bezeichnung allein garantiert keine konkrete Nutzdatenrate.",
+        "answer": "Brutto ist nicht Netto: Protokolloverhead, geteilte Funkzeit, Bestätigungen, Störungen und Wiederholungen reduzieren die Nutzdatenrate. 2.4 GHz durchdringt Hindernisse meist besser, ist aber oft stärker belegt und hat weniger überlappungsfreie Kanaloptionen. 5 GHz bietet mehr Kanaloptionen, hat typischerweise geringere Reichweite und kann im ausreichend abgedeckten Raum geeignet sein. Empfehlung: 5 GHz mit geeigneter Kanalplanung; Kapazität und Messung vor Ort entscheiden.",
+        "anchors": [
+          "zwei konkrete Nettoverlustgründe",
+          "2.4 GHz mit Reichweite und Belegung",
+          "5 GHz mit Reichweite und Kanälen",
+          "szenariobezogene Empfehlung"
+        ],
+        "oral": "Warum erreicht ein WLAN oft weniger als die beworbene Datenrate, und wann wählen Sie fünf Gigahertz?",
+        "spoken": "Die Werbung nennt eine Bruttodatenrate. Protokolloverhead, geteilte Funkzeit, Störungen und Wiederholungen reduzieren die nutzbare Rate. Zwei Komma vier Gigahertz reicht häufig weiter, ist aber oft stärker belegt. Fünf Gigahertz bietet mehr Kanaloptionen und eignet sich bei ausreichender Abdeckung gut für einen dicht belegten Raum. Die tatsächliche Leistung wird vor Ort geprüft.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW22W",
+          "BW23S"
+        ]
+      },
+      {
+        "id": "03.08",
+        "title": "Strukturierte Diagnose und Netzpläne",
+        "prompt": "Ein Arbeitsplatz ist nicht erreichbar. Nennen Sie vier Diagnoseebenen mit je einer konkreten Prüfung: physischer Link, IP-Konfiguration, Routing, Namensauflösung. Erklären Sie danach den Unterschied zwischen logischem und physischem Netzwerkplan. Formulieren Sie keine Diagnose nur aus einem einzelnen fehlgeschlagenen Ping.",
+        "answer": "Physisch: Kabel/Port/Link-LED prüfen, gegebenenfalls mit bekannt gutem Kabel testen. IP: ipconfig /all beziehungsweise ip addr mit dem Sollnetz vergleichen. Routing: Routingtabelle und korrektes Gateway prüfen; tracert/traceroute gezielt einsetzen. DNS: nslookup/dig mit Namen und konfiguriertem DNS. ICMP kann gefiltert sein, deshalb beweist ein fehlender Ping keinen kompletten Ausfall. Logischer Plan zeigt Netze, VLANs, Adressen und Kommunikationsbeziehungen; physischer Plan zeigt Standorte, Geräte, Ports und Verkabelung.",
+        "anchors": [
+          "Link- und IP-Prüfung",
+          "Routingprüfung",
+          "DNS-Prüfung und Ping-Grenze",
+          "logischen und physischen Plan unterscheiden"
+        ],
+        "oral": "Wie vermeiden Sie unstrukturiertes Raten bei Netzwerkfehlern?",
+        "spoken": "Ich prüfe erst den physischen Link, dann IP-Adresse und Maske, anschließend Routing und zuletzt gezielt die Namensauflösung. Zu jeder Hypothese gehört ein geeigneter Test. Ein fehlgeschlagener Ping allein beweist keinen Totalausfall, weil ICMP gefiltert sein kann. Der logische Netzplan hilft bei Netzen und Adressen; der physische Plan bei Ports, Standorten und Kabeln.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW23S",
+          "BW24S"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "04-sicherheit",
+    "title": "Schutzbedarf, Datenschutz und Wiederherstellung",
+    "basis": [
+      "BW22S",
+      "BW22W",
+      "BW23S",
+      "BW23W",
+      "BW24S",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "04.01",
+        "title": "CIA mit Folgen im konkreten Betrieb",
+        "prompt": "Ein Systemhaus verwaltet Gehaltsdaten, Kundenaufträge und tägliche Lieferpläne. Erläutern Sie Vertraulichkeit, Integrität und Verfügbarkeit jeweils mit einem passenden Schaden und einer wirksamen Maßnahme. Antworten Sie in ganzen Sätzen.",
+        "answer": "Vertraulichkeit: Nur berechtigte Personen dürfen Gehaltsdaten lesen; ein Abfluss verletzt die Privatsphäre. Rollenrechte und geeignete Verschlüsselung reduzieren unbefugten Zugriff. Integrität: Auftragsmengen und Kontodaten müssen korrekt bleiben; Manipulation kann falsche Lieferungen oder Zahlungen auslösen. Änderungsrechte, Eingabeprüfungen und nachvollziehbare Protokolle helfen. Verfügbarkeit: Lieferpläne müssen rechtzeitig nutzbar sein; Ausfälle verzögern die Auslieferung. Redundanz und getestete Wiederherstellung senken Ausfallfolgen.",
+        "anchors": [
+          "Vertraulichkeit mit Schaden und Maßnahme",
+          "Integrität mit Schaden und Maßnahme",
+          "Verfügbarkeit mit Schaden und Maßnahme",
+          "konkreter Bezug auf die drei Datenarten"
+        ],
+        "oral": "Wie erklären Sie die drei Schutzziele mit einem konkreten Geschäftsbeispiel?",
+        "spoken": "Vertraulichkeit schützt Gehaltsdaten vor unberechtigten Lesern. Integrität schützt Aufträge vor falschen oder manipulierten Werten. Verfügbarkeit sorgt dafür, dass Lieferpläne rechtzeitig nutzbar sind. Zu jedem Schutzziel nenne ich einen möglichen betrieblichen Schaden und eine passende Maßnahme. Nur die drei Fachwörter aufzuzählen reicht bei Erläutern nicht aus.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW22W",
+          "BW23S",
+          "BW23W",
+          "BW24S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "04.02",
+        "title": "Schutzbedarf und Maximumprinzip",
+        "prompt": "Ein Server betreibt zwei Anwendungen. Für Vertraulichkeit ist Anwendung A normal und B hoch eingestuft. Für Integrität sind beide hoch, für Verfügbarkeit A sehr hoch und B normal. Bestimmen Sie den vererbten Schutzbedarf je Grundwert nach dem Maximumprinzip und erläutern Sie, warum nicht einfach ein Mittelwert gebildet wird. Es gibt keine besonderen Verteilungs- oder Kumulationseffekte.",
+        "answer": "Vertraulichkeit hoch; Integrität hoch; Verfügbarkeit sehr hoch. Je Grundwert wird die höchste abhängige Anforderung übernommen. Ein Mittelwert würde den Schutzbedarf der kritischeren Anwendung absenken, obwohl deren möglicher Schaden bestehen bleibt. Die Einstufung ist anhand definierter Schadenskriterien und Abhängigkeiten zu begründen; sie ist keine bloße Geräteeigenschaft.",
+        "anchors": [
+          "Vertraulichkeit hoch",
+          "Integrität hoch",
+          "Verfügbarkeit sehr hoch",
+          "Maximum pro Grundwert erklären, kein Mittelwert"
+        ],
+        "oral": "Wie erbt ein gemeinsamer Server den Schutzbedarf seiner Anwendungen?",
+        "spoken": "Für jeden Grundwert übernehme ich grundsätzlich die höchste relevante Anforderung. Hier ist Vertraulichkeit hoch, Integrität hoch und Verfügbarkeit sehr hoch. Ein Mittelwert wäre gefährlich, weil der Schaden der kritischeren Anwendung dadurch nicht verschwindet. Die Einstufung wird anhand von Abhängigkeiten und konkreten Schadenskriterien begründet.",
+        "priority": "P1",
+        "sources": [
+          "BW23S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "04.03",
+        "title": "Ransomware beurteilen",
+        "prompt": "Ein Erpressungstrojaner verschlüsselt den Dateiserver. Zusätzlich droht der Angreifer mit Veröffentlichung kopierter Daten. Bewerten Sie die Folgen für alle drei Schutzziele. Beschreiben Sie zwei sinnvolle erste Schritte, ohne Beweismittel unnötig zu zerstören.",
+        "answer": "Verfügbarkeit: Dateien oder Dienste sind nicht nutzbar. Integrität: Daten wurden unbefugt verändert/verschlüsselt und sind nicht vertrauenswürdig. Vertraulichkeit: Bei erfolgter Exfiltration wurden Inhalte offengelegt; die Drohung allein beweist den Abfluss noch nicht. Erste Schritte: Betroffene Systeme kontrolliert vom Netz isolieren und den Incident-Prozess beziehungsweise das zuständige Sicherheitsteam aktivieren. Beweise und Logs sichern lassen, Umfang klären und saubere Wiederherstellung vorbereiten. Nicht unkoordiniert löschen oder neu installieren.",
+        "anchors": [
+          "Verfügbarkeit korrekt",
+          "Integrität korrekt",
+          "Vertraulichkeit mit Exfiltrationsunterscheidung",
+          "Isolation und geordnete Eskalation/Beweissicherung"
+        ],
+        "oral": "Welche Schutzziele verletzt Ransomware, und was tun Sie zuerst?",
+        "spoken": "Verschlüsselung blockiert die Verfügbarkeit und verändert die Daten unbefugt, betrifft also auch die Integrität. Werden Daten kopiert und offengelegt, ist zusätzlich die Vertraulichkeit verletzt. Eine bloße Drohung beweist den Abfluss noch nicht. Zuerst isoliere ich betroffene Systeme kontrolliert und aktiviere den vorgesehenen Incident-Prozess. Protokolle und Beweismittel sollen erhalten bleiben.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "04.04",
+        "title": "Backup, RAID, RTO und RPO",
+        "prompt": "Beurteilen Sie die Aussage: Ein gespiegeltes Laufwerk ersetzt eine Datensicherung. Entwerfen Sie anschließend ein knappes 3-2-1-Konzept und erläutern Sie RTO und RPO. Die Firma toleriert höchstens zwei Stunden Datenverlust und vier Stunden bis zur Wiederaufnahme.",
+        "answer": "RAID kann bei bestimmten Laufwerksausfällen die Verfügbarkeit erhöhen, kopiert aber auch versehentliche Änderungen und schützt nicht vor allen Schadensarten. Es ersetzt kein Backup. 3-2-1: drei Datenkopien insgesamt, auf zwei unterschiedlichen Medientypen, eine räumlich getrennt; zusätzlich eine gegen unbefugte Änderung geschützte Offline- oder immutable Kopie vorsehen. RPO maximal 2 h: Wiederherstellungspunkte und Sicherungsintervalle passend planen. RTO maximal 4 h: Wiederanlauf einschließlich Restore testen. Regelmäßige Restore-Tests und geschützte Zugangsdaten sind erforderlich.",
+        "anchors": [
+          "RAID-Grenzen beurteilen",
+          "3-2-1 korrekt",
+          "RPO 2 h Datenverlust",
+          "RTO 4 h Wiederanlauf und Restore-Test"
+        ],
+        "oral": "Was müssen Sie zu Backup, Wiederherstellungszeit und Datenverlust sagen können?",
+        "spoken": "RAID ist kein Ersatz für eine getrennte Sicherung. Drei zwei eins bedeutet drei Kopien insgesamt, zwei Medientypen und eine räumlich getrennte Kopie. Eine geschützte Offline- oder unveränderliche Kopie erschwert die Mitverschlüsselung. RPO beschreibt den tolerierten Datenverlust als Zeitspanne, hier zwei Stunden. RTO beschreibt die Wiederanlaufzeit, hier vier Stunden. Beides muss mit Restore-Tests überprüft werden.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW26M",
+          "UNT"
+        ]
+      },
+      {
+        "id": "04.05",
+        "title": "Firewall und minimale Rechte",
+        "prompt": "Eine Filiale hat Internetzugang, Gäste-WLAN und interne Buchhaltungsgeräte. Erläutern Sie drei passende Schutzmaßnahmen: Firewallregel, rollenbasierte Berechtigungen und Mehrfaktor-Authentifizierung. Beschreiben Sie jeweils die begrenzte Gefahr. Begründen Sie, warum eine Firewall allein kein vollständiges Sicherheitskonzept ist.",
+        "answer": "Firewall: Gäste dürfen ins Internet, aber nicht auf das Buchhaltungsnetz zugreifen; Regeln begrenzen unerwünschte Kommunikation. Rollenrechte: Nur zuständige Buchhaltungsmitarbeiter erhalten Zugriff auf Finanzdaten, mit getrennten Administratorkonten und minimalen Rechten. MFA ergänzt ein Passwort um einen unabhängigen Faktor und reduziert Missbrauch gestohlener Passwörter. Eine Firewall verhindert nicht jede Phishinghandlung, Fehlberechtigung oder jeden Angriff über erlaubte Verbindungen; weitere Maßnahmen und Überwachung bleiben erforderlich.",
+        "anchors": [
+          "Firewallregel mit geschütztem Ziel",
+          "Rollenrechte und Least Privilege",
+          "MFA mit unabhängigen Faktoren",
+          "Grenzen der Firewall erläutern"
+        ],
+        "oral": "Wie ergänzen sich Firewall, minimale Rechte und Mehrfaktor-Anmeldung?",
+        "spoken": "Eine Firewall beschränkt Kommunikation zwischen Sicherheitszonen. Rollenrechte beschränken, was angemeldete Personen lesen oder ändern dürfen. Mehrfaktor-Authentifizierung erschwert die Nutzung gestohlener Passwörter durch einen zweiten unabhängigen Faktor. Keine dieser Maßnahmen ersetzt die anderen. Auch erlaubter Datenverkehr und menschliche Fehlentscheidungen können gefährlich sein.",
+        "priority": "P1",
+        "sources": [
+          "BW23W",
+          "BW22W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "04.06",
+        "title": "Personenbezogene Daten und sichere Altgeräte",
+        "prompt": "Ordnen Sie Mitarbeitergeburtsdatum, veröffentlichte Kantinenpreise und unveröffentlichte Produktkonstruktion begründet ein: personenbezogen, öffentliche nicht personenbezogene Information oder Geschäftsgeheimnis unter den entsprechenden Schutzvoraussetzungen. Nennen Sie außerdem drei Schritte vor der Weitergabe eines gebrauchten Firmenlaptops.",
+        "answer": "Geburtsdatum einer identifizierbaren Person ist personenbezogen. Öffentlich veröffentlichte Kantinenpreise ohne Personenbezug sind hier öffentliche Sachinformation. Die unveröffentlichte Konstruktion kann ein Geschäftsgeheimnis sein, wenn insbesondere wirtschaftlicher Geheimniswert und angemessene Geheimhaltungsmaßnahmen vorliegen. Vor Weitergabe: benötigte Daten gesichert übernehmen und Rechte/Lizenzen prüfen; Daten mit geeignetem, zum Datenträger passendem Verfahren sicher löschen; Erfolg dokumentieren und Gerät/Konten aus der Verwaltung entfernen. Einfaches Löschen von Dateien oder Schnellformatieren genügt nicht zuverlässig.",
+        "anchors": [
+          "Geburtsdatum und Preise richtig einordnen",
+          "Konstruktion mit Schutzvoraussetzungen",
+          "Datenübernahme und sichere Löschung",
+          "Nachweis sowie Konten/Verwaltung bereinigen"
+        ],
+        "oral": "Welche Daten sind personenbezogen, und was ist vor der Weitergabe eines Firmenrechners zu tun?",
+        "spoken": "Ein Mitarbeitergeburtsdatum ist personenbezogen, öffentliche Kantinenpreise ohne Personenbezug sind Sachinformation. Eine geheime Produktkonstruktion kann unter den gesetzlichen Voraussetzungen ein Geschäftsgeheimnis sein. Vor Weitergabe sichere ich benötigte Daten, lösche den Datenträger mit einem geeigneten Verfahren und dokumentiere den Erfolg. Anschließend bereinige ich Konten und Geräteverwaltung. Ein Papierkorb oder eine Schnellformatierung reichen nicht zuverlässig.",
+        "priority": "P1",
+        "sources": [
+          "BW23W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "04.07",
+        "title": "Videoüberwachung im Fallbeispiel",
+        "prompt": "Ein Laden möchte dauerhaft den gesamten angrenzenden Gehweg filmen und Aufnahmen unbegrenzt aufbewahren. Erläutern Sie vier Gesichtspunkte für die datenschutzgerechte Prüfung und nennen Sie eine unmittelbar geeignete Anpassung. Ein Hinweisschild allein soll als angebliche Erlaubnis bewertet werden.",
+        "answer": "Zu prüfen sind ein konkreter legitimer Zweck und eine tragfähige Rechtsgrundlage, Erforderlichkeit und Interessenabwägung, Datenminimierung mit begrenztem Bildausschnitt sowie zweckangemessene kurze Speicher-/Löschfristen und geschützter Zugriff. Transparente Information ist zusätzlich nötig, ersetzt aber keine Rechtsgrundlage. Öffentliche Gehwege dürfen durch Private nur in eng begrenzten Ausnahmefällen erfasst werden. Geeignete unmittelbare Anpassung: Kamera auf den erforderlichen eigenen Bereich begrenzen oder öffentliche Bereiche wirksam maskieren; pauschale Dauer- und Vorratsspeicherung vermeiden. Keine allgemeingültige feste Aufbewahrungsfrist erfinden.",
+        "anchors": [
+          "Zweck und Rechtsgrundlage",
+          "Erforderlichkeit/Abwägung und Bildausschnitt",
+          "Löschkonzept und Zugriff",
+          "Hinweisschild reicht nicht; konkrete Anpassung"
+        ],
+        "oral": "Warum erlaubt ein Hinweisschild keine beliebige Videoüberwachung des Gehwegs?",
+        "spoken": "Eine Information ersetzt keine Rechtsgrundlage. Zu prüfen sind Zweck, Erforderlichkeit und die Interessen betroffener Personen. Der Bildausschnitt und die Speicherdauer müssen begrenzt sein. Private Überwachung öffentlicher Gehwege ist nur in eng begrenzten Ausnahmefällen zulässig. Ich richte die Kamera auf den notwendigen eigenen Bereich aus oder maskiere fremde Bereiche wirksam. Eine unbegrenzte Speicherung ist kein geeignetes Standardkonzept.",
+        "priority": "P1",
+        "sources": [
+          "BW24S",
+          "NAT26",
+          "OFF-DAT"
+        ]
+      },
+      {
+        "id": "04.08",
+        "title": "Verschlüsselung, Hash und SQL-Injection",
+        "prompt": "Unterscheiden Sie reversible Verschlüsselung und kryptografisches Hashing. Erklären Sie, wie Passwörter geeignet gespeichert werden, und nennen Sie eine wirksame technische Maßnahme gegen SQL-Injection. Begründen Sie, warum bloßes Sperren einzelner Sonderzeichen nicht genügt.",
+        "answer": "Verschlüsselung ist mit passendem Schlüssel umkehrbar und schützt lesbare Inhalte. Ein kryptografischer Hash ist eine nicht zur Umkehr gedachte Abbildung; für Passwörter benötigt man speziell geeignete langsame Passwort-Hashverfahren wie Argon2id mit individuellem Salt, keinen einfachen schnellen Hash. Parametrisierte SQL-Anweisungen trennen Datenwerte vom SQL-Code. Eine Zeichen-Blacklist kann umgangen werden und behandelt Kodierung und Abfragestruktur nicht zuverlässig; Eingabevalidierung ergänzt die Parametrisierung.",
+        "anchors": [
+          "Verschlüsselung versus Hash",
+          "geeignetes Passwortverfahren mit Salt",
+          "Parametrisierung als Trennung von Code und Daten",
+          "Grenzen von Blacklists erklären"
+        ],
+        "oral": "Wie unterscheiden Sie Verschlüsselung, Passwort-Hashing und den Schutz gegen SQL-Injection?",
+        "spoken": "Verschlüsselung kann mit dem Schlüssel rückgängig gemacht werden. Passwortspeicherung verwendet ein dafür geeignetes langsames Hashverfahren mit individuellem Salt, beispielsweise Argon zwei id. Gegen SQL-Injection setze ich parametrisierte Abfragen ein. Dadurch bleiben Eingaben Daten und werden nicht als Teil des SQL-Codes interpretiert. Das Sperren einzelner Sonderzeichen ersetzt diese Trennung nicht.",
+        "priority": "P2",
+        "sources": [
+          "UNT"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "05-rechnen-hardware",
+    "title": "Rechnen, Hardware und Verfügbarkeit",
+    "basis": [
+      "BW22S",
+      "BW23W",
+      "BW26M",
+      "NAT26",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "05.01",
+        "title": "SLA-Verfügbarkeit prüfen",
+        "prompt": "Ein Vertrag fordert 99.8 Prozent Verfügbarkeit im Kalenderjahr. Rechnen Sie mit 365 Tagen und ohne ausgeschlossene Wartungsfenster. Ausfälle dauern insgesamt 20 Stunden. Ermitteln Sie die maximal zulässige Ausfallzeit in Stunden und beurteilen Sie den Vertrag. Zusätzlich gilt je Störung eine Entstörzeit von höchstens 6 Stunden; ein einzelner Ausfall dauert 7 Stunden. Bewerten Sie dieses Kriterium gesondert.",
+        "answer": "Jahreszeit 365*24 = 8760 h. Erlaubter Ausfallanteil 1-0.998 = 0.002. Maximal 8760*0.002 = 17.52 h = 17 h 31 min 12 s. Mit 20 h Gesamtausfall wird die Jahresverfügbarkeit unterschritten. Auch der einzelne 7-h-Ausfall verletzt die separate Entstörgrenze von 6 h. Jahresverfügbarkeit und Entstörzeit sind unterschiedliche Kriterien.",
+        "anchors": [
+          "Jahreszeit und korrekter Prozentfaktor",
+          "17.52 h mit Einheit",
+          "Jahreskriterium beurteilen",
+          "Entstörgrenze separat beurteilen"
+        ],
+        "oral": "Wie berechnen Sie erlaubte Ausfallzeit und unterscheiden sie von der Entstörzeit?",
+        "spoken": "Ich multipliziere die Gesamtzeit mit eins minus der Verfügbarkeit als Dezimalzahl. Bei neunundneunzig Komma acht Prozent und achttausendsiebenhundertsechzig Jahresstunden sind siebzehn Komma zweiundfünfzig Stunden Ausfall zulässig. Zwanzig Stunden verletzen diese Vorgabe. Eine zusätzliche Entstörgrenze je Vorfall wird unabhängig davon geprüft: Sieben Stunden sind mehr als erlaubte sechs.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW26M"
+        ]
+      },
+      {
+        "id": "05.02",
+        "title": "RAID-Kapazität und Ausfalltoleranz",
+        "prompt": "Ein System hat acht gleiche Festplatten zu je 12 TB, keine Hot-Spare. Berechnen Sie nutzbare Kapazität für RAID 5 und RAID 10 ohne Formatierungs- und Verwaltungsverluste. Erläutern Sie anschließend die mögliche Ausfalltoleranz beider Varianten. Für RAID 10 werden vier gespiegelte Paare gestriped.",
+        "answer": "RAID 5: (8-1)*12 = 84 TB; eine Platte darf ausfallen. RAID 10: 8/2*12 = 48 TB. Es übersteht mindestens einen Laufwerksausfall; mehrere sind möglich, wenn nicht beide Platten desselben Spiegelpaares ausfallen. Der gleichzeitige Ausfall eines ganzen Spiegelpaares führt zu Datenverlust im Verbund. Kapazitäts- und Verfügbarkeitsvorteile müssen gegen Kosten und Wiederaufbau abgewogen werden.",
+        "anchors": [
+          "RAID-5-Formel und 84 TB",
+          "RAID-10-Formel und 48 TB",
+          "RAID 5: ein Ausfall",
+          "RAID 10: Abhängigkeit von Spiegelpaaren"
+        ],
+        "oral": "Wie viel Kapazität liefern acht Platten mit jeweils zwölf Terabyte in RAID fünf und RAID zehn?",
+        "spoken": "RAID fünf nutzt die Kapazität von sieben Platten: vierundachtzig Terabyte. RAID zehn spiegelt und nutzt die Hälfte: achtundvierzig Terabyte. RAID fünf toleriert einen Laufwerksausfall. RAID zehn kann mehrere Ausfälle tolerieren, solange in keinem Spiegelpaar beide Platten ausfallen. Die Aussage, RAID zehn vertrage beliebige vier Ausfälle, wäre deshalb falsch.",
+        "priority": "P1",
+        "sources": [
+          "BW26M",
+          "UNT"
+        ]
+      },
+      {
+        "id": "05.03",
+        "title": "Energiekosten berechnen",
+        "prompt": "Zwölf Arbeitsplätze verbrauchen je 90 W und laufen an 210 Tagen jeweils 8 Stunden. Ein Server verbraucht 180 W und läuft 365 Tage rund um die Uhr. Strompreis: 0.32 EUR/kWh. Alle Werte sind konstante Wirkleistungen. Berechnen Sie Arbeitsplatzkosten, Serverkosten und Gesamtkosten pro Jahr. Runden Sie erst die Geldbeträge auf Cent.",
+        "answer": "Arbeitsplätze: 12*0.090 kW*210*8 h = 1814.4 kWh; Kosten 580.608 EUR -> 580.61 EUR. Server: 0.180*365*24 = 1576.8 kWh; Kosten 504.576 EUR -> 504.58 EUR. Gesamtenergie 3391.2 kWh; Gesamtkosten aus ungerundeten Werten 1085.184 EUR -> 1085.18 EUR. Die Summe bereits gerundeter Teilbeträge weicht um einen Cent ab; die Aufgabenregel entscheidet.",
+        "anchors": [
+          "Watt korrekt in kW",
+          "Arbeitsplatzrechnung",
+          "Serverrechnung",
+          "Gesamtbetrag mit Rundungsregel"
+        ],
+        "oral": "Wie berechnen Sie Stromkosten, ohne Watt und Kilowattstunden zu verwechseln?",
+        "spoken": "Ich teile Watt durch tausend, multipliziere die Leistung in Kilowatt mit den Betriebsstunden und erhalte Kilowattstunden. Anschließend multipliziere ich mit dem Strompreis. Die zwölf Arbeitsplätze brauchen eintausendachthundertvierzehn Komma vier Kilowattstunden, der Server eintausendfünfhundertsechsundsiebzig Komma acht. Aus den ungerundeten Werten ergeben sich insgesamt eintausendfünfundachtzig Euro achtzehn.",
+        "priority": "P1",
+        "sources": [
+          "BW23W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "05.04",
+        "title": "PoE und Stromstärke",
+        "prompt": "Ein Access Point benötigt am Gerät 21 W bei 48 V. Ein angebotener PoE-Port liefert laut Datenblatt höchstens 12.95 W am Endgerät, ein PoE+-Port 25.5 W. Wählen Sie den geeigneten Port und berechnen Sie die Stromstärke in mA. Zehn APs sollen gleichzeitig versorgt werden: Welche weitere Angabe des Switches ist zu prüfen?",
+        "answer": "Der 25.5-W-Port ist notwendig, da 12.95 W < 21 W. I=P/U=21/48 A = 0.4375 A = 437.5 mA. Zusätzlich Gesamt-PoE-Budget und Reserven des Switches prüfen: Die gleichzeitige Versorgung benötigt mindestens 210 W am Endgerät, zuzüglich bei der Dimensionierung zu berücksichtigender Verluste und Reserven. Portleistung und Gesamtbudget sind getrennte Grenzen.",
+        "anchors": [
+          "Port anhand Leistungsgrenze auswählen",
+          "Formel I=P/U",
+          "437.5 mA mit Umrechnung",
+          "Gesamtbudget mindestens 210 W plus Planung"
+        ],
+        "oral": "Was prüfen Sie bei der Stromversorgung eines Access Points über das Netzwerkkabel?",
+        "spoken": "Die Leistung am Endgerät muss ausreichen. Für einundzwanzig Watt reicht ein Port mit zwölf Komma fünfundneunzig Watt nicht; der Port mit fünfundzwanzig Komma fünf Watt passt. Mit Leistung durch Spannung erhalte ich null Komma vier drei sieben fünf Ampere oder vierhundertsiebenunddreißig Komma fünf Milliampere. Bei vielen Geräten prüfe ich zusätzlich das gesamte PoE-Budget des Switches.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW26M",
+          "NAT26"
+        ]
+      },
+      {
+        "id": "05.05",
+        "title": "Video-Datenrate und Kompression",
+        "prompt": "Eine Kamera liefert 1280*720 Pixel, 24 Bit je Pixel, 25 Bilder pro Sekunde. Die komprimierten Daten betragen 20 Prozent der Rohdaten. Berechnen Sie Rohdatenrate und komprimierte Datenrate in Mbit/s, ohne Protokolloverhead. Verwenden Sie dezimale Mbit/s. Erläutern Sie den Unterschied zwischen auf 20 Prozent und um 20 Prozent komprimiert.",
+        "answer": "Rohdaten: 1280*720*24*25 = 552960000 bit/s = 552.96 Mbit/s. Auf 20 Prozent: *0.20 = 110.592 Mbit/s. Eine Verringerung um 20 Prozent würde dagegen 80 Prozent übrig lassen, also 442.368 Mbit/s. Protokolloverhead und Reserven wären in einer realen Netzdimensionierung zusätzlich zu berücksichtigen.",
+        "anchors": [
+          "Rohdatenformel",
+          "552.96 Mbit/s",
+          "110.592 Mbit/s",
+          "auf versus um korrekt unterscheiden"
+        ],
+        "oral": "Was ist bei komprimierter Videodatenrate die häufigste Prozentfalle?",
+        "spoken": "Ich multipliziere Pixelanzahl, Farbtiefe und Bilder pro Sekunde. Das ergibt hier fünfhundertzweiundfünfzig Komma neun sechs Megabit pro Sekunde. Auf zwanzig Prozent bedeutet mal null Komma zwei: einhundertzehn Komma fünf neun zwei Megabit pro Sekunde. Um zwanzig Prozent reduziert bedeutet dagegen, dass achtzig Prozent übrig bleiben.",
+        "priority": "P2",
+        "sources": [
+          "NAT26",
+          "UNT"
+        ]
+      },
+      {
+        "id": "05.06",
+        "title": "Speicher aus Bitrate berechnen",
+        "prompt": "Sechs Kameras liefern jeweils konstant 8 Mbit/s. Gespeichert wird 48 Stunden ohne zusätzlichen Overhead. Berechnen Sie den Speicher in dezimalen GB und in GiB. 1 GB=10^9 Byte, 1 GiB=2^30 Byte. Runden Sie GiB auf zwei Nachkommastellen. Nennen Sie den zusätzlichen Planungsbedarf bei realem Betrieb.",
+        "answer": "Gesamtbitrate 6*8*10^6 = 48000000 bit/s. Zeit 48*3600 = 172800 s. Speicher = 48000000*172800/8 = 1036800000000 Byte. Das sind 1036.8 GB beziehungsweise 965.60 GiB. Real: Metadaten, Dateisystem, RAID-/Redundanzkonzept, Schwankungen und Sicherheitsreserve berücksichtigen. RAID-Kapazitätsverlust nicht doppelt verrechnen.",
+        "anchors": [
+          "Gesamtrate und Sekunden",
+          "Division durch 8",
+          "GB und GiB korrekt",
+          "Planungsreserven benennen"
+        ],
+        "oral": "Wie rechnen Sie von einer laufenden Datenrate auf Speicherbedarf?",
+        "spoken": "Ich addiere die Datenraten aller Kameras, multipliziere mit der Zeit in Sekunden und teile die Bitmenge durch acht. Erst danach rechne ich Byte in die verlangte Einheit um. Sechs Kameras mit je acht Megabit pro Sekunde brauchen in achtundvierzig Stunden eintausendsechsunddreißig Komma acht dezimale Gigabyte, also ungefähr neunhundertfünfundsechzig Komma sechs Gibibyte. Für den Betrieb werden Reserven benötigt.",
+        "priority": "P2",
+        "sources": [
+          "NAT26",
+          "UNT"
+        ]
+      },
+      {
+        "id": "05.07",
+        "title": "Schnittstellen und kompatible Hardware",
+        "prompt": "Ein Notebook soll über eine Dockingstation gleichzeitig zwei Monitore mit je 2560*1440 Pixel und 60 Hz, Netzwerk und Strom erhalten. Es besitzt eine USB-C-Buchse. Begründen Sie, warum die Steckerform allein die Eignung nicht belegt. Nennen Sie vier konkret zu prüfende Eigenschaften von Notebook, Dock und Kabel.",
+        "answer": "USB-C ist zunächst eine Bauform. Zu prüfen sind: unterstützte Bildausgabe/DisplayPort-Alt-Mode beziehungsweise die passende Dock-Technik; Zahl, Auflösung und Bildrate gleichzeitig nutzbarer Displays; ausreichende unterstützte Ladeleistung/Power Delivery; Daten-/Netzwerkfähigkeit und geeignetes Kabel sowie Kompatibilität der Geräte/Treiber. Entscheidend ist die durchgängige Unterstützung, nicht ein einzelnes Logo. Ein Monitoranschluss am Dock garantiert nicht jede Kombination.",
+        "anchors": [
+          "Steckerform von Funktionen trennen",
+          "Bildausgabetechnik prüfen",
+          "zwei Displays mit gewünschter Bildrate prüfen",
+          "Ladeleistung und Kabel-/Datenkompatibilität"
+        ],
+        "oral": "Warum reicht eine USB-C-Buchse als Nachweis für zwei Monitore und Laden nicht aus?",
+        "spoken": "Die Form sagt noch nicht, welche Funktionen unterstützt werden. Ich prüfe die Bildausgabetechnik, die gleichzeitig möglichen Auflösungen und Bildraten, die Ladeleistung und die Daten- beziehungsweise Netzwerkfunktionen. Notebook, Dock und Kabel müssen zusammenpassen. Erst die Datenblätter der gesamten Verbindung belegen, ob der gewünschte Arbeitsplatz funktioniert.",
+        "priority": "P2",
+        "sources": [
+          "UNT",
+          "BW22S"
+        ]
+      },
+      {
+        "id": "05.08",
+        "title": "Verfügbarkeit über RAID hinaus",
+        "prompt": "Ein Betrieb hat bereits RAID und tägliche Sicherungen, darf aber bei Stromausfall oder defektem Netzteil nicht sofort stillstehen. Erläutern Sie vier zusätzliche Maßnahmen mit jeweiliger Wirkung. Begrenzen Sie die Wirkung einer USV ausdrücklich.",
+        "answer": "USV überbrückt eine begrenzte Zeit und ermöglicht kontrolliertes Herunterfahren; sie ersetzt keine beliebig lange Stromversorgung. Redundante Netzteile an geeigneten getrennten Versorgungswegen vermindern einzelne Netzteilausfälle. Redundante Hosts oder ein passend konzipiertes Failover reduzieren Hostausfallfolgen. Monitoring mit Alarmierung erkennt Störungen früh und beschleunigt Reaktion. Weitere passende Ansätze sind redundante Netzwege und vorbeugende Wartung, sofern zum Szenario begründet.",
+        "anchors": [
+          "USV mit zeitlicher Grenze",
+          "Netzteilredundanz",
+          "Host-/Failoverkonzept",
+          "Monitoring mit konkreter Wirkung"
+        ],
+        "oral": "Welche Maßnahmen erhöhen Verfügbarkeit zusätzlich zu RAID und Backup?",
+        "spoken": "Eine USV überbrückt kurze Stromunterbrechungen und ermöglicht geordnetes Herunterfahren. Redundante Netzteile reduzieren einen einzelnen Netzteilfehler. Ein geeignetes Failover kann einen ausgefallenen Host ersetzen. Monitoring mit Alarmierung verkürzt die Zeit bis zur Reaktion. Jede Maßnahme braucht eine konkrete Begründung; eine USV liefert keinen unbegrenzten Strom.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW26M",
+          "UNT"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "06-beschaffung",
+    "title": "Beschaffung, Angebote und kaufmännisches Rechnen",
+    "basis": [
+      "BW22S",
+      "BW22W",
+      "BW23S",
+      "BW24S",
+      "BW26M",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "06.01",
+        "title": "Anforderungen messbar formulieren",
+        "prompt": "Eine Beratung beschäftigt 15 mobile Mitarbeitende. Sie teilen sich 8 Schreibtische. Jede Person benötigt ein eigenes Notebook; jeder Schreibtisch zwei Monitore und eine Dockingstation. Daten liegen überwiegend auf dem Server. Videokonferenzen und mobiles Arbeiten gehören zum Alltag. Ermitteln Sie die Stückzahlen und formulieren Sie vier messbare Muss-Kriterien sowie ein Kann-Kriterium. Kennzeichnen Sie eigene technische Annahmen.",
+        "answer": "Benötigt: 15 Notebooks, 16 Monitore, 8 Dockingstationen. Beispielhafte Muss-Kriterien unter gekennzeichneten Planungsannahmen: Dock unterstützt zwei Displays mit vereinbarter Auflösung/Bildrate; Notebook bietet Kamera und Mikrofon für die festgelegte Konferenzsoftware; festgelegte Akkulaufzeit im vereinbarten Testszenario; unterstützter sicherer mobiler Zugang per Mobilfunk oder geeignetem Hotspot. Konkrete Werte wie 16 GB RAM oder 8 h Akkulaufzeit sind begründete Annahmen, nicht aus der Anfrage bewiesene Fakten. Kann: besonders geringes Gewicht mit Zielwert. Muss-Kriterien werden vor einer Nutzwertbewertung geprüft.",
+        "anchors": [
+          "Stückzahlen korrekt",
+          "zwei messbare Muss-Kriterien",
+          "zwei weitere messbare Muss-Kriterien",
+          "Kann-Kriterium und Annahmen gekennzeichnet"
+        ],
+        "oral": "Wie vermeiden Sie bei einer Anforderungsanalyse erfundene Kundenwünsche?",
+        "spoken": "Ich trenne ausdrücklich genannte Anforderungen von eigenen Planungsannahmen. Fünfzehn Personen brauchen hier fünfzehn Notebooks. Acht geteilte Schreibtische brauchen sechzehn Monitore und acht Docks. Technische Kriterien formuliere ich prüfbar, etwa zwei Displays bei einer vereinbarten Auflösung. Eigene Vorschläge für Arbeitsspeicher oder Akkulaufzeit kennzeichne ich als Annahmen.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "06.02",
+        "title": "Nutzwertanalyse mit Muss-Prüfung",
+        "prompt": "Beide Geräte erfüllen alle Muss-Kriterien. Gewichte: Leistung 50 Prozent, Service 30 Prozent, Energie 20 Prozent. Einheitliche Skala: 1 schlecht, 5 gut. A erhält 4/3/5, B erhält 3/5/3. Berechnen Sie den Nutzwert und begründen Sie die Auswahl. Erläutern Sie, was gilt, wenn der rechnerische Sieger eine zwingende Muss-Anforderung doch nicht erfüllt.",
+        "answer": "A: 4*0.5 + 3*0.3 + 5*0.2 = 3.9. B: 3*0.5 + 5*0.3 + 3*0.2 = 3.6. Nach den vereinbarten Kriterien gewinnt A; bessere Leistung und Energie gleichen den geringeren Servicewert aus. Ein verletztes Muss-Kriterium schließt eine Alternative aus oder erfordert eine vorab abgestimmte Änderung der Anforderung. Ein hoher Gesamtscore heilt den Muss-Verstoß nicht.",
+        "anchors": [
+          "A 3.9 mit Rechnung",
+          "B 3.6 mit Rechnung",
+          "Auswahl mit Kriterienbezug",
+          "Muss-Kriterium als Ausschluss erläutern"
+        ],
+        "oral": "Wie berechnen und bewerten Sie eine Nutzwertanalyse?",
+        "spoken": "Ich multipliziere jeden Punktwert mit seinem Gewicht und addiere. Gerät A erreicht drei Komma neun, Gerät B drei Komma sechs. Unter den vereinbarten Kriterien gewinnt A. Zwingende Muss-Kriterien werden jedoch vorher geprüft. Eine Alternative, die ein Muss-Kriterium verletzt, wird nicht durch einen hohen Gesamtscore geeignet.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "UNT"
+        ]
+      },
+      {
+        "id": "06.03",
+        "title": "Quantitativer Angebotsvergleich",
+        "prompt": "Für zehn identische Geräte gilt netto: Anbieter A, Listenpreis je Gerät 800 EUR, Rabatt 10 Prozent, Skonto 2 Prozent nach Rabatt, Bezugskosten insgesamt 50 EUR. Anbieter B, Listenpreis je Gerät 760 EUR, Rabatt 5 Prozent, kein Skonto, Bezugskosten insgesamt 0 EUR. Skonto kann sicher genutzt werden. Berechnen Sie die Bezugspreise und begründen Sie die rein quantitative Auswahl.",
+        "answer": "A: Liste 8000.00; nach 10 Prozent Rabatt 7200.00; nach 2 Prozent Skonto 7056.00; plus 50.00 Bezugskosten = 7106.00 EUR. B: 7600.00*0.95 = 7220.00 EUR. A ist um 114.00 EUR günstiger. Rabatt und Skonto werden nacheinander auf die jeweilige Basis gerechnet, nicht als 12 Prozent vom ursprünglichen Listenpreis zusammengefasst.",
+        "anchors": [
+          "Menge und Rabatt A",
+          "Skonto und Bezugskosten A",
+          "Rechnung B",
+          "Auswahl und Differenz 114 EUR"
+        ],
+        "oral": "Wie vergleichen Sie Angebote mit Rabatt, Skonto und Bezugskosten?",
+        "spoken": "Ich rechne zuerst den Gesamtlistenpreis, ziehe dann Rabatt und anschließend Skonto vom verbleibenden Betrag ab. Danach addiere ich die Bezugskosten. Anbieter A kostet siebentausendeinhundertsechs Euro, Anbieter B siebentausendzweihundertzwanzig. A ist um einhundertvierzehn Euro günstiger. Unterschiedliche Prozentbasen dürfen nicht einfach addiert werden.",
+        "priority": "P1",
+        "sources": [
+          "BW24S",
+          "BW22W"
+        ]
+      },
+      {
+        "id": "06.04",
+        "title": "Vorwärtskalkulation",
+        "prompt": "Listeneinkaufspreis netto 500.00 EUR. Liefererrabatt 10 Prozent; Liefererskonto 2 Prozent; Bezugskosten 15.00 EUR; Handlungskosten 20 Prozent vom Bezugspreis; Gewinn 10 Prozent von Selbstkosten. Kundenrabatt und Kundenskonto gibt es nicht. Berechnen Sie bis zum Barverkaufspreis und ergänzen Sie 19 Prozent Umsatzsteuer. Runden Sie jeden Geldzwischenschritt auf Cent.",
+        "answer": "500.00 - 50.00 = 450.00 Zieleinkaufspreis. Skonto 9.00 -> 441.00 Bareinkaufspreis. +15.00 = 456.00 Bezugspreis. Handlungskosten 91.20 -> 547.20 Selbstkosten. Gewinn 54.72 -> 601.92 Barverkaufspreis netto. Umsatzsteuer 114.36 -> 716.28 EUR brutto. Jede Prozentangabe benötigt die richtige Bezugsgröße.",
+        "anchors": [
+          "Rabatt und Skonto",
+          "Bezugspreis und Handlungskosten",
+          "Selbstkosten und Gewinn",
+          "Netto/Brutto und Umsatzsteuer"
+        ],
+        "oral": "Welche Stationen hat die Vorwärtskalkulation?",
+        "spoken": "Vom Listeneinkaufspreis ziehe ich Rabatt ab und erhalte den Zieleinkaufspreis. Nach Skonto folgt der Bareinkaufspreis. Mit Bezugskosten entsteht der Bezugspreis, mit Handlungskosten die Selbstkosten. Der Gewinn führt zum Nettoverkaufspreis. In dieser Aufgabe sind das sechshunderteins Euro zweiundneunzig. Mit neunzehn Prozent Umsatzsteuer ergeben sich siebenhundertsechzehn Euro achtundzwanzig.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW23S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "06.05",
+        "title": "Rückwärtskalkulation",
+        "prompt": "Barverkaufspreis netto 924.00 EUR. Gewinn 10 Prozent auf Selbstkosten, Handlungskosten 20 Prozent auf Bezugspreis, Bezugskosten 20.00 EUR, Liefererskonto 2 Prozent und Liefererrabatt 10 Prozent. Ermitteln Sie den Listeneinkaufspreis. Kundenrabatt und Kundenskonto entfallen. Rechnen Sie rückwärts und runden Sie jeden Geldzwischenschritt auf Cent.",
+        "answer": "Selbstkosten 924/1.10 = 840.00. Bezugspreis 840/1.20 = 700.00. Bareinkaufspreis 700-20 = 680.00. Zieleinkaufspreis 680/0.98 = 693.88. Listeneinkaufspreis 693.88/0.90 = 770.98 EUR. Beim Rückgängigmachen eines Zuschlags wird durch 1+p dividiert; ein Abzug wird durch Division durch 1-p rückgängig gemacht.",
+        "anchors": [
+          "Selbstkosten 840",
+          "Bezugspreis 700 und Bareinkauf 680",
+          "Zieleinkauf 693.88",
+          "Listenpreis 770.98 und Faktoren erklären"
+        ],
+        "oral": "Warum ziehen Sie bei der Rückwärtskalkulation nicht einfach zehn Prozent vom Verkaufspreis ab?",
+        "spoken": "Ein Gewinnzuschlag von zehn Prozent wurde auf die Selbstkosten gerechnet. Der Verkaufspreis entspricht daher einhundertzehn Prozent dieser Basis. Ich teile durch eins Komma eins. Analog werden Handlungskosten zurückgerechnet. Um zwei Prozent Skonto rückgängig zu machen, teile ich durch null Komma achtundneunzig. Hier ergibt sich ein Listeneinkaufspreis von siebenhundertsiebzig Euro achtundneunzig.",
+        "priority": "P1",
+        "sources": [
+          "BW26M",
+          "UNT"
+        ]
+      },
+      {
+        "id": "06.06",
+        "title": "Qualitative Auswahl und Bezugsquellen",
+        "prompt": "Nennen Sie je zwei interne und externe Bezugsquellen für Lieferanteninformationen. Ein Anbieter ist 4 Prozent teurer, liefert aber rechtzeitig und bietet nachweislich besseren Vor-Ort-Service. Erläutern Sie zwei szenariobezogene Gründe, ihn trotzdem auszuwählen.",
+        "answer": "Intern: Lieferantenkartei/ERP und dokumentierte frühere Bestellungen beziehungsweise Reklamationsbewertungen. Extern: Hersteller-/Lieferantenangebote und Fachmessen oder geeignete Branchenverzeichnisse. Rechtzeitige Lieferung kann Projektverzug und Stillstandskosten vermeiden. Besserer Vor-Ort-Service kann Ausfallzeiten und interne Supportkosten senken. Diese Vorteile werden gegen den Mehrpreis und die vereinbarten Muss-Kriterien abgewogen; nicht pauschal immer den billigsten oder teuersten wählen.",
+        "anchors": [
+          "zwei interne Quellen",
+          "zwei externe Quellen",
+          "Liefertermin mit betrieblicher Folge",
+          "Servicevorteil mit Kosten-/Risikoabwägung"
+        ],
+        "oral": "Welche Gründe können einen etwas höheren Beschaffungspreis rechtfertigen?",
+        "spoken": "Ein rechtzeitiger Liefertermin kann teuren Projektverzug verhindern. Nachweislich guter Vor-Ort-Service kann Ausfallzeiten und interne Arbeit reduzieren. Ich stütze die Auswahl auf konkrete Anforderungen und Gesamtkosten. Lieferanteninformationen kommen intern etwa aus ERP und Reklamationshistorie, extern aus Angeboten und Branchenquellen.",
+        "priority": "P1",
+        "sources": [
+          "BW24S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "06.07",
+        "title": "Wareneingang nachvollziehbar prüfen",
+        "prompt": "Bestellt sind 18 Notebooks Modell N mit je 16 GB RAM. Geliefert werden 17 Kartons; ein Karton ist sichtbar eingedrückt. Beschreiben Sie vier konkrete Prüfschritte einschließlich Dokumentation und Reaktion auf Abweichungen. Ein optisch unbeschädigter Karton soll nicht automatisch als korrekte Lieferung gelten.",
+        "answer": "Anlieferung/Verpackung prüfen und sichtbare Schäden mit Fotos und Vermerk festhalten. Menge mit Bestellung und Lieferschein vergleichen: ein Gerät fehlt. Identität/Ausstattung und Seriennummern prüfen, insbesondere Modell und RAM. Geeigneten Funktionstest durchführen. Abweichungen dokumentieren und dem zuständigen Einkauf/Lieferanten zeitnah melden; beschädigte Ware nicht kommentarlos als mängelfrei bestätigen. Unbeschädigte Verpackung belegt weder Vollständigkeit noch richtige Ausstattung.",
+        "anchors": [
+          "äußere Prüfung und Schadenbeleg",
+          "Mengenabweichung erkennen",
+          "Identität/Ausstattung und Funktion",
+          "Dokumentation sowie Weitergabe/Reklamation"
+        ],
+        "oral": "Welche Schritte gehören zu einer Wareneingangsprüfung?",
+        "spoken": "Ich prüfe Verpackung und sichtbare Schäden, vergleiche die Menge mit Bestellung und Lieferschein, kontrolliere Modell und Ausstattung und teste die Funktion. Im Beispiel fehlt ein Notebook; ein Karton ist beschädigt. Beides wird nachvollziehbar dokumentiert und an die zuständige Stelle weitergegeben. Ein unbeschädigter Karton beweist keine inhaltlich richtige Lieferung.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW24S"
+        ]
+      },
+      {
+        "id": "06.08",
+        "title": "Angebot, Rabatt, Skonto und Liefertermin",
+        "prompt": "Erklären Sie Rabatt und Skonto. Nennen Sie vier konkrete Angaben, die ein prüfbares Angebot enthalten sollte. Ein vertraglich fest vereinbarter Liefertermin ist überschritten und der Projektstart gefährdet. Beschreiben Sie zwei sinnvolle organisatorische Reaktionen und eine mögliche wirtschaftliche Folge. Eine abschließende rechtliche Verzugsprüfung ist nicht verlangt.",
+        "answer": "Rabatt ist ein Preisnachlass etwa aufgrund Menge/Kundenkondition; Skonto ist ein Nachlass bei Zahlung innerhalb der vereinbarten kurzen Frist. Angebotsangaben zum Beispiel: genaue Leistung mit Menge, Einzel-/Gesamtpreis und Steuerbehandlung, Liefertermin/-bedingungen, Zahlungsbedingungen und Bindefrist. Bei Terminüberschreitung: Lieferstatus verbindlich klären und dokumentieren, Auftraggeber frühzeitig informieren sowie Ersatz-/Teillieferung oder Terminplananpassung abstimmen. Wirtschaftliche Folge: Stillstandskosten, entgangener Umsatz oder Ansehensverlust. Rechtsfolgen sind gesondert anhand Vertrag und Umständen zu prüfen.",
+        "anchors": [
+          "Rabatt versus Skonto",
+          "vier prüfbare Angebotsangaben",
+          "zwei konkrete Reaktionen",
+          "wirtschaftliche Folge mit Projektbezug"
+        ],
+        "oral": "Wie unterscheiden Sie Rabatt und Skonto, und wie reagieren Sie auf einen gefährdeten Liefertermin?",
+        "spoken": "Rabatt ist ein vereinbarter Preisnachlass, etwa für eine Menge. Skonto setzt die Zahlung innerhalb einer festgelegten Frist voraus. Ein Angebot beschreibt Leistung, Menge, Preise, Lieferung und Zahlung eindeutig. Ist der Projektstart durch verspätete Lieferung gefährdet, kläre ich den Status, informiere den Auftraggeber und stimme Alternativen ab. Wirtschaftliche Folgen können Stillstand und Ansehensverlust sein.",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW23S",
+          "BW26M",
+          "NAT26",
+          "UNT"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "07-service-organisation",
+    "title": "Service, Organisation, Projekt und UML",
+    "basis": [
+      "BW22S",
+      "BW22W",
+      "BW23S",
+      "BW23W",
+      "BW26M",
+      "NAT26",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "07.01",
+        "title": "Incident, Service Request, Event und Priorität",
+        "prompt": "Ordnen Sie zu und begründen Sie: a) Monitoring meldet eine relevante Überschreitung des Speicher-Schwellwerts ohne bisherige Nutzerstörung; b) ein Mitarbeiter bestellt einen zusätzlichen Standardmonitor; c) alle 25 Mitarbeitenden können auf die Auftragsdatenbank nicht mehr zugreifen. Erläutern Sie anschließend, wie Auswirkung und Dringlichkeit die Ticketpriorität bestimmen.",
+        "answer": "a) Event: ein für den Betrieb relevantes beobachtetes Ereignis, das je nach Bewertung weitere Maßnahmen auslösen kann. b) Service Request: standardisierte Leistungsanfrage. c) Incident: ungeplante Unterbrechung beziehungsweise Beeinträchtigung eines Service. Die Priorität richtet sich nach Auswirkung, etwa Zahl Betroffener und Geschäftsschaden, sowie Dringlichkeit, etwa fehlender Ausweichmöglichkeit und zeitkritischem Prozess. Eine laute oder hochrangige meldende Person ist allein kein technischer Prioritätsmaßstab.",
+        "anchors": [
+          "Event begründet",
+          "Request begründet",
+          "Incident begründet",
+          "Impact/Urgency mit Geschäftsbezug"
+        ],
+        "oral": "Woran erkennen Sie Event, Service Request und Incident?",
+        "spoken": "Ein Event ist ein relevantes beobachtetes Ereignis, zum Beispiel eine Schwellwertmeldung. Ein Service Request fordert eine standardisierte Leistung an. Ein Incident bezeichnet eine ungeplante Serviceunterbrechung. Die Priorität entsteht aus Auswirkung und Dringlichkeit: Wie viele sind betroffen, wie groß ist der Geschäftsschaden, und wie schnell muss gehandelt werden?",
+        "priority": "P1",
+        "sources": [
+          "BW22W",
+          "BW23S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "07.02",
+        "title": "SLA, Abnahme und Testprotokoll",
+        "prompt": "Nennen Sie vier eindeutig prüfbare SLA-Inhalte. Unterscheiden Sie Reaktionszeit und Wiederherstellungs-/Entstörzeit. Nennen Sie außerdem vier Angaben im Test- und Abnahmeprotokoll eines neu eingerichteten Arbeitsplatzes.",
+        "answer": "SLA-Inhalte: definierte Servicezeiten, Zielverfügbarkeit mit Messzeitraum, Reaktionsfrist je Priorität und Entstör-/Wiederherstellungsziel samt Messbeginn und Ausnahmen. Reaktionszeit endet bei qualifizierter Aufnahme/Bearbeitung gemäß Vertrag; Entstörzeit endet bei der vereinbarten Wiederherstellung. Protokoll: Gerät/Konfiguration und Versionen, Testfall mit Soll- und Ist-Ergebnis, Mängel/Restpunkte sowie Datum und verantwortliche Freigabe/Abnahme. Die konkrete vertragliche Definition ist maßgeblich.",
+        "anchors": [
+          "vier prüfbare SLA-Inhalte",
+          "Reaktion und Wiederherstellung trennen",
+          "Testobjekt und Soll-Ist-Protokoll",
+          "Mängel und nachvollziehbare Abnahme"
+        ],
+        "oral": "Was unterscheidet eine schnelle Reaktion von einer gelösten Störung?",
+        "spoken": "Eine Reaktionszeit beschreibt den Beginn der qualifizierten Bearbeitung nach der Vertragsdefinition. Eine Entstörzeit beschreibt die Wiederherstellung des Service. Das sind unterschiedliche Zusagen. Für eine Abnahme dokumentiere ich den geprüften Arbeitsplatz, die Testfälle mit Soll und Ist, offene Mängel und die verantwortliche Freigabe. Ohne klare Messdefinition bleibt ein SLA schwer prüfbar.",
+        "priority": "P1",
+        "sources": [
+          "BW22S",
+          "BW23S",
+          "UNT"
+        ]
+      },
+      {
+        "id": "07.03",
+        "title": "Organisation und Stellenarten",
+        "prompt": "Die Geschäftsführung führt drei Abteilungsleitungen. Jede ausführende Person ist genau einer Leitung unterstellt. Ein Datenschutzberater berät die Geschäftsführung ohne Weisungsrecht gegenüber den Abteilungen.\na) Benennen und skizzieren Sie die Organisationsform.\nb) Erläutern Sie Instanz, Ausführungsstelle und Stabsstelle.\nc) Nennen Sie einen Vorteil und einen Nachteil dieser Struktur.",
+        "answer": "Stablinienorganisation: Geschäftsführung -> drei Abteilungsleitungen -> jeweils zugeordnete Ausführungsstellen. Der beratende Stab ist seitlich der Geschäftsführung zugeordnet und erhält keine Linienweisung an die Abteilungen. Instanzen besitzen Leitungs-/Weisungsbefugnis; Ausführungsstellen erledigen operative Arbeit; Stäbe unterstützen durch Fachberatung. Vorteil: klare Zuständigkeiten bei fachlicher Beratung. Nachteil: längere Entscheidungswege beziehungsweise mögliche Konflikte zwischen Beratung und Linie. Mehrere Fachvorgesetzte wären dagegen ein Mehrliniensystem; eine Matrix kombiniert zwei Gliederungsdimensionen.",
+        "anchors": [
+          "Stablinienstruktur richtig benennen/skizzieren",
+          "Instanz und Ausführungsstelle",
+          "Stab ohne Linienweisungsrecht",
+          "Vor- und Nachteil mit Strukturbezug"
+        ],
+        "oral": "Woran erkennen Sie eine Stablinienorganisation?",
+        "spoken": "Die Weisungslinie bleibt eindeutig: Jede ausführende Stelle hat genau eine zuständige Leitung. Ein Stab berät die Führung, gibt der Linie aber grundsätzlich keine eigenen Weisungen. Instanzen leiten, Ausführungsstellen arbeiten operativ. Vorteil sind klare Zuständigkeiten mit Fachberatung. Ein möglicher Nachteil sind längere Entscheidungswege.",
+        "priority": "P1",
+        "sources": [
+          "BW23S",
+          "BW23W",
+          "BW26M"
+        ]
+      },
+      {
+        "id": "07.04",
+        "title": "e.K. und GmbH sachlich vergleichen",
+        "prompt": "Ein Einzelkaufmann möchte das Unternehmen mit weiteren Beteiligten ausbauen. Vergleichen Sie e.K. und reguläre GmbH nach Haftung, gesetzlichem Mindestkapital, Unternehmensführung und Handelsregister. Formulieren Sie eine begründete Empfehlung unter der Annahme, dass Risikobegrenzung und Beteiligung weiterer Gesellschafter besonders wichtig sind. Nicht mit der UG verwechseln.",
+        "answer": "e.K.: natürliche Person, grundsätzlich persönliche unbeschränkte Haftung auch mit Privatvermögen, kein gesetzliches Mindestkapital, Führung durch Inhaber, Handelsregister Abteilung A. Reguläre GmbH: juristische Person, für Gesellschaftsschulden grundsätzlich Haftung mit Gesellschaftsvermögen, Stammkapital mindestens 25000 EUR, Geschäftsführung durch bestellte Geschäftsführer, Handelsregister Abteilung B. Empfehlung unter den Annahmen: GmbH erwägen, weil Beteiligungsstruktur und grundsätzliche Haftungsbegrenzung passen; höhere Gründungs-/Verwaltungsanforderungen und Kapitalbedarf abwägen. Persönliche Bürgschaften oder Pflichtverletzungen können dennoch persönliche Haftungsrisiken schaffen. 25000 EUR Stammkapital ist nicht identisch mit der in jedem Fall sofort voll einzuzahlenden Geldsumme.",
+        "anchors": [
+          "Haftungsvergleich mit Grundsatz",
+          "Mindestkapital korrekt",
+          "Führung und Register",
+          "begründete Empfehlung mit Kosten/Grenzen"
+        ],
+        "oral": "Welche Unterschiede zwischen Einzelkaufmann und regulärer GmbH sollten Sie nennen können?",
+        "spoken": "Der Einzelkaufmann haftet grundsätzlich persönlich und hat kein gesetzliches Mindestkapital. Die reguläre GmbH ist eine eigene juristische Person mit mindestens fünfundzwanzigtausend Euro Stammkapital. Für ihre Schulden haftet grundsätzlich das Gesellschaftsvermögen. Geschäftsführer führen die GmbH. Registerabteilung A gilt für den Einzelkaufmann, B für die GmbH. Die Empfehlung muss Risiken, Beteiligungswunsch und zusätzlichen Aufwand abwägen.",
+        "priority": "P1",
+        "sources": [
+          "BW23S",
+          "BW23W",
+          "OFF-RECHT"
+        ]
+      },
+      {
+        "id": "07.05",
+        "title": "Rollout, Change und Ergonomie",
+        "prompt": "Ein Unternehmen führt ein neues Arbeitsplatzsystem für 40 Personen ein. Vergleichen Sie Sofortumstellung und Parallelbetrieb. Nennen Sie zwei Maßnahmen zur Akzeptanzförderung und zwei konkrete ergonomische Einstellungen. Begründen Sie eine Einführung mit Pilotgruppe bei zeitkritischen Prozessen.",
+        "answer": "Sofortumstellung beendet das Altsystem zum Stichtag: schneller und weniger Doppelbetrieb, aber konzentriertes Ausfallrisiko. Parallelbetrieb hält beide Systeme zeitweise verfügbar: mehr Rückfallmöglichkeit, jedoch höhere Kosten und Abgleichaufwand. Pilotgruppe entdeckt Probleme vor breitem Einsatz. Akzeptanz: frühzeitige verständliche Information und rollenbezogene Schulung mit erreichbarem Support. Ergonomie: blendfreie Monitoraufstellung mit passender Höhe/Abstand; Tisch und Stuhl so einstellen, dass Füße stabil stehen und eine entspannte Armhaltung möglich ist. Erfolgreiche Einführung umfasst Technik und Nutzung.",
+        "anchors": [
+          "Sofort- und Parallelbetrieb abwägen",
+          "Pilot mit Risikobegründung",
+          "zwei Akzeptanzmaßnahmen",
+          "zwei ergonomische Einstellungen"
+        ],
+        "oral": "Was gehört zu einem erfolgreichen Rollout neben der Installation?",
+        "spoken": "Ich wähle eine zum Risiko passende Umstellung. Sofortumstellung ist schnell, bündelt aber das Ausfallrisiko. Parallelbetrieb bietet Rückfallmöglichkeiten, kostet jedoch mehr Arbeit. Eine Pilotgruppe macht Probleme früh sichtbar. Mitarbeitende brauchen rechtzeitige Information und passende Schulung. Der Arbeitsplatz wird außerdem blendfrei und körpergerecht eingestellt.",
+        "priority": "P1",
+        "sources": [
+          "NAT26",
+          "UNT"
+        ]
+      },
+      {
+        "id": "07.06",
+        "title": "Netzplan: rechnen statt Begriffe aufsagen",
+        "prompt": "Projektvorgänge in Tagen: A=2 ohne Vorgänger, B=4 nach A, C=3 nach A, D=2 nach B und C. Projektstart ist Zeitpunkt 0. Bestimmen Sie für jeden Vorgang FAZ, FEZ, SAZ, SEZ und Gesamtpuffer. Geben Sie Projektdauer und kritischen Pfad an. Es gibt keine Ressourcenbeschränkungen.",
+        "answer": "|Vorgang|FAZ|FEZ|SAZ|SEZ|Puffer|\n|---|---|---|---|---|---|\n|A|0|2|0|2|0|\n|B|2|6|2|6|0|\n|C|2|5|3|6|1|\n|D|6|8|6|8|0|\n\nProjektdauer 8 Tage; kritischer Pfad A-B-D. Vorwärts: FEZ=FAZ+Dauer und FAZ=max(FEZ der Vorgänger). Rückwärts: SAZ=SEZ-Dauer und SEZ=min(SAZ der Nachfolger). Puffer=SAZ-FAZ.",
+        "anchors": [
+          "Vorwärtsrechnung",
+          "Rückwärtsrechnung",
+          "Puffer C=1, übrige 0",
+          "Dauer 8 und Pfad A-B-D"
+        ],
+        "oral": "Wie finden Sie Projektdauer und kritischen Pfad in einem kleinen Netzplan?",
+        "spoken": "Ich rechne zuerst vorwärts und starte einen Vorgang erst nach dem spätesten Ende seiner Vorgänger. Danach rechne ich vom Projektende rückwärts. Der Gesamtpuffer ist spätester minus frühester Anfang. Im Beispiel dauert das Projekt acht Tage. A, B und D bilden den kritischen Pfad. C hat einen Tag Puffer.",
+        "priority": "P2",
+        "sources": [
+          "NAT26",
+          "UNT"
+        ]
+      },
+      {
+        "id": "07.07",
+        "title": "PDCA, SMART und TCO",
+        "prompt": "Für neue Notebooks sollen Störungen reduziert und Beschaffungskosten bewertet werden.\na) Formulieren Sie ein messbares termingebundenes Ziel statt weniger Störungen.\nb) Wenden Sie die vier PDCA-Schritte auf dieses Ziel an.\nc) Nennen Sie vier TCO-Kostenarten außer dem Kaufpreis und eine nachhaltige Beschaffungsentscheidung.",
+        "answer": "SMART-Beispiel: Bis zum Ende des nächsten Quartals sinken die monatlichen, gerätebedingten Incidents von 20 auf höchstens 12 bei gleicher Gerätezahl; die Messung erfolgt über definierte Ticketkategorien. Plan: Ursachen und Maßnahme planen. Do: im Pilot umsetzen. Check: Messwerte mit Ziel vergleichen. Act: wirksame Lösung standardisieren oder nachsteuern. TCO zum Beispiel Lizenzen, Energie, Wartung/Support, Ausfälle und Schulung. Nachhaltigkeit: reparierbare, ausreichend leistungsfähige Geräte mit Ersatzteilversorgung und längerer Nutzungsdauer wählen; nicht nur Anschaffungspreis betrachten.",
+        "anchors": [
+          "SMART-Ziel mit Baseline und Termin",
+          "Plan und Do fallbezogen",
+          "Check und Act fallbezogen",
+          "vier TCO-Arten und nachhaltige Entscheidung"
+        ],
+        "oral": "Wie verbinden Sie messbare Verbesserung mit Kosten und Nachhaltigkeit?",
+        "spoken": "Ich definiere zuerst Ausgangswert, Zielwert, Messmethode und Termin. PDCA bedeutet planen, umsetzen, prüfen und verbessern beziehungsweise standardisieren. Zu den Gesamtkosten gehören neben dem Kauf Lizenzen, Energie, Wartung und Ausfallzeiten. Reparierbarkeit und längere sinnvolle Nutzung können Kosten und Ressourcenverbrauch senken. Eine günstige Anschaffung ist nicht automatisch die günstigste Gesamtlösung.",
+        "priority": "P2",
+        "sources": [
+          "UNT"
+        ]
+      },
+      {
+        "id": "07.08",
+        "title": "OOP und UML-Klasse",
+        "prompt": "Modellieren Sie eine UML-Klasse Geraet mit privaten Attributen seriennummer:String und aktiv:boolean sowie öffentlicher Methode aktiviere():void. Unterscheiden Sie Klasse und Objekt. Erläutern Sie Kapselung und nennen Sie einen konkreten Vorteil gegenüber frei veränderbaren globalen Daten.",
+        "answer": "```text\nGeraet\n--------------------------------\n- seriennummer : String\n- aktiv : boolean\n--------------------------------\n+ aktiviere() : void\n```\nEine Klasse beschreibt Struktur und Verhalten; ein Objekt ist eine konkrete Instanz mit eigenen Werten. Kapselung verbirgt den internen Zustand und steuert Änderungen über definierte Methoden. Dadurch lassen sich Regeln prüfen, etwa erlaubte Statuswechsel; unkontrollierte Änderungen und unbeabsichtigte Abhängigkeiten werden reduziert. Minus bedeutet private, Plus public.",
+        "anchors": [
+          "UML-Attribute mit Typ und Sichtbarkeit",
+          "Methode mit Sichtbarkeit und Rückgabetyp",
+          "Klasse und Objekt unterscheiden",
+          "Kapselung mit konkretem Vorteil"
+        ],
+        "oral": "Was sollten Sie an einer einfachen UML-Klasse erklären können?",
+        "spoken": "Eine Klasse beschreibt Attribute und Methoden, ein Objekt ist eine konkrete Instanz. Minus kennzeichnet private Attribute, Plus eine öffentliche Methode. Kapselung bedeutet, dass der Zustand nicht beliebig von außen verändert wird. Änderungen laufen über definierte Methoden, die Regeln prüfen können. Das reduziert unkontrollierte Zustandsänderungen.",
+        "priority": "P2",
+        "sources": [
+          "NAT26",
+          "UNT"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "08-ergaenzungen",
+    "title": "Ergänzungen aus bundesweiten Prüfungen und Unterricht",
+    "basis": [
+      "NAT21H",
+      "NAT22F",
+      "NAT22H",
+      "NAT23F",
+      "NAT23H",
+      "NAT24F",
+      "UNT"
+    ],
+    "tasks": [
+      {
+        "id": "08.01",
+        "title": "OSI, DHCP, ARP und APIPA",
+        "prompt": "Ordnen Sie Ethernet-Signal, Ethernet-MAC, IPv4 und TCP den OSI-Schichten 1 bis 4 zu. Erläutern Sie danach DHCP und ARP. Ein Windows-Client erhält bei aktivierter automatischer IPv4-Konfiguration nur eine Adresse aus 169.254.0.0/16: Welche naheliegende Hypothese prüfen Sie? Eine einzelne Adresse beweist die Ursache nicht.",
+        "answer": "Schicht 1: physische Signalübertragung; Schicht 2: Ethernet/MAC-Frames; Schicht 3: IPv4-Routing; Schicht 4: TCP-Transport. DHCP weist unter anderem IP, Maske, Gateway und DNS zeitlich verwaltet zu. ARP ermittelt für eine lokale IPv4-Ziel-/Next-Hop-Adresse die zugehörige MAC-Adresse. 169.254.0.0/16 ist IPv4-Link-Local: Bei diesem Windows-Szenario liegt eine fehlgeschlagene DHCP-Konfiguration nahe. Prüfen: Server/Dienst, VLAN/Port, Relay und Adresspool; die Adresse kann jedoch auch anderweitig gesetzt worden sein.",
+        "anchors": [
+          "vier Schichten korrekt",
+          "DHCP-Funktion",
+          "ARP-Funktion",
+          "APIPA-Hypothese mit gezieltem Test statt Beweisbehauptung"
+        ],
+        "oral": "Was verbinden Sie mit den ersten vier OSI-Schichten, DHCP und ARP?",
+        "spoken": "Die ersten vier Schichten betreffen Signale, Frames mit MAC-Adressen, IP-Routing und Transport. DHCP liefert eine verwaltete Netzwerkkonfiguration. ARP sucht im lokalen IPv4-Netz die MAC-Adresse zum nächsten Ziel. Eine automatisch entstandene Adresse aus dem Bereich einhundertneunundsechzig Punkt zweihundertvierundfünfzig deutet unter Windows häufig auf fehlende DHCP-Antwort hin. Ich prüfe diese Hypothese gezielt.",
+        "priority": "P2",
+        "sources": [
+          "NAT22F",
+          "NAT24F",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.02",
+        "title": "CPU, RAM, SSD und sicherer Einbau",
+        "prompt": "Unterscheiden Sie CPU, Cache und RAM. Erläutern Sie, warum ein logischer Thread kein zusätzlicher physischer Kern ist. Bewerten Sie die Aussage: Jede M.2-SSD ist schneller als jede SATA-SSD. Nennen Sie zwei Sicherheitsmaßnahmen vor dem Einbau und den richtigen Bezugspunkt für die Dual-Channel-Slotwahl.",
+        "answer": "Die CPU führt Befehle aus; Cache hält häufig benötigte Daten nahe an den Recheneinheiten; RAM hält aktive Programme und Daten flüchtig bereit. Ein logischer Thread teilt sich physische Ressourcen eines Kerns und verdoppelt nicht automatisch die Leistung. M.2 bezeichnet eine Bauform; es gibt unter anderem SATA- und PCIe/NVMe-Anbindung. Leistung hängt von Schnittstelle und Gerät ab. Vor Einbau Stromversorgung trennen und geeigneten ESD-/Potentialausgleich beachten. RAM-Kompatibilität und die vom Mainboard-Handbuch vorgegebene Slotbelegung für Dual Channel prüfen.",
+        "anchors": [
+          "CPU/Cache/RAM unterscheiden",
+          "Thread versus physischer Kern",
+          "M.2-Bauform versus Protokoll",
+          "Strom/ESD und Mainboard-Slotvorgabe"
+        ],
+        "oral": "Welche Verwechslungen bei CPU, RAM und SSD sollten Sie vermeiden?",
+        "spoken": "Cache und RAM sind nicht dasselbe: Cache liegt näher an der Verarbeitung, RAM hält den aktiven Arbeitsbestand. Ein logischer Thread ist kein zusätzlicher physischer Kern. M Punkt zwei beschreibt die Bauform und garantiert weder NVMe noch eine bestimmte Geschwindigkeit. Vor dem Einbau beachte ich Stromtrennung und ESD-Schutz. Für Dual Channel gilt die Slotvorgabe des Mainboard-Handbuchs.",
+        "priority": "P2",
+        "sources": [
+          "NAT22F",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.03",
+        "title": "Cloud, On-Premises und Virtualisierung",
+        "prompt": "Eine kleine Firma erwägt eine cloudbasierte Arbeitsplatzverwaltung statt eines eigenen Verwaltungsservers. Erläutern Sie je zwei mögliche Vor- und Nachteile. Unterscheiden Sie IaaS und SaaS. Erklären Sie außerdem, was ein Hypervisor tut und warum zwei virtuelle Maschinen auf einem einzelnen Host noch keine Host-Ausfallredundanz bilden.",
+        "answer": "Cloud kann schnellen Start, flexible Skalierung und weniger eigene Serverpflege ermöglichen; Nachteile können Anbieter-/Internetabhängigkeit und laufende Kosten beziehungsweise Prüfbedarf für Datenverarbeitung und Integration sein. On-Premises bietet mehr unmittelbare Kontrolle, benötigt aber eigene Betriebsressourcen. IaaS stellt Infrastrukturressourcen bereit, deren Gastbetriebssysteme und Anwendungen der Kunde wesentlich selbst verwaltet. SaaS stellt eine nutzbare Anwendung bereit; Verantwortung und Konfiguration bleiben vertraglich aufzuteilen. Ein Hypervisor verwaltet virtuelle Maschinen und ihre Ressourcen. Fällt ihr einziger physischer Host aus, fallen beide VMs aus: zwei VMs allein sind keine Hostredundanz.",
+        "anchors": [
+          "zwei Cloud-Vorteile",
+          "zwei Nachteile mit Fallbezug",
+          "IaaS versus SaaS",
+          "Hypervisor und gemeinsame Ausfallursache"
+        ],
+        "oral": "Welche Abwägung brauchen Sie bei Cloud und Virtualisierung?",
+        "spoken": "Cloud kann schnellen Start und flexible Nutzung ermöglichen, schafft aber Abhängigkeiten und laufende Kosten. IaaS liefert Infrastruktur, SaaS eine nutzbare Anwendung. Der Verantwortungsumfang muss jeweils geklärt sein. Ein Hypervisor verteilt Ressourcen an virtuelle Maschinen. Zwei virtuelle Maschinen auf demselben Host schützen nicht vor dessen Ausfall, weil sie dieselbe physische Grundlage teilen.",
+        "priority": "P2",
+        "sources": [
+          "NAT22F",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.04",
+        "title": "VPN und digitales Zertifikat",
+        "prompt": "Ein Mitarbeiter greift aus dem Homeoffice auf interne Systeme zu. Erläutern Sie zwei Sicherheitsfunktionen eines geeignet konfigurierten VPN. Beschreiben Sie den Zweck eines digitalen Zertifikats und nennen Sie zwei Prüfungen beim Zertifikatsgebrauch. Begründen Sie, warum ein VPN einen bereits kompromittierten Client nicht automatisch sicher macht.",
+        "answer": "Ein geeignetes VPN schützt die Kommunikation über ein nicht vertrauenswürdiges Netz durch Verschlüsselung und Integritätsschutz sowie Authentifizierung der Gegenstellen. Ein Zertifikat bindet einen öffentlichen Schlüssel an eine überprüfbare Identität und wird digital signiert. Zu prüfen sind insbesondere Vertrauenskette/Signatur, Gültigkeit, passender Name beziehungsweise Zweck und gegebenenfalls Widerrufsstatus. Der private Schlüssel bleibt geschützt beim Inhaber. Ein kompromittierter Endpunkt kann Daten vor Verschlüsselung lesen oder nach Entschlüsselung verändern; deshalb bleiben Härtung, Updates und Zugangskontrolle notwendig.",
+        "anchors": [
+          "Vertraulichkeit und Integrität im Tunnel",
+          "Authentifizierung/Zertifikatszweck",
+          "zwei geeignete Zertifikatsprüfungen",
+          "Endpunktrisiko trotz VPN erläutern"
+        ],
+        "oral": "Was schützt ein VPN und was beweist ein Zertifikat?",
+        "spoken": "Ein geeignet eingerichtetes VPN schützt den Übertragungsweg durch Verschlüsselung, Integritätsschutz und Authentifizierung. Ein digitales Zertifikat ordnet einen öffentlichen Schlüssel einer Identität zu. Ich prüfe Vertrauen, Gültigkeit und passende Identität. Der private Schlüssel wird nicht veröffentlicht. Ein bereits infizierter Rechner bleibt gefährlich, weil er Daten vor der Verschlüsselung oder nach der Entschlüsselung angreifen kann.",
+        "priority": "P2",
+        "sources": [
+          "NAT23H",
+          "NAT24F",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.05",
+        "title": "Kauf, Leasing und Amortisation",
+        "prompt": "Ein Gerät kostet beim Kauf netto 1800 EUR. Leasing kostet 58 EUR monatlich über 36 Monate, ohne Sonderzahlung, Zusatzkosten oder Eigentumsübergang. Vergleichen Sie die Zahlungen ohne Zins-/Steuereffekte und Restwertansatz; erklären Sie Besitz und Eigentum beim Leasing. Separat: Ein energieeffizienteres Gerät kostet 240 EUR mehr und spart 8 EUR monatlich. Wann amortisiert sich der Mehrpreis in dieser vereinfachten Rechnung?",
+        "answer": "Leasingzahlungen 58*36=2088 EUR; das sind 288 EUR mehr als der Kaufpreis. Beim Leasing nutzt und besitzt der Leasingnehmer das Gerät, Eigentümer bleibt grundsätzlich der Leasinggeber; ein späterer Erwerb braucht eine entsprechende Vereinbarung. Liquidität und planbare Zahlungen können für Leasing sprechen, Gesamtkosten und Bindung dagegen. Amortisation des Mehrpreises: 240/8=30 Monate. Die Rechnung ersetzt keinen Vergleich mit Restwert, Zinsen, Risiken und unterschiedlichen Vertragsleistungen.",
+        "anchors": [
+          "Leasingsumme und Differenz",
+          "Besitz/Eigentum unterscheiden",
+          "Liquidität und Kosten abwägen",
+          "Amortisation 30 Monate mit Formel"
+        ],
+        "oral": "Wie vergleichen Sie Kauf und Leasing und berechnen eine einfache Amortisation?",
+        "spoken": "Achtundfünfzig Euro mal sechsunddreißig Monate ergeben zweitausendachtundachtzig Euro. Das sind zweihundertachtundachtzig mehr als der Kaufpreis. Der Leasingnehmer nutzt das Gerät, Eigentümer bleibt grundsätzlich der Leasinggeber. Ein Mehrpreis von zweihundertvierzig Euro amortisiert sich bei acht Euro monatlicher Einsparung nach dreißig Monaten. Reale Vergleiche müssen weitere Vertrags- und Kostenfaktoren berücksichtigen.",
+        "priority": "P2",
+        "sources": [
+          "NAT21H",
+          "NAT23F",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.06",
+        "title": "Lastenheft, Pflichtenheft und Projektbeteiligte",
+        "prompt": "Ein Auftrag lautet: Ein neues Ticketsystem soll innerhalb von drei Monaten den Support verbessern. Unterscheiden Sie Lastenheft und Pflichtenheft. Formulieren Sie zwei konkret prüfbare Anforderungen. Nennen Sie drei Stakeholder mit je einem typischen Interesse. Unterscheiden Sie abschließend Gantt-Diagramm und Netzplan.",
+        "answer": "Lastenheft: Auftraggeber beschreibt was und wofür benötigt wird. Pflichtenheft: Auftragnehmer beschreibt wie und womit umgesetzt wird. Beispielanforderungen: Berechtigte Nutzer können Tickets mit Pflichtfeldern erfassen; ein definierter Test zeigt die vereinbarte Reaktionszeit bei festgelegter Last. Messwerte sind mit dem Auftraggeber abzustimmen. Stakeholder: Support möchte schnelle Bearbeitung, Mitarbeitende einfache Meldung, Geschäftsführung Kosten-/Leistungstransparenz; Datenschutz und Betrieb sind weitere mögliche Beteiligte. Gantt zeigt Vorgänge auf einer Zeitachse; ein Netzplan analysiert Abhängigkeiten und Puffer beziehungsweise kritische Pfade.",
+        "anchors": [
+          "Lasten- und Pflichtenheft",
+          "zwei prüfbare Anforderungen",
+          "drei Stakeholder mit Interessen",
+          "Gantt und Netzplan unterscheiden"
+        ],
+        "oral": "Was unterscheidet die beiden Anforderungsdokumente und die beiden Planungsdarstellungen?",
+        "spoken": "Das Lastenheft beschreibt aus Auftraggebersicht, was benötigt wird und wofür. Das Pflichtenheft beschreibt die Umsetzung durch den Auftragnehmer. Anforderungen müssen prüfbar sein. Support, Beschäftigte und Geschäftsführung haben unterschiedliche Interessen und werden berücksichtigt. Ein Gantt-Diagramm zeigt Termine auf einer Zeitachse; der Netzplan betont Abhängigkeiten, Puffer und kritische Wege.",
+        "priority": "P2",
+        "sources": [
+          "NAT21H",
+          "NAT22H",
+          "NAT23F",
+          "NAT23H",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.07",
+        "title": "Kodierung, Bilddaten und Übertragungsdauer",
+        "prompt": "a) Unterscheiden Sie Textkodierung und Dateiformat. Warum sind UTF-8-Texte nicht grundsätzlich ein Byte je Zeichen groß?\nb) Ein unkomprimiertes Bild hat 1000*800 Pixel mit 24 Bit je Pixel, ohne Header. Berechnen Sie die Größe in Byte und die Zahl möglicher RGB-Farben.\nc) Eine Datei mit 120 MiB wird mit konstant nutzbaren 40 Mbit/s übertragen. Berechnen Sie die ideale Zeit ohne weiteren Overhead. 1 MiB=2^20 Byte, 1 Mbit=10^6 Bit.",
+        "answer": "Textkodierung legt die Abbildung von Zeichen auf Bytes fest; ein Dateiformat legt die Struktur/Inhalte einer Datei fest. UTF-8 verwendet je Unicode-Codepunkt ein bis vier Byte, daher ist die Zeichenzahl nicht allgemein die Bytezahl. Bild: 1000*800*24/8=2400000 Byte. 24 Bit ermöglichen 2^24=16777216 RGB-Kombinationen. Übertragung: 120*2^20*8/(40*10^6)=25.165824 s, etwa 25.17 s. Entscheidend sind Byte/Bit und binäre/dezimale Einheiten.",
+        "anchors": [
+          "Kodierung versus Format und UTF-8",
+          "Bildgröße 2400000 Byte",
+          "Farben 2^24",
+          "Übertragung 25.17 s mit korrekten Einheiten"
+        ],
+        "oral": "Welche Einheitenfallen gibt es bei Texten, Bildern und Übertragungszeit?",
+        "spoken": "Ein Textzeichen ist in UTF acht nicht immer ein Byte. Eine Kodierung ist außerdem nicht dasselbe wie ein Dateiformat. Für Bildgröße multipliziere ich Pixelzahl mit Bits je Pixel und teile durch acht. Vierundzwanzig Bit ergeben zwei hoch vierundzwanzig Farbkombinationen. Für die Übertragungszeit teile ich die Datenmenge in Bit durch die nutzbare Bitrate. Einhundertzwanzig Mebibyte bei vierzig Megabit pro Sekunde brauchen ideal etwa fünfundzwanzig Komma siebzehn Sekunden.",
+        "priority": "P2",
+        "sources": [
+          "NAT22F",
+          "NAT22H",
+          "NAT24F",
+          "UNT"
+        ]
+      },
+      {
+        "id": "08.08",
+        "title": "Härtung und datensparsame Protokollierung",
+        "prompt": "Ein neu installierter Firmenclient verwendet ein Standardkennwort, unnötige Dienste und tägliche Administratorkonten. Erklären Sie Härtung und nennen Sie drei passende Änderungen. Beschreiben Sie Nutzen und Datenschutzgrenzen von Sicherheitsprotokollen. Nennen Sie zuletzt einen Grund, vertrauliche Kundendaten nicht ungeprüft in einen öffentlichen KI-Dienst einzugeben.",
+        "answer": "Härtung reduziert unnötige Angriffsflächen und setzt sichere Konfigurationen um. Standardzugänge durch individuelle starke Authentifizierung ersetzen; unnötige Dienste entfernen/deaktivieren; Standardnutzung ohne Adminrechte und getrennte Administrationskonten einrichten. Zusätzlich Updates und Richtlinien kontrolliert verteilen. Sicherheitslogs ermöglichen Erkennung und Nachvollziehbarkeit, benötigen aber Zweckbindung, minimale Inhalte, Zugriffsschutz und festgelegte Aufbewahrung; keine Passwörter protokollieren. Bei KI-Diensten müssen Vertraulichkeit, erlaubte Datenverarbeitung und Anbieterbedingungen geprüft werden; vertrauliche Inhalte nur innerhalb ausdrücklich freigegebener Verfahren verarbeiten. KI-Ausgaben müssen fachlich geprüft werden.",
+        "anchors": [
+          "Härtung erklären",
+          "drei konkrete Änderungen",
+          "Logging-Nutzen mit Datenschutzgrenzen",
+          "KI-Datenweitergabe und fachliche Prüfung"
+        ],
+        "oral": "Was gehört zur Härtung und zu einem verantwortlichen Umgang mit Protokollen und KI-Diensten?",
+        "spoken": "Ich reduziere unnötige Angriffsflächen, ersetze Standardzugänge, schalte unnötige Dienste ab und trenne normale Nutzung von Administration. Sicherheitsprotokolle helfen bei Erkennung und Nachweis, dürfen aber nicht unbegrenzt oder mit Passwörtern gefüllt werden. Für Kundendaten gelten auch bei KI-Diensten Vertraulichkeit und freigegebene Verarbeitungsregeln. Eine überzeugend formulierte KI-Antwort ersetzt keine fachliche Prüfung.",
+        "priority": "P2",
+        "sources": [
+          "NAT23F",
+          "NAT26",
+          "UNT"
+        ]
+      }
+    ]
+  }
+]

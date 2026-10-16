@@ -1,0 +1,346 @@
+[
+  {
+    "chapter": "Programmierung, Algorithmen und Tests",
+    "file": "01-programmierung.mp3",
+    "duration_seconds": 314.77,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2518983,
+    "sha256": "0dc05b26e58efaf1269616bc3ed7451783afb12d58edded569cd9bf6450524fb",
+    "markers": [
+      {
+        "id": "01.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "01.02",
+        "seconds": 34.45
+      },
+      {
+        "id": "01.03",
+        "seconds": 74.12
+      },
+      {
+        "id": "01.04",
+        "seconds": 112.08
+      },
+      {
+        "id": "01.05",
+        "seconds": 156.2
+      },
+      {
+        "id": "01.06",
+        "seconds": 194.69
+      },
+      {
+        "id": "01.07",
+        "seconds": 234.56
+      },
+      {
+        "id": "01.08",
+        "seconds": 274.5
+      }
+    ]
+  },
+  {
+    "chapter": "Datenmodellierung und SQL",
+    "file": "02-datenbanken-sql.mp3",
+    "duration_seconds": 306.62,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2453691,
+    "sha256": "37e39b38ad5baf2b59311b099026e7509a20354c01c6e5c815a1235c6cf41861",
+    "markers": [
+      {
+        "id": "02.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "02.02",
+        "seconds": 38.31
+      },
+      {
+        "id": "02.03",
+        "seconds": 81.81
+      },
+      {
+        "id": "02.04",
+        "seconds": 116.64
+      },
+      {
+        "id": "02.05",
+        "seconds": 155.63
+      },
+      {
+        "id": "02.06",
+        "seconds": 193.66
+      },
+      {
+        "id": "02.07",
+        "seconds": 227.6
+      },
+      {
+        "id": "02.08",
+        "seconds": 264.07
+      }
+    ]
+  },
+  {
+    "chapter": "Netzwerkkonfiguration und Diagnose",
+    "file": "03-netzwerk.mp3",
+    "duration_seconds": 313.02,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2504964,
+    "sha256": "996e05f5a966fe65313f34c4ac4784f36d8bb5ac5f259afe03c790bc470dadbb",
+    "markers": [
+      {
+        "id": "03.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "03.02",
+        "seconds": 38.3
+      },
+      {
+        "id": "03.03",
+        "seconds": 77.32
+      },
+      {
+        "id": "03.04",
+        "seconds": 114.01
+      },
+      {
+        "id": "03.05",
+        "seconds": 152.96
+      },
+      {
+        "id": "03.06",
+        "seconds": 195.5
+      },
+      {
+        "id": "03.07",
+        "seconds": 231.61
+      },
+      {
+        "id": "03.08",
+        "seconds": 273.86
+      }
+    ]
+  },
+  {
+    "chapter": "Schutzbedarf, Datenschutz und Wiederherstellung",
+    "file": "04-sicherheit.mp3",
+    "duration_seconds": 329.48,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2636689,
+    "sha256": "9bc0a4b9f432d2b261a746f2bd768fe6c9a205b4bfba74ad2f302af87c17bbc6",
+    "markers": [
+      {
+        "id": "04.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "04.02",
+        "seconds": 38.36
+      },
+      {
+        "id": "04.03",
+        "seconds": 74.88
+      },
+      {
+        "id": "04.04",
+        "seconds": 114.82
+      },
+      {
+        "id": "04.05",
+        "seconds": 156.76
+      },
+      {
+        "id": "04.06",
+        "seconds": 195.96
+      },
+      {
+        "id": "04.07",
+        "seconds": 243.4
+      },
+      {
+        "id": "04.08",
+        "seconds": 287.21
+      }
+    ]
+  },
+  {
+    "chapter": "Rechnen, Hardware und Verfügbarkeit",
+    "file": "05-rechnen-hardware.mp3",
+    "duration_seconds": 322.4,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2580038,
+    "sha256": "6998cc117e31d84070db819fa23de97d24129adf20a547393c4815e0eb32dad8",
+    "markers": [
+      {
+        "id": "05.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "05.02",
+        "seconds": 41.39
+      },
+      {
+        "id": "05.03",
+        "seconds": 81.85
+      },
+      {
+        "id": "05.04",
+        "seconds": 123.56
+      },
+      {
+        "id": "05.05",
+        "seconds": 163.2
+      },
+      {
+        "id": "05.06",
+        "seconds": 201.17
+      },
+      {
+        "id": "05.07",
+        "seconds": 242.15
+      },
+      {
+        "id": "05.08",
+        "seconds": 282.14
+      }
+    ]
+  },
+  {
+    "chapter": "Beschaffung, Angebote und kaufmännisches Rechnen",
+    "file": "06-beschaffung.mp3",
+    "duration_seconds": 314.0,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2512851,
+    "sha256": "524de1e375b5f1a8a16c56c9433c2537b47b2a4ecd217df01375011c316083cc",
+    "markers": [
+      {
+        "id": "06.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "06.02",
+        "seconds": 39.94
+      },
+      {
+        "id": "06.03",
+        "seconds": 74.49
+      },
+      {
+        "id": "06.04",
+        "seconds": 112.24
+      },
+      {
+        "id": "06.05",
+        "seconds": 152.65
+      },
+      {
+        "id": "06.06",
+        "seconds": 195.09
+      },
+      {
+        "id": "06.07",
+        "seconds": 233.24
+      },
+      {
+        "id": "06.08",
+        "seconds": 270.41
+      }
+    ]
+  },
+  {
+    "chapter": "Service, Organisation, Projekt und UML",
+    "file": "07-service-organisation.mp3",
+    "duration_seconds": 315.62,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2525704,
+    "sha256": "2e2adbb1da7fe4d347185a4362a1f9dd9e29744611a3f0ceec10dd5291cb8dd0",
+    "markers": [
+      {
+        "id": "07.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "07.02",
+        "seconds": 37.76
+      },
+      {
+        "id": "07.03",
+        "seconds": 78.34
+      },
+      {
+        "id": "07.04",
+        "seconds": 115.1
+      },
+      {
+        "id": "07.05",
+        "seconds": 161.36
+      },
+      {
+        "id": "07.06",
+        "seconds": 200.35
+      },
+      {
+        "id": "07.07",
+        "seconds": 235.11
+      },
+      {
+        "id": "07.08",
+        "seconds": 277.94
+      }
+    ]
+  },
+  {
+    "chapter": "Ergänzungen aus bundesweiten Prüfungen und Unterricht",
+    "file": "08-ergaenzungen.mp3",
+    "duration_seconds": 342.29,
+    "voice": "Anna (macOS, de_DE)",
+    "rate": "155 Wörter/Minute",
+    "bytes": 2739225,
+    "sha256": "c3689e0aaa7aa8bd1cf94498796dcb1fb77e742c2a74044488f1646c3e807ab8",
+    "markers": [
+      {
+        "id": "08.01",
+        "seconds": 0.0
+      },
+      {
+        "id": "08.02",
+        "seconds": 44.21
+      },
+      {
+        "id": "08.03",
+        "seconds": 83.87
+      },
+      {
+        "id": "08.04",
+        "seconds": 123.82
+      },
+      {
+        "id": "08.05",
+        "seconds": 166.51
+      },
+      {
+        "id": "08.06",
+        "seconds": 209.45
+      },
+      {
+        "id": "08.07",
+        "seconds": 251.13
+      },
+      {
+        "id": "08.08",
+        "seconds": 297.8
+      }
+    ]
+  }
+]

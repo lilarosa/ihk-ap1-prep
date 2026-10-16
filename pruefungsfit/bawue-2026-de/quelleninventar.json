@@ -1,0 +1,338 @@
+[
+  {
+    "index": 0,
+    "filename": "PrüfungSo_22_T1.pdf",
+    "sha256": "888c51f53a8de53c939af94625d20ce4618ab2e8d9b2d0253bcfacc03b4a5f47",
+    "pages": 12,
+    "characters": 15808,
+    "method": "Cache",
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 1,
+    "filename": "Prüfung_So_T1_22_Loesungen.pdf",
+    "sha256": "4a2f2604a6b123985fec918b38ea697d05763eaad1029fbdbb10d8ac80cdd56c",
+    "pages": 4,
+    "characters": 6797,
+    "method": "Cache",
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 2,
+    "filename": "Abschlusspruefung Winter 2022-23 AP1.pdf",
+    "sha256": "4da415d7f3641810bbec8bcbc25264b09ce39bd83b8884cce216f34849147cb6",
+    "pages": 16,
+    "method": "OCR",
+    "characters": 16944,
+    "tags": [
+      "SQL",
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 3,
+    "filename": "Sommerprï¿½fung 2022 AP1 AUFGABEN.pdf",
+    "sha256": "a8f86461db79d9de75aaf62c1142dc716129abed3f60b27f8b4f87a8d3c81d4a",
+    "pages": 12,
+    "method": "OCR",
+    "characters": 18033,
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 4,
+    "filename": "Sommerprï¿½fung 2022 AP1 Lâ_¢SUNGEN.pdf",
+    "sha256": "db22e84ec0f25c92c0b25c0f6614522d8593fcec4859c8397de3480782276718",
+    "pages": 4,
+    "method": "OCR",
+    "characters": 7513,
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 5,
+    "filename": "Sommer 2023 AP1 Baden-Wuerttemberg AUFGABEN.pdf",
+    "sha256": "8a15169917e8205fd7dd1e82ae03755bd8c3fb277c5fcccb11a9ca61b32a60a9",
+    "pages": 16,
+    "method": "OCR",
+    "characters": 17713,
+    "tags": [
+      "SQL",
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 6,
+    "filename": "Sommer 2023 AP1 Baden-Wuerttemberg LoeSUNGEN.pdf",
+    "sha256": "1e64b30b212cc1b1c28e460a2cc9951fb732fbbd6ea314ea288221fca50faa98",
+    "pages": 6,
+    "method": "OCR",
+    "characters": 8675,
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 7,
+    "filename": "W2023_AP1.pdf",
+    "sha256": "7406a43efef32bfbec42878146ac014562267740b48972e3ee69c33c963c2e12",
+    "pages": 10,
+    "method": "OCR",
+    "characters": 14101,
+    "tags": [
+      "SQL",
+      "Programmierung",
+      "Netzwerk",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 8,
+    "filename": "W2023_AP1_Loesungen.pdf",
+    "sha256": "d0f69fae403ac36d85f10cbc5060aa412776e24579893f793ac97406cc22faa5",
+    "pages": 6,
+    "method": "OCR",
+    "characters": 9576,
+    "tags": [
+      "SQL",
+      "Netzwerk",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 9,
+    "filename": "Sommer 2023 AP1 Baden-Wuettemberg LoeSUNGEN.pdf",
+    "sha256": "1e64b30b212cc1b1c28e460a2cc9951fb732fbbd6ea314ea288221fca50faa98",
+    "duplicate_of": 6
+  },
+  {
+    "index": 10,
+    "filename": "AP 1 Aufgaben Sommer 2024 Baden Wuerttemberg.pdf",
+    "sha256": "ab48887ec9ab3255a76a70a4bcc8e73f09fa35d963d59766b5844d20011e85e1",
+    "pages": 16,
+    "method": "OCR",
+    "characters": 14936,
+    "tags": [
+      "SQL",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 11,
+    "filename": "AP 1 Loesungen Sommer 2024 Baden Wuerttemberg.pdf",
+    "sha256": "9569ab0bcdd1f43f2e6ccc4bcc4c54d101846ef676478bd61d3dc7fb957d0027",
+    "pages": 3,
+    "method": "OCR",
+    "characters": 4684,
+    "tags": [
+      "SQL",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 12,
+    "filename": "Herbst Teil 1 2023 BaWü Aufgaben.pdf",
+    "sha256": "ffa741a32488fb35c0113113baa119a27c2d37c7fd4d86892abd72b493c72e76",
+    "pages": 7,
+    "method": "OCR",
+    "characters": 10159,
+    "tags": [
+      "SQL",
+      "Programmierung",
+      "Netzwerk",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 13,
+    "filename": "Sommer Teil 1 2023 BaWü Aufgaben.pdf",
+    "sha256": "17ee1b82e73013032b74e7ee81f772588cf31c9140cee0ede175ed4c052a7160",
+    "pages": 15,
+    "method": "OCR",
+    "characters": 17734,
+    "tags": [
+      "SQL",
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 14,
+    "filename": "Sommer Teil 1 2023 BaWü.pdf",
+    "sha256": "02cdf8cb18468a9c5cb372be9210e4b7ffc7beca1bc57c92ba205a47fab714b0",
+    "pages": 6,
+    "method": "OCR",
+    "characters": 8680,
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 15,
+    "filename": "AP1_2024.pdf",
+    "sha256": "35063c76df13fa8fe8b5ce0aa7b5f18985e98dc0b0f5eaa064f449e8bed58e22",
+    "pages": 9,
+    "method": "OCR",
+    "characters": 14427,
+    "tags": [
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit"
+    ]
+  },
+  {
+    "index": 16,
+    "filename": "AP1_2024_Lösungen.pdf",
+    "sha256": "a8653222d1699992cd617beb6c60f61c193055216ba60bcc2dd20f0ec2c69cb2",
+    "pages": 8,
+    "characters": 11063,
+    "method": "Cache",
+    "tags": [
+      "Netzwerk",
+      "Beschaffung",
+      "Sicherheit"
+    ]
+  },
+  {
+    "index": 17,
+    "filename": "APT1_2021H.pdf",
+    "sha256": "29ae011c8401477ac58341d919ec8630d11ca8373406dfa2cb969f516ff91749",
+    "pages": 11,
+    "characters": 15586,
+    "method": "Cache",
+    "tags": [
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 18,
+    "filename": "APT1-FJ2022_cut.pdf",
+    "sha256": "3d41ed2015a9650ba8e33b0e6553f79c9ea3077300608d62ca15abf8243da5a9",
+    "pages": 14,
+    "method": "OCR",
+    "characters": 18978,
+    "tags": [
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 19,
+    "filename": "2022 APT1 Herbst - Lösungen.pdf",
+    "sha256": "7773dddd57426d724ca9a84887c62d5ee0b5f6ac15b9e65d31bf7c8fa0055ded",
+    "pages": 6,
+    "method": "OCR",
+    "characters": 8387,
+    "tags": [
+      "SQL",
+      "Netzwerk",
+      "Sicherheit",
+      "Organisation"
+    ]
+  },
+  {
+    "index": 20,
+    "filename": "2022 APT1 Herbst.pdf",
+    "sha256": "06329780d44d3933c3cc042b88faa33a09dbd572e4a3e70794f227c98d87ff7e",
+    "pages": 13,
+    "method": "OCR",
+    "characters": 22783,
+    "tags": [
+      "SQL",
+      "Programmierung",
+      "Netzwerk",
+      "Beschaffung"
+    ]
+  },
+  {
+    "index": 21,
+    "filename": "2023_Frühjahr_Aufgabe.pdf",
+    "sha256": "1a20edc52a14943991fb2af09fb2585d644b372c7d7fa2effe41b6003d007a73",
+    "pages": 14,
+    "method": "OCR",
+    "characters": 21623,
+    "tags": [
+      "SQL",
+      "Beschaffung",
+      "Sicherheit"
+    ]
+  },
+  {
+    "index": 22,
+    "filename": "2023_Frühjahr_Lösung.pdf",
+    "sha256": "3f7ed82ff8a396fd16ef04f3e43e50c5c605d14cdbffadaf82a050a7d2eb397e",
+    "pages": 5,
+    "method": "OCR",
+    "characters": 7997,
+    "tags": [
+      "SQL",
+      "Sicherheit"
+    ]
+  },
+  {
+    "index": 23,
+    "filename": "Abschlussprüfung APT1 Herbst 2023.pdf",
+    "sha256": "8b3dc98eb272c4794daafafa932c795860ed0531ef04df4ccc258e32812f57e3",
+    "pages": 16,
+    "method": "OCR",
+    "characters": 22246,
+    "tags": [
+      "SQL",
+      "Beschaffung",
+      "Sicherheit",
+      "Organisation"
+    ]
+  }
+]
