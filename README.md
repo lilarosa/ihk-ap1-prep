@@ -1,5 +1,11 @@
 # ihk-ap1-prep
 
+## Programmierung üben: Einstieg mit 6 Diagnoseaufgaben
+
+[Bedingungen, Schreibtischtest, Schleifen, Fehlersuche, Durchschnitt und CSV](tasks/programmierung-diagnose-01/README.md)
+
+Deutschsprachige Aufgaben mit chinesischen Lernhinweisen, getrennten ausführlichen Lösungen und ausführbarem Java-Beispiel. Zuerst Aufgaben 1 bis 4 selbst lösen, danach vergleichen.
+
 ## Neu: AP1 BaWü Prüfungsfit auf Deutsch
 
 [64 Aufgaben, getrennte Lösungen, A4-PDFs und 8 deutsche MP3-Kapitel](pruefungsfit/bawue-2026-de/README.md)
