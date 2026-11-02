@@ -1,0 +1,103 @@
+Kapitel 5. Informationssicherheit, Angriffe und Schutzmaßnahmen.
+
+Vertraulichkeit bedeutet Schutz vor unberechtigtem Lesen. Integrität bedeutet Schutz vor unberechtigter oder unbemerkter Veränderung.
+
+Verfügbarkeit bedeutet rechtzeitige Nutzbarkeit. Ein System kann vertraulich und trotzdem nicht verfügbar sein.
+
+Zu jedem Schutzziel gehört ein konkreter möglicher Schaden. Erst daraus werden passende Schutzmaßnahmen abgeleitet.
+
+Schutzbedarf wird häufig als normal, hoch oder sehr hoch eingestuft. Maßgeblich sind die vorgegebenen Schadenskriterien.
+
+Eine Einstufung wird begründet, nicht nur angekreuzt. Vertrauliche Kundendaten und existenzkritische Abläufe benötigen unterschiedliche Betrachtungen.
+
+Nach dem Maximumprinzip übernimmt ein System je Schutzziel die höchste relevante Anforderung seiner abhängigen Anwendungen. Ein einfacher Mittelwert wäre ungeeignet.
+
+Kumulation kann den Schutzbedarf erhöhen. Viele einzeln kleine Schäden können zusammen schwerwiegend werden.
+
+Verteilung kann Abhängigkeiten verändern. Solche Effekte müssen begründet werden und sind keine pauschalen Ausnahmen.
+
+Eine Bedrohung ist ein mögliches schädigendes Ereignis. Eine Schwachstelle erleichtert dessen Eintritt oder Wirkung.
+
+Risiko berücksichtigt Eintrittswahrscheinlichkeit und Schadensausmaß. Eine Maßnahme sollte zum konkreten Risiko passen.
+
+Technische und organisatorische Maßnahmen ergänzen sich. Eine Firewall ersetzt beispielsweise keine klare Zuständigkeit.
+
+Least Privilege bedeutet minimale notwendige Rechte. Nicht benötigte Rechte werden entzogen.
+
+Need to know beschränkt Informationszugriff auf den Aufgabenbedarf. Neugier allein begründet keine Berechtigung.
+
+Mehrfaktor-Authentifizierung kombiniert unabhängige Faktoren. Zwei verschiedene Passwörter sind nicht automatisch zwei Faktoren.
+
+Wissen, Besitz und körperliches Merkmal sind typische Faktoren. Ein Passwort und ein geeigneter Sicherheitsschlüssel können kombiniert werden.
+
+Starke Passwörter sind ausreichend lang, schwer vorhersehbar und einzigartig. Ein Passwortmanager unterstützt ihre Verwaltung.
+
+Standardkennwörter und ungenutzte Konten erhöhen das Risiko. Sichere Erstkonfiguration verändert beziehungsweise entfernt sie.
+
+Härtung reduziert unnötige Angriffsflächen. Unnötige Dienste werden deaktiviert und sichere Einstellungen durchgesetzt.
+
+Eine Firewall erlaubt oder sperrt Kommunikation nach Regeln. Sie benötigt eine passende Platzierung zwischen Sicherheitszonen.
+
+Eine zustandsbehaftete Firewall berücksichtigt Verbindungszustände. Das ersetzt keine Prüfung sämtlicher Anwendungsrisiken.
+
+Netzsegmentierung begrenzt mögliche Ausbreitung. Rechte und Regeln zwischen den Segmenten müssen trotzdem stimmen.
+
+Schadsoftware umfasst unter anderem Viren, Würmer und Trojaner. Diese Begriffe beschreiben unterschiedliche Eigenschaften.
+
+Ein Virus hängt typischerweise an einem Wirtsobjekt. Ein Wurm kann sich selbstständig über geeignete Wege verbreiten.
+
+Ein Trojaner täuscht eine nützliche oder harmlose Funktion vor. Seine schädliche Wirkung ist darin verborgen.
+
+Ransomware kann Daten verschlüsseln und Dienste blockieren. Zusätzlicher Datendiebstahl bedroht die Vertraulichkeit.
+
+Eine bloße Erpressungsdrohung beweist einen Datenabfluss noch nicht. Die Untersuchung muss den tatsächlichen Umfang klären.
+
+Phishing täuscht vertrauenswürdige Kommunikation vor. Ziel sind etwa Zugangsdaten, Zahlungen oder das Öffnen schädlicher Inhalte.
+
+Social Engineering nutzt menschliches Verhalten aus. Zeitdruck, Autorität und Hilfsbereitschaft können dafür missbraucht werden.
+
+Verdächtige Anfragen werden über einen bekannten unabhängigen Kanal geprüft. Die Telefonnummer aus der verdächtigen Nachricht ist dafür nicht automatisch geeignet.
+
+Bei einem vermuteten Sicherheitsvorfall werden betroffene Systeme kontrolliert isoliert. Der vorgesehene Melde- und Eskalationsweg wird aktiviert.
+
+Beweise und Protokolle sollen erhalten bleiben. Unkoordiniertes Löschen oder Neuinstallieren kann die Untersuchung erschweren.
+
+Verschlüsselung schützt Inhalte mit einem Schlüssel. Entschlüsselung macht sie mit dem passenden Schlüssel wieder lesbar.
+
+Symmetrische Verschlüsselung verwendet denselben geheimen Schlüssel auf beiden Seiten. Seine sichere Verteilung ist wichtig.
+
+Asymmetrische Verfahren verwenden ein Schlüsselpaar. Öffentlicher und privater Schlüssel haben unterschiedliche Rollen.
+
+Bei asymmetrischer Vertraulichkeit wird für den Empfänger mit dessen öffentlichem Schlüssel verschlüsselt. Entschlüsselt wird mit dessen privatem Schlüssel.
+
+Eine digitale Signatur wird mit dem privaten Signaturschlüssel erzeugt. Der zugehörige öffentliche Schlüssel dient zur Prüfung.
+
+Ein Hash ist keine rückwärts entschlüsselbare Geheimschrift. Eine passende Hashfunktion dient unter anderem der Integritätsprüfung.
+
+Passwörter brauchen geeignete langsame Passwort-Hashverfahren mit individuellem Salt. Ein einfacher schneller Hash ist dafür keine gute Standardlösung.
+
+Ein Zertifikat bindet einen öffentlichen Schlüssel an eine Identität. Vertrauenskette, Gültigkeit und passende Identität werden geprüft.
+
+T L S schützt bei korrekter Prüfung einen Kommunikationskanal. Es beweist nicht, dass jeder Inhalt des Servers fachlich richtig ist.
+
+H T T P S ist H T T P über einen geschützten T L S-Kanal. Ein Schlosszeichen allein beweist keine ehrliche Geschäftsabsicht.
+
+Sicherheitsprotokolle helfen bei Erkennung und Nachvollziehbarkeit. Sie brauchen Zugriffsschutz und einen klaren Zweck.
+
+Backups, Updates, Schulung und Monitoring ergänzen sich. Einzelmaßnahmen bieten keinen absoluten Schutz.
+
+Hybride Verschlüsselung kombiniert asymmetrische und symmetrische Verfahren. Der Datentransport nutzt dabei üblicherweise einen geeignet vereinbarten symmetrischen Sitzungsschlüssel.
+
+Eine Zertifizierungsstelle bestätigt Zertifikatsbindungen nach ihren Prüfregeln. Vertrauen entsteht nicht allein dadurch, dass irgendein Zertifikat existiert.
+
+Ein selbstsigniertes Zertifikat hat ohne zusätzlichen Vertrauensaufbau keine allgemein anerkannte Vertrauenskette. Eine Warnung sollte nicht gedankenlos übergangen werden.
+
+Defense in Depth kombiniert mehrere Schutzschichten. Der Ausfall einer einzelnen Maßnahme soll nicht sofort alle Grenzen beseitigen.
+
+Zero Trust verlangt keine pauschale Vertrauensannahme allein wegen eines internen Standorts. Zugriffe werden passend zu Identität, Kontext und Risiko geprüft.
+
+Das Vier-Augen-Prinzip verlangt eine zweite zuständige Prüfung bei kritischen Handlungen. Es reduziert bestimmte Fehler- und Missbrauchsrisiken.
+
+Zutritt betrifft Räume, Zugang betrifft die Systemnutzung. Zugriff betrifft konkrete Daten und Funktionen nach der Anmeldung.
+
+Ein Notfallplan regelt Zuständigkeiten, Kommunikation und Wiederanlauf. Er muss im Notfall erreichbar und praktisch erprobt sein.

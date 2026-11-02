@@ -1,0 +1,71 @@
+Kapitel 6. Datenschutz, Datensicherung und Wiederherstellung.
+
+Datenschutz schützt natürliche Personen bei der Verarbeitung personenbezogener Daten. Informationssicherheit schützt Informationen allgemein.
+
+Personenbezogene Daten beziehen sich auf identifizierte oder identifizierbare Menschen. Auch indirekte Zuordnung kann dafür ausreichen.
+
+Gesundheitsdaten gehören zu besonders geschützten Datenkategorien. Nicht jedes vertrauliche Unternehmensdokument ist deshalb personenbezogen.
+
+Für eine Verarbeitung ist eine passende Rechtsgrundlage nötig. Einwilligung ist eine Möglichkeit, aber nicht die einzige.
+
+Zweckbindung bedeutet Verwendung für festgelegte zulässige Zwecke. Eine spätere beliebige Nutzung ist dadurch nicht automatisch erlaubt.
+
+Datenminimierung begrenzt die Verarbeitung auf notwendige Daten. Vorratssammlung ohne konkreten Bedarf widerspricht diesem Prinzip.
+
+Speicherbegrenzung verlangt geeignete Fristen und Löschregeln. Daten bleiben nicht allein aus Bequemlichkeit unbegrenzt erhalten.
+
+Betroffene Personen müssen angemessen informiert werden. Auch ihre anwendbaren Rechte müssen organisatorisch unterstützt werden.
+
+Auftragsverarbeitung erfordert passende vertragliche und organisatorische Regelungen. Ein Cloudvertrag allein löst nicht alle Datenschutzfragen.
+
+Videoaufnahmen erkennbarer Personen sind regelmäßig personenbezogene Daten. Zweck, Erforderlichkeit und Interessenabwägung sind zu prüfen.
+
+Ein Hinweisschild ersetzt keine Rechtsgrundlage für Videoüberwachung. Es erfüllt höchstens einen Teil der Informationspflichten.
+
+Öffentliche Gehwege dürfen durch Private nicht pauschal mitüberwacht werden. Bildausschnitt und Maskierung können die Erfassung begrenzen.
+
+Für Videoaufnahmen gibt es keine beliebig erfundene allgemeine Speicherfrist. Die Dauer muss zum zulässigen Zweck passen.
+
+Bei einer Datenpanne werden Verantwortliche und Datenschutzfunktion unverzüglich eingebunden. Mögliche Meldepflichten und Fristen werden gezielt geprüft.
+
+Eine Meldung an die Aufsicht muss unter den gesetzlichen Voraussetzungen unverzüglich und möglichst binnen 72 Stunden erfolgen. Nicht jede Störung ist automatisch meldepflichtig.
+
+Beim Weitergeben alter Geräte werden benötigte Daten zuerst geordnet übernommen. Danach erfolgt eine geeignete sichere Löschung.
+
+Papierkorb und Schnellformatierung löschen Daten nicht zuverlässig gegen Wiederherstellung. Das Verfahren muss zum Datenträger passen.
+
+Raid erhöht je nach Aufbau die Verfügbarkeit bei bestimmten Laufwerksausfällen. Es ist kein Ersatz für ein Backup.
+
+Raid schützt nicht allgemein gegen versehentliches Löschen, Ransomware oder Brand. Solche Schäden können den gesamten Verbund treffen.
+
+Raid 1 spiegelt Daten. Bei zwei gleich großen Platten entspricht die nutzbare Kapazität grundsätzlich einer Platte.
+
+Raid 5 verteilt Daten und Parität. Es toleriert den Ausfall einer Platte.
+
+Raid 10 kombiniert Spiegelung und Striping. Mehrere Ausfälle sind nur bei geeigneter Verteilung auf die Spiegelpaare tolerierbar.
+
+Fallen beide Platten desselben Raid-10-Spiegelpaars aus, kann der gesamte Verbund ausfallen. Die reine Anzahl ausgefallener Platten genügt zur Bewertung nicht.
+
+Eine vollständige Sicherung kopiert den gesamten ausgewählten Datenbestand. Sie vereinfacht oft die Wiederherstellung, benötigt aber mehr Sicherungsaufwand.
+
+Eine inkrementelle Sicherung speichert Änderungen seit der letzten passenden Sicherung. Zur Wiederherstellung wird die benötigte Kette gebraucht.
+
+Eine differentielle Sicherung speichert Änderungen seit der letzten Vollsicherung. Zur Wiederherstellung genügen grundsätzlich Vollsicherung und passende differentielle Sicherung.
+
+Die 3-2-1-Regel bedeutet drei Kopien insgesamt. Sie verteilt sich auf zwei Medientypen und eine räumlich getrennte Kopie.
+
+Eine offline oder unveränderlich geschützte Kopie erschwert gemeinsame Verschlüsselung. Auch ihre Zugangsdaten müssen geschützt werden.
+
+R P O beschreibt den maximal tolerierten Datenverlust als Zeitspanne. Dazu müssen geeignete Wiederherstellungspunkte existieren.
+
+R T O beschreibt die angestrebte maximale Wiederanlaufzeit. Dazu gehören mehr Schritte als nur das Kopieren einer Datei.
+
+Ein vorhandenes Backup ist noch kein bewiesener erfolgreicher Restore. Wiederherstellung wird regelmäßig getestet und dokumentiert.
+
+Redundante Netzteile, Hosts und Netzwege reduzieren bestimmte Ausfallrisiken. Gemeinsame Ausfallursachen müssen gesondert betrachtet werden.
+
+Pseudonymisierung ersetzt direkte Zuordnungsmerkmale durch Kennzeichen. Mit zusätzlichen Informationen bleibt eine Zuordnung möglich.
+
+Anonymisierung soll einen Personenbezug wirksam und dauerhaft aufheben. Pseudonymisierte Daten bleiben grundsätzlich personenbezogen.
+
+Ein Geschäftsgeheimnis ist nicht einfach jede unveröffentlichte Information. Unter anderem sind Geheimniswert und angemessene Geheimhaltungsmaßnahmen wichtig.

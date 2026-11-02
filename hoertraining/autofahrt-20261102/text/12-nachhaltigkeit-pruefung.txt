@@ -1,0 +1,61 @@
+Kapitel 12. Nachhaltigkeit, K I und die letzten Prüfungsregeln.
+
+Green IT betrachtet den gesamten Lebenszyklus. Herstellung, Nutzung, Reparatur und Entsorgung verbrauchen Ressourcen.
+
+Ein niedriger Stromverbrauch allein beweist nicht die beste Umweltbilanz. Nutzungsdauer und Herstellungsaufwand gehören zur Bewertung.
+
+Reparierbarkeit und verfügbare Ersatzteile können die Nutzung verlängern. Ein Austausch sollte zum Bedarf passen.
+
+Energiesparfunktionen reduzieren unnötigen Verbrauch. Sie werden so eingerichtet, dass betriebliche Anforderungen weiterhin erfüllt sind.
+
+Ausgediente Elektronik gehört in geeignete Verwertungswege. Daten werden vorher mit einem passenden Verfahren geschützt entfernt.
+
+Ein Nachhaltigkeitsvorschlag braucht eine konkrete Wirkung. Weniger Energie, längere Nutzung oder vermiedener Abfall sind nachvollziehbare Wirkungen.
+
+Generative K I erzeugt plausible Ausgaben, aber keine garantierte Wahrheit. Fachliche Prüfung bleibt erforderlich.
+
+Fehlerhafte K I-Aussagen können überzeugend formuliert sein. Quellen, Zahlen und Code werden deshalb überprüft.
+
+Vertrauliche Kundendaten gehören nicht ungeprüft in öffentliche K I-Dienste. Freigabe, Verarbeitungsvorgaben und Datenschutz müssen passen.
+
+Auch K I-generierter Code kann Sicherheitslücken enthalten. Ein bestandener Einzeltest ersetzt keine geeignete Prüfung.
+
+Im Prüfungstext bestimmt der Operator die Antworttiefe. Nennen verlangt andere Tiefe als erläutern oder begründen.
+
+Bei Nennen werden die geforderten Punkte präzise aufgeführt. Bei Beschreiben wird Merkmal oder Ablauf verständlich dargestellt.
+
+Bei Erläutern wird ein Zusammenhang erklärt und auf den Fall bezogen. Bei Begründen folgen Entscheidung, fachlicher Grund und konkrete Auswirkung.
+
+Bei Bewerten werden passende Kriterien abgewogen. Am Ende steht ein nachvollziehbares Urteil.
+
+Die geforderte Anzahl von Antworten wird eingehalten. Unsichere Zusatzangaben verbessern einen klaren richtigen Punkt nicht automatisch.
+
+Eine Sicherheitsantwort verbindet Schutzziel, möglichen Schaden und Maßnahme. Ein reines Schlagwort erfüllt eine Begründung oft nicht.
+
+Eine Diagnoseantwort verbindet Ursache, Prüfung und Behebung. Danach wird der erfolgreiche Zustand erneut getestet.
+
+Eine Auswahlantwort nennt die gewählte Lösung und passende Eigenschaft. Anschließend wird ihr Nutzen für den konkreten Kunden erklärt.
+
+Bei Programmieraufgaben werden zuerst Eingabe und Ausgabe geklärt. Dann folgen Initialisierung, Schleife, Bedingung und Rückgabe.
+
+Bei S Q L werden Tabelle, Spalten, Filter und Sortierung systematisch geprüft. Änderungen brauchen eine passende Einschränkung.
+
+Bei Aufgaben mit Anlagen werden die vorgegebenen Daten verwendet. Eigene Annahmen werden nicht als Kundenfakten ausgegeben.
+
+Wenn eine vollständige Lösung fehlt, bleiben nachvollziehbare Teilschritte wertvoll. Korrekte Formeln, Bedingungen und begründete Ansätze werden sauber notiert.
+
+Eine gelernte Definition wird auf die konkrete Situation übertragen. Der Bezug zum Kunden oder Prozess macht die Antwort prüfbar.
+
+Diese Wiederholung bündelt wichtige Grundlagen und ausgewertete Aufgabentypen. Die genaue kommende Prüfung lässt sich daraus nicht vorhersagen.
+
+Energieeffizienz beschreibt das Verhältnis von Nutzen zu eingesetzter Energie. Ein effizienteres Gerät kann bei viel stärkerer Nutzung trotzdem mehr Gesamtenergie verbrauchen.
+
+Ein Rebound-Effekt verringert erwartete Einsparungen durch zusätzliche Nutzung. Deshalb werden auch absolute Verbräuche betrachtet.
+
+Maschinelles Lernen gewinnt Muster aus Trainingsdaten. Es ist nicht dasselbe wie eine feste Liste manuell formulierter Wenn-Dann-Regeln.
+
+Training passt Modellparameter anhand von Daten an. Inferenz verwendet das trainierte Modell für neue Eingaben.
+
+Bias bezeichnet systematische Verzerrung. Ungeeignete Daten und unpassende Auswertung können betriebliche Entscheidungen verfälschen.
+
+Halluzination bezeichnet überzeugend erzeugte, aber unzutreffende Inhalte. Sprachliche Sicherheit ist kein Beweis für fachliche Richtigkeit.

@@ -1,0 +1,119 @@
+{
+  "voice": "de-DE-ConradNeural",
+  "rate": "-5%",
+  "inserted_silence_seconds": 0,
+  "chapters": [
+    {
+      "file": "01-arbeitsplatz-hardware.mp3",
+      "title": "Arbeitsplatz, Hardware und Schnittstellen",
+      "points": 37,
+      "start_seconds": 0.0,
+      "duration_seconds": 336.84,
+      "sha256": "95b535dc3f119d8330e2e2d6477e1d6c4acc1372b6dca0967cc2b930f52216a3",
+      "bytes": 3369266
+    },
+    {
+      "file": "02-betriebssystem-cloud.mp3",
+      "title": "Betriebssystem, Rechte, Cloud und Virtualisierung",
+      "points": 37,
+      "start_seconds": 336.84,
+      "duration_seconds": 353.76,
+      "sha256": "58c3978b4c2a8b4605e3a726dffdb7cb81c269dd902d5bd1caed23e88877a82d",
+      "bytes": 3538474
+    },
+    {
+      "file": "03-netzwerk-ipv4.mp3",
+      "title": "Netzwerkgrundlagen, IPv4 und Fehlersuche",
+      "points": 44,
+      "start_seconds": 690.6,
+      "duration_seconds": 414.552,
+      "sha256": "7e35b1736dbcff99c9223d07e4f5d6c167a107929b5c0af3510d712d97e1edf8",
+      "bytes": 4146385
+    },
+    {
+      "file": "04-ipv6-wlan.mp3",
+      "title": "IPv6, WLAN und Netzsegmentierung",
+      "points": 33,
+      "start_seconds": 1105.152,
+      "duration_seconds": 316.272,
+      "sha256": "def15dd1a83c7faa72ef81649a671a6c0245c60df3550bc62adaa85d0f459a20",
+      "bytes": 3163577
+    },
+    {
+      "file": "05-it-sicherheit.mp3",
+      "title": "Informationssicherheit, Angriffe und Schutzmaßnahmen",
+      "points": 51,
+      "start_seconds": 1421.424,
+      "duration_seconds": 471.936,
+      "sha256": "7b3a538e26c78fab269dcfa170cea34e07ddcbb8176ed4a8cbfb313c3c42bb7b",
+      "bytes": 4720238
+    },
+    {
+      "file": "06-datenschutz-backup.mp3",
+      "title": "Datenschutz, Datensicherung und Wiederherstellung",
+      "points": 35,
+      "start_seconds": 1893.36,
+      "duration_seconds": 337.584,
+      "sha256": "70e376bec50329bd6fafeb23a3704fda104c57429b1f4df00529c8dd44481890",
+      "bytes": 3376714
+    },
+    {
+      "file": "07-programmierung.mp3",
+      "title": "Programmierung, Algorithmik, Tests und UML",
+      "points": 69,
+      "start_seconds": 2230.944,
+      "duration_seconds": 602.52,
+      "sha256": "ee82676724fa7b58fa0b546661dbcffb5afcda3165abaf71e24802fbd517ca55",
+      "bytes": 6026067
+    },
+    {
+      "file": "08-datenbanken-sql.mp3",
+      "title": "Datenmodellierung, Datenformate und SQL",
+      "points": 54,
+      "start_seconds": 2833.464,
+      "duration_seconds": 488.064,
+      "sha256": "a03c592677881f34fec09986f159f3b686ccc63111fc05b0b60a901fce0fbbc2",
+      "bytes": 4881504
+    },
+    {
+      "file": "09-beschaffung-wirtschaft.mp3",
+      "title": "Beschaffung, Angebote und wirtschaftliches Handeln",
+      "points": 48,
+      "start_seconds": 3321.528,
+      "duration_seconds": 446.496,
+      "sha256": "4c67a1b07dc65be04cf285a12c6ddfa273d52d6b1dff698f4dd9e98482a3fdb3",
+      "bytes": 4465835
+    },
+    {
+      "file": "10-service-organisation.mp3",
+      "title": "Service, Organisation, Projekt und Einführung",
+      "points": 41,
+      "start_seconds": 3768.024,
+      "duration_seconds": 381.792,
+      "sha256": "f98a2c6b1ad2f9d4e020927db6ee4db5e8be04afe16b8c859b5bdc912ba26daf",
+      "bytes": 3818791
+    },
+    {
+      "file": "11-rechenregeln.mp3",
+      "title": "Rechenregeln, Einheiten und häufige Zahlenfallen",
+      "points": 39,
+      "start_seconds": 4149.816,
+      "duration_seconds": 388.128,
+      "sha256": "b2d689df7731d10ed2def65a8ce6453a3ec0c6c21e38dbaa2fff2c60bd415d4a",
+      "bytes": 3882154
+    },
+    {
+      "file": "12-nachhaltigkeit-pruefung.mp3",
+      "title": "Nachhaltigkeit, KI und die letzten Prüfungsregeln",
+      "points": 30,
+      "start_seconds": 4537.944,
+      "duration_seconds": 283.632,
+      "sha256": "0b6504bb23a7aa86cae29c0d4dc45ce4a5c65d4a64bb3ef56c3a35417c7d29ca",
+      "bytes": 2837195
+    }
+  ],
+  "total_seconds": 4821.576,
+  "points": 518,
+  "full_file": "AP1_BaWue_Autofahrt_Gesamt.mp3",
+  "full_sha256": "413aff2bcf34f87e4b115591768b3ab917d272fc1305e69abeeb18106adb33be"
+}

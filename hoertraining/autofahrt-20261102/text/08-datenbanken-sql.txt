@@ -1,0 +1,109 @@
+Kapitel 8. Datenmodellierung, Datenformate und S Q L.
+
+Eine relationale Datenbank speichert Daten in verbundenen Tabellen. Zeilen sind Datensätze, Spalten beschreiben Attribute.
+
+Ein Datentyp begrenzt die möglichen Werte eines Attributs. Er sollte zur fachlichen Bedeutung passen.
+
+Für genaue Geldbeträge eignet sich häufig Decimal. Binäre Gleitkommazahlen stellen viele Dezimalbrüche nicht exakt dar.
+
+Ein Primärschlüssel identifiziert jeden Datensatz eindeutig. Er darf nicht fehlen und nicht doppelt vorkommen.
+
+Ein Fremdschlüssel verweist auf einen passenden Schlüssel einer referenzierten Tabelle. Er unterstützt referenzielle Integrität.
+
+Eine doppelte Primärschlüsselkennung kann ein Insert scheitern lassen. Für eine neue Zeile wird eine neue gültige Kennung benötigt.
+
+Eine Eins-zu-viele-Beziehung verbindet einen Datensatz mit mehreren anderen. Der Fremdschlüssel steht häufig auf der Viele-Seite.
+
+Eine Viele-zu-viele-Beziehung braucht im relationalen Modell eine Zuordnungstabelle. Diese enthält die Verweise auf beide Seiten.
+
+Ein zusammengesetzter Primärschlüssel besteht aus mehreren Attributen. Er kann doppelte Kombinationen in einer Zuordnungstabelle verhindern.
+
+Optionalität und maximale Anzahl sind getrennt zu prüfen. Genau eins ist nicht dasselbe wie null oder eins.
+
+Redundanz bedeutet unnötige Wiederholung derselben Information. Unkontrollierte Wiederholung kann widersprüchliche Änderungen verursachen.
+
+Einfüge-, Änderungs- und Löschanomalien entstehen bei ungünstiger Datenstruktur. Normalisierung reduziert solche Abhängigkeiten.
+
+Die erste Normalform verlangt atomare Werte im vorgesehenen Modell. Wiederholungsgruppen gehören nicht einfach in nummerierte Parallelspalten.
+
+Die zweite Normalform vermeidet Teilabhängigkeiten von zusammengesetzten Schlüsseln. Die dritte vermeidet bestimmte transitive Abhängigkeiten von Nichtschlüsselattributen.
+
+Bei Bestellungen werden Bestellung, Position, Artikel und Hersteller sinnvoll getrennt. Die Schlüssel verbinden diese Tabellen.
+
+Der historische Verkaufspreis kann zur Bestellposition gehören. Eine spätere Artikelpreisänderung darf alte Rechnungen nicht unbeabsichtigt verändern.
+
+Select bestimmt die auszugebenden Spalten. From bestimmt die verwendete Tabelle beziehungsweise Tabellenquelle.
+
+Where filtert einzelne Zeilen. And und Or verbinden Bedingungen, Klammern legen ihre Kombination klar fest.
+
+Texte werden in S Q L normalerweise in einfache Anführungszeichen gesetzt. Zahlen brauchen diese Textkennzeichnung nicht.
+
+Like erlaubt Mustervergleiche. Das Prozentzeichen steht für beliebig viele Zeichen, der Unterstrich für ein Zeichen.
+
+Für einen Namen mit bestimmtem Anfang folgt im Like-Muster ein Prozentzeichen. Ein Prozentzeichen davor würde eine andere Suche erzeugen.
+
+Order by legt die Sortierung fest. Asc bedeutet aufsteigend, Desc absteigend.
+
+Ohne Order by ist keine gewünschte Ergebnisreihenfolge garantiert. Eine zufällig passende Anzeige genügt nicht.
+
+Count Stern zählt Zeilen. Count einer Spalte zählt deren Werte ohne S Q L-Null.
+
+Sum addiert passende Werte. Avg berechnet einen Durchschnitt, Min und Max liefern kleinsten und größten Wert.
+
+S Q L-Null bedeutet fehlend oder unbekannt. Es wird mit Is null beziehungsweise Is not null geprüft.
+
+Gleich Null ist keine geeignete S Q L-Nullprüfung. Leerer Text ist außerdem nicht dasselbe wie S Q L-Null.
+
+Eine leere E-Mail kann je Datenmodell als leerer Text oder als Null gespeichert sein. Die Aufgabenbeschreibung entscheidet über den richtigen Filter.
+
+Insert fügt Datensätze hinzu. Explizite Spaltennamen machen die Zuordnung der Werte klarer.
+
+Update verändert vorhandene Datensätze. Eine gezielte Where-Bedingung begrenzt die Änderung.
+
+Delete entfernt Datensätze. Ohne passende Einschränkung können sämtliche Zeilen betroffen sein.
+
+Ein Delete auf Bildmetadaten löscht nicht automatisch die Bilddatei. Das benötigt zusätzliche Anwendungslogik.
+
+Ein Join verbindet passende Zeilen anhand einer Bedingung. Häufig werden Fremdschlüssel und referenzierter Schlüssel verglichen.
+
+Ein Inner Join zeigt nur passende Verbindungen. Ein Left Join erhält zusätzlich Zeilen der linken Seite ohne Partner.
+
+Für eine Anzahl null bei fehlenden Partnern wird nach einem Left Join ein geeignetes rechtes Schlüsselattribut gezählt. Count Stern würde auch die erhaltene linke Zeile zählen.
+
+Group by bildet Gruppen. Aggregatfunktionen werden dann auf die jeweilige Gruppe angewendet.
+
+Having filtert Gruppenergebnisse. Ein Filter auf einzelne Ausgangszeilen gehört normalerweise in Where.
+
+Für mindestens zwei Tickets wird die Anzahl einer Gruppe mit zwei verglichen. Eine Statusbedingung kann vorher geschlossene Tickets auswählen.
+
+Parametrisierte Abfragen trennen Datenwerte von S Q L-Code. Sie sind eine zentrale Maßnahme gegen S Q L-Injection.
+
+Eingabevalidierung ergänzt parametrisierte Abfragen. Eine einfache Zeichen-Blacklist ersetzt die sichere Trennung nicht.
+
+Constraints wie Not null, Unique und Fremdschlüssel erzwingen wichtige Datenregeln. Oberflächenprüfungen allein reichen dafür nicht immer.
+
+Eine Transaktion bündelt zusammengehörige Änderungen. Commit bestätigt sie, Rollback macht nicht bestätigte Änderungen rückgängig.
+
+Atomarität bedeutet alles oder nichts. Konsistenz, Isolation und Dauerhaftigkeit ergänzen die grundlegenden Transaktionseigenschaften.
+
+Ein Index kann bestimmte Lesezugriffe beschleunigen. Er benötigt Speicher und kann Schreibzugriffe zusätzlich belasten.
+
+C S V ist ein tabellarisches Austauschformat mit vereinbartem Trennzeichen. Allgemeine C S V-Dateien können Maskierung und Anführungszeichen benötigen.
+
+Dschäison verwendet strukturierte Schlüssel und Werte. Zeichenketten stehen in doppelten Anführungszeichen und Zahlen können Zahlen bleiben.
+
+X M L strukturiert Daten mit Elementen und Attributen. Es kann verschachtelte Zusammenhänge darstellen.
+
+Eine Programmiersprachen-Nullreferenz, S Q L-Null und der C S V-Text NULL sind verschiedene Darstellungen. Sie dürfen nicht ungeprüft gleichgesetzt werden.
+
+Bei einer Prüfung werden die vorgegebenen Tabellen- und Spaltennamen exakt verwendet. Die logisch richtige Idee braucht auch eine zur Aufgabe passende Abfrage.
+
+Eine Entität ist ein unterscheidbares fachliches Objekt. Ein Attribut beschreibt eine seiner Eigenschaften.
+
+Eine Eins-zu-eins-Beziehung erlaubt höchstens einen Partner auf jeder Seite. Die zusätzliche Optionalität muss ausdrücklich modelliert werden.
+
+Delete entfernt Zeilen, Drop entfernt ein Datenbankobjekt wie eine Tabelle. Truncate leert eine Tabelle mit systemspezifischen Eigenschaften.
+
+Transaktionsdauerhaftigkeit bedeutet Erhalt bestätigter Änderungen unter den vorgesehenen Betriebsannahmen. Sie ist keine Garantie gegen jeden denkbaren physischen Totalschaden.
+
+Ein Datenbankkonto erhält nur die nötigen Rechte. Eine reine Leseanwendung benötigt nicht automatisch administrative Änderungsrechte.

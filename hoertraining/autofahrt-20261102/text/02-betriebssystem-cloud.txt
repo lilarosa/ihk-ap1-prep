@@ -1,0 +1,75 @@
+Kapitel 2. Betriebssystem, Rechte, Cloud und Virtualisierung.
+
+Das Betriebssystem verwaltet Hardware und Ressourcen. Es stellt Anwendungen grundlegende Dienste bereit.
+
+Ein Prozess ist ein ausgeführtes Programm mit eigenem Kontext. Threads sind Ausführungsstränge innerhalb eines Prozesses.
+
+Der Scheduler verteilt Rechenzeit. Viele laufende Prozesse bedeuten nicht, dass alle gleichzeitig auf demselben Kern rechnen.
+
+Virtueller Speicher bildet einen logischen Adressraum ab. Nicht jeder Teil liegt jederzeit im physischen RAM.
+
+Eine Auslagerungsdatei erweitert die Speicherverwaltung. Sie ersetzt keinen ausreichend großen Arbeitsspeicher.
+
+Ein Dateisystem organisiert Dateien, Verzeichnisse und Metadaten. Berechtigungen und Wiederherstellungsfunktionen hängen vom eingesetzten System ab.
+
+Ein Dateiname und seine Erweiterung beweisen das Format nicht sicher. Der Inhalt kann zusätzlich geprüft werden.
+
+Beim Start initialisiert die Firmware wichtige Hardware. Anschließend wird ein geeigneter Startmechanismus für das Betriebssystem verwendet.
+
+U E F I ist moderne Systemfirmware. Secure Boot prüft die Vertrauenswürdigkeit geeigneter Startkomponenten anhand von Signaturen.
+
+Secure Boot und Festplattenverschlüsselung erfüllen unterschiedliche Aufgaben. Das eine ersetzt das andere nicht.
+
+Ein Treiber verbindet das Betriebssystem mit einer Gerätefunktion. Falsche oder veraltete Treiber können Störungen verursachen.
+
+Updates beheben Fehler und Sicherheitslücken. Änderungen sollten passend zum Risiko getestet und dokumentiert werden.
+
+Ein Standardkonto erhält nur die benötigten Rechte. Administrative Aufgaben verwenden getrennte privilegierte Konten.
+
+Authentifizierung prüft die behauptete Identität. Autorisierung legt fest, was diese Identität tun darf.
+
+Gruppen und Rollen vereinfachen die Rechteverwaltung. Berechtigungen werden nach dem tatsächlichen Aufgabenbedarf vergeben.
+
+Ein Hypervisor stellt virtuelle Maschinen bereit. Er verwaltet ihre Zugriffe auf gemeinsame physische Ressourcen.
+
+Eine virtuelle Maschine besitzt normalerweise ein eigenes Gastbetriebssystem. Mehrere virtuelle Maschinen können auf demselben Host laufen.
+
+Zwei virtuelle Maschinen auf einem einzigen Host sind keine Hostredundanz. Ein Hostausfall kann beide gleichzeitig treffen.
+
+Container teilen gewöhnlich den Kernel des Hostsystems. Sie sind deshalb nicht dasselbe wie vollständige virtuelle Maschinen.
+
+Ein Snapshot hält einen bestimmten Systemzustand fest. Er ersetzt keine unabhängig geschützte Datensicherung.
+
+On-Premises bedeutet Betrieb in eigener Verantwortung auf eigener beziehungsweise zugeordneter Infrastruktur. Das erfordert geeignete Betriebsressourcen.
+
+Cloud-Dienste werden über ein Netz bereitgestellt. Skalierbarkeit kann steigen, aber Anbieter- und Verbindungsabhängigkeiten bleiben.
+
+Infrastructure as a Service stellt Infrastrukturressourcen bereit. Der Kunde verwaltet häufig Gastbetriebssysteme und Anwendungen selbst.
+
+Platform as a Service stellt eine Plattform für Anwendungen bereit. Viele Aufgaben der darunterliegenden Infrastruktur übernimmt der Anbieter.
+
+Software as a Service stellt eine nutzbare Anwendung bereit. Benutzerverwaltung, Konfiguration und erlaubte Datenverarbeitung bleiben trotzdem zu klären.
+
+Public, Private und Hybrid Cloud beschreiben unterschiedliche Bereitstellungsmodelle. Sie sind keine Synonyme für Infrastructure as a Service, Platform as a Service und Software as a Service.
+
+Cloud ist nicht automatisch günstiger oder sicherer. Kosten, Zuständigkeiten, Datenschutz, Integration und Ausstiegsmöglichkeiten werden verglichen.
+
+Bei einer Migration gehören Datenprüfung und Rückfallplanung dazu. Erst ein erfolgreicher Test belegt die nutzbare Übernahme.
+
+Der Kernel ist der zentrale Kern des Betriebssystems. Er vermittelt grundlegende Ressourcen- und Hardwarezugriffe.
+
+Ein Typ-1-Hypervisor läuft direkt auf der vorgesehenen Hardwareplattform. Ein Typ-2-Hypervisor setzt auf einem Hostbetriebssystem auf.
+
+N T F S ist ein typisches Windows-Dateisystem, ext4 ein verbreitetes Linux-Dateisystem. FAT32 hat unter anderem eine Begrenzung der einzelnen Dateigröße auf knapp vier Gibibyte.
+
+Journaling protokolliert bestimmte Dateisystemänderungen zur besseren Konsistenzwiederherstellung. Es ist kein Backup aller Dateiinhalte.
+
+Lesen, Schreiben und Ausführen sind unterschiedliche Berechtigungen. Die genaue Wirkung bei Dateien und Verzeichnissen hängt vom System ab.
+
+Live-Migration verschiebt eine laufende virtuelle Maschine zwischen geeigneten Hosts. Voraussetzungen und verbleibende Unterbrechungen hängen von der Technik ab.
+
+Vertikale Skalierung vergrößert Ressourcen eines Systems. Horizontale Skalierung ergänzt weitere Systeme beziehungsweise Instanzen.
+
+Shared Responsibility teilt Sicherheits- und Betriebsaufgaben zwischen Anbieter und Kunde. Die Aufteilung hängt vom Dienstmodell und Vertrag ab.
+
+Vendor Lock-in erschwert einen Anbieterwechsel. Proprietäre Schnittstellen und schwer exportierbare Daten können dazu beitragen.

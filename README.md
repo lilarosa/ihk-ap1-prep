@@ -1,5 +1,13 @@
 # ihk-ap1-prep
 
+## Neu: AP1-Wissen für die Autofahrt, ohne Quizpausen
+
+[12 Kapitel, 518 kurze Lernpunkte, rund 80 Minuten deutsche Hörfassung](hoertraining/autofahrt-20261102/README.md)
+
+Neuronale deutsche Conrad-Stimme, normale Satzmelodie und angeglichene Lautheit. Keine eingeplanten Selbstantwort- oder Nachsprechpausen. Gesamt-MP3, Einzelkapitel, Offline-Paket und vollständiger Lesetext.
+
+[Gesamte MP3 herunterladen](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-autofahrt-kompakt-2026-11-02/AP1_BaWue_Autofahrt_Gesamt.mp3) · [Komplettpaket herunterladen](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-autofahrt-kompakt-2026-11-02/AP1_BaWue_Autofahrt_Komplettpaket.zip)
+
 ## Programmierung üben: Einstieg mit 6 Diagnoseaufgaben
 
 [Bedingungen, Schreibtischtest, Schleifen, Fehlersuche, Durchschnitt und CSV](tasks/programmierung-diagnose-01/README.md)

@@ -1,0 +1,67 @@
+Kapitel 4. I P Version sechs, WLAN und Netzsegmentierung.
+
+Eine I P Version sechs-Adresse hat 128 Bit. Sie wird üblicherweise in hexadezimalen Blöcken dargestellt.
+
+Führende Nullen eines Blocks dürfen entfallen. Eine zusammenhängende Nullfolge darf einmal durch einen doppelten Doppelpunkt ersetzt werden.
+
+Zwei doppelte Doppelpunkte in derselben I P Version sechs-Adresse wären mehrdeutig. Deshalb ist diese Kurzschreibweise dort nur einmal erlaubt.
+
+Ein typisches I P Version sechs-LAN verwendet ein Präfix von 64 Bit. Die konkrete Vorgabe des Netzplans ist maßgeblich.
+
+I P Version sechs kennt keinen Broadcast. Bestimmte Verteilaufgaben werden unter anderem mit Multicast erledigt.
+
+Link-Local-Adressen stammen aus dem Bereich F E acht null mit Präfix 10. Sie gelten nur auf dem jeweiligen lokalen Link.
+
+Bei einer Link-Local-Adresse kann die Angabe des Interfaces nötig sein. Dieselbe Schreibweise kann auf verschiedenen Links vorkommen.
+
+Global-Unicast-Adressen sind für netzübergreifende Kommunikation vorgesehen. Nicht jeder formal passende Bereich ist tatsächlich öffentlich routbar.
+
+Der Bereich zweitausendeins Doppelpunkt D B acht ist für Dokumentation reserviert. Solche Beispieladressen werden nicht im öffentlichen Internet verwendet.
+
+Unique-Local-Adressen sind für lokale beziehungsweise organisationsinterne Nutzung vorgesehen. Sie ersetzen keine Zugriffsregeln.
+
+Neighbor Discovery übernimmt wichtige I P Version sechs-Nachbarschaftsaufgaben. Dazu gehört die Ermittlung von Link-Layer-Adressen.
+
+Router Advertisements teilen I P Version sechs-Clients wichtige Netzinformationen mit. Das Standardgateway wird normalerweise darüber bekanntgegeben.
+
+Slaak ermöglicht zustandslose automatische Adresskonfiguration. D H C P Version sechs kann weitere Konfiguration oder verwaltete Adressen bereitstellen.
+
+Dual Stack betreibt I P Version vier und I P Version sechs parallel. Beide Protokolle benötigen passende Konfiguration und Schutzregeln.
+
+Tunneling kapselt ein Protokoll in einem anderen. Es überbrückt ein Netz, das das innere Protokoll nicht direkt transportiert.
+
+Ein V L A N trennt logische Ethernet-Broadcast-Domänen. Die Kommunikation zwischen VLANs benötigt eine geeignete Vermittlung.
+
+Ein eigenes Gastnetz erleichtert getrennte Verwaltung. Den Zugriff auf interne Systeme begrenzen erst passende Firewallregeln oder Zugriffskontrolllisten.
+
+Ein anderes Subnetz allein ist keine verlässliche Zugriffssperre. Die Trennung muss technisch durchgesetzt werden.
+
+WLAN teilt Funkzeit zwischen mehreren Teilnehmern. Die beworbene Bruttodatenrate ist keine garantierte Nutzdatenrate.
+
+Overhead, Störungen und Wiederholungen senken den Durchsatz. Viele gleichzeitig aktive Geräte teilen verfügbare Kapazität.
+
+zwei Komma vier Gigahertz hat häufig eine größere Reichweite. Das Band ist aber oft stärker belegt.
+
+5 Gigahertz bietet mehr Kanaloptionen. Hindernisse und Reichweite müssen trotzdem berücksichtigt werden.
+
+Wi-Fi 6 bezeichnet IEEE acht null zwei Punkt elf A X. Wi-Fi sechs E erweitert geeignete Geräte um den 6-Gigahertz-Bereich.
+
+Die SSID ist der Name eines Funknetzes. Eine versteckte SSID ist kein wirksamer Ersatz für Verschlüsselung.
+
+Starke WLAN-Authentifizierung und geeignete Verschlüsselung schützen den Zugang. Veraltete Verfahren werden nicht durch ein langes Netzwerknamensfeld sicher.
+
+Eine M A C-Adressfilterung ist höchstens eine ergänzende Hürde. M A C-Adressen können unter anderem nachgebildet werden.
+
+Bei schlechter Funkleistung werden Kanalbelegung, Signalqualität und Aufstellung geprüft. Einfach mehr Access Points ohne Planung kann zusätzliche Störungen erzeugen.
+
+Latenz ist die Verzögerung einer Übertragung. Jitter bezeichnet die Schwankung dieser Verzögerung.
+
+Für Echtzeitkommunikation können hohe Latenz und Jitter problematisch sein. Paketverlust ist ein zusätzliches, getrenntes Kriterium.
+
+Ein V P N schützt bei geeigneter Konfiguration einen Kommunikationsweg. Es macht einen bereits kompromittierten Client nicht automatisch vertrauenswürdig.
+
+WPA3 ist eine Familie von WLAN-Sicherheitsverfahren. Unterstützte Betriebsarten und Endgeräte müssen zur gewählten Konfiguration passen.
+
+Client-Isolation kann direkte Kommunikation zwischen WLAN-Clients begrenzen. Sie ersetzt nicht alle Regeln zu anderen Netzen.
+
+Ein erfolgreicher Ping ohne Verlust bewertet nur die getestete Verbindung und Zeit. Er beweist weder ausreichende Echtzeitqualität noch dauerhafte Fehlerfreiheit.

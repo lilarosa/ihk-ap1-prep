@@ -1,0 +1,83 @@
+Kapitel 10. Service, Organisation, Projekt und Einführung.
+
+Ein Incident ist eine ungeplante Unterbrechung oder Beeinträchtigung eines Service. Ziel ist die passende Wiederherstellung.
+
+Ein Service Request ist eine standardisierte Leistungsanfrage. Eine Monitorbestellung ist nicht automatisch eine Störung.
+
+Ein Event ist ein relevantes beobachtetes Ereignis. Eine Schwellwertmeldung kann einen Incident auslösen, muss es aber nicht.
+
+Ein Problem beschreibt die zugrunde liegende oder mögliche Ursache von Incidents. Ursachenarbeit unterscheidet sich von schneller Entstörung.
+
+Ein Ticket dokumentiert Meldung und Bearbeitung. Zeitpunkt, Fehlerbild, Betroffene und bisherige Maßnahmen müssen nachvollziehbar sein.
+
+Die Priorität ergibt sich aus Auswirkung und Dringlichkeit. Die Lautstärke der meldenden Person ist kein sachliches Kriterium.
+
+Eine Eskalation kann fachlich oder hierarchisch erfolgen. Sie folgt einem passenden definierten Ablauf.
+
+Ein S L A legt messbare Servicezusagen fest. Dazu gehören Servicezeit, Verfügbarkeit, Reaktion und Wiederherstellungsziele.
+
+Reaktionszeit und Entstörzeit sind unterschiedliche Größen. Schnelle Antwort beweist noch keine behobene Störung.
+
+Verfügbarkeit braucht einen Messzeitraum und klare Ausnahmen. Wartungsfenster werden nach der konkreten Vereinbarung behandelt.
+
+Ein einzelner zu langer Ausfall kann eine Entstörgrenze verletzen. Die Jahresverfügbarkeit muss zusätzlich separat gerechnet werden.
+
+Eine Einweisung erklärt Anmeldung, Funktionen und sichere Nutzung. Auch Datenablage und Supportweg gehören dazu.
+
+Eine Abnahme vergleicht die erbrachte Leistung mit den Anforderungen. Offene Mängel und verantwortliche Freigaben werden dokumentiert.
+
+Ein Lastenheft beschreibt aus Auftraggebersicht was und wofür benötigt wird. Ein Pflichtenheft beschreibt wie und womit der Auftragnehmer umsetzt.
+
+Ein Projekt hat ein definiertes Ziel und einen begrenzten Rahmen. Aufgaben, Ressourcen, Termine und Verantwortlichkeiten werden geplant.
+
+Stakeholder sind vom Projekt betroffene oder darauf einwirkende Beteiligte. Ihre Interessen können sich unterscheiden.
+
+SMART-Ziele sind konkret und überprüfbar. Messwert, realistischer Zielwert und Termin machen Fortschritt beurteilbar.
+
+Zeit, Kosten und Leistungsumfang beeinflussen sich. Änderungen an einer Größe erfordern oft eine neue Abstimmung der anderen.
+
+Ein Gantt-Diagramm stellt Vorgänge auf einer Zeitachse dar. Ein Netzplan macht insbesondere Abhängigkeiten und Puffer analysierbar.
+
+F A Z bedeutet frühester Anfang, F E Z frühestes Ende. Frühestes Ende ergibt sich aus frühestem Anfang plus Dauer.
+
+Der früheste Anfang nach mehreren Vorgängern richtet sich nach deren spätestem frühesten Ende. Erst dann sind alle nötigen Vorgänger abgeschlossen.
+
+S A Z bedeutet spätester Anfang, S E Z spätestes Ende. Die Rückwärtsrechnung beginnt am vorgegebenen beziehungsweise ermittelten Projektende.
+
+Gesamtpuffer ist spätester minus frühester Anfang. Gleichwertig ist spätestes minus frühestes Ende.
+
+Ein kritischer Vorgang hat im betrachteten Netzplan keinen Gesamtpuffer. Seine Verzögerung kann das Projektende verschieben.
+
+Eine Einlinienorganisation gibt jeder Stelle einen eindeutigen Weisungsweg. Das schafft Klarheit, kann aber Entscheidungen verlängern.
+
+In einer Mehrlinienorganisation gibt es mehrere fachliche Weisungswege. Kompetenzkonflikte müssen vermieden werden.
+
+Eine Stabsstelle berät eine Leitung. Sie besitzt gegenüber der Linie grundsätzlich keine eigene Linienweisungsbefugnis.
+
+Eine Instanz besitzt Leitungsbefugnis. Eine Ausführungsstelle erledigt operative Aufgaben ohne entsprechende Leitungsfunktion.
+
+Eine Matrix verbindet zwei Gliederungsdimensionen. Zum Beispiel können Funktion und Projekt gemeinsam wirken.
+
+Change Management begleitet Veränderungen technisch und organisatorisch. Information, Beteiligung und Qualifizierung fördern die erfolgreiche Nutzung.
+
+Eine Pilotgruppe erprobt die Lösung vor dem breiten Einsatz. So werden Probleme mit begrenzter Auswirkung sichtbar.
+
+Eine Sofortumstellung beendet den alten Betrieb zum Stichtag. Das spart Doppelbetrieb, bündelt aber Umstellungsrisiken.
+
+Ein Parallelbetrieb hält beide Systeme zeitweise verfügbar. Er erleichtert Vergleiche, verursacht aber zusätzlichen Aufwand und Datenabgleich.
+
+Ein Rollback-Plan beschreibt den kontrollierten Rückweg. Er muss vor der kritischen Umstellung vorbereitet sein.
+
+Tests benötigen Eingaben, erwartete Ergebnisse und tatsächliche Ergebnisse. Abweichungen werden bewertet, statt nur funktioniert zu notieren.
+
+P D C A bedeutet planen, umsetzen, prüfen und verbessern beziehungsweise standardisieren. Der Soll-Ist-Vergleich entscheidet über das weitere Vorgehen.
+
+Eine gute Dokumentation ist nachvollziehbar und aktuell. Sie nennt auch Änderungen, Ansprechpartner und offene Punkte.
+
+Ein Workaround stellt vorläufig nutzbaren Betrieb her. Er beseitigt nicht zwingend die eigentliche Ursache.
+
+Eine Known Error Database hält bekannte Fehler und geeignete Lösungsansätze fest. Sie kann wiederholte Diagnosearbeit reduzieren.
+
+Ein Meilenstein kennzeichnet ein wichtiges überprüfbares Projektereignis. Er ist nicht einfach eine beliebig lange Tätigkeit.
+
+Ein schrittweiser Rollout führt das System nacheinander für Teilbereiche ein. Das begrenzt Risiken, verlängert aber gegebenenfalls den Gesamtübergang.

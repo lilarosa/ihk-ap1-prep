@@ -1,0 +1,89 @@
+Kapitel 3. Netzwerkgrundlagen, I P Version vier und Fehlersuche.
+
+Ein Switch verbindet Geräte innerhalb eines lokalen Netzes. Er leitet Ethernet-Frames anhand von M A C-Adressen weiter.
+
+Ein Router verbindet unterschiedliche I P-Netze. Seine Routingtabelle bestimmt geeignete nächste Wege.
+
+Ein Access Point verbindet WLAN-Geräte mit einem Netz. Er ist nicht automatisch der Internetrouter.
+
+Ein Repeater empfängt und sendet Funksignale erneut. Das garantiert keine Verdopplung der nutzbaren Datenrate.
+
+Die erste O S I-Schicht betrifft physische Signale. Die zweite Schicht betrifft unter anderem Ethernet-Frames und M A C-Adressen.
+
+Die dritte O S I-Schicht betrifft Vermittlung und Routing. Die vierte Schicht stellt Transportfunktionen bereit.
+
+Die oberen O S I-Schichten beschreiben Sitzung, Darstellung und Anwendung. Das Modell hilft, Fehler systematisch einzuordnen.
+
+Eine I P Version vier-Adresse hat 32 Bit. Die Präfixlänge trennt Netzanteil und Hostanteil.
+
+Die Subnetzmaske kennzeichnet den Netzanteil. Adresse und Maske müssen gemeinsam betrachtet werden.
+
+In einem gewöhnlichen Broadcast-Subnetz sind Netz- und Broadcastadresse keine normalen Clientadressen. Sonderfälle haben eigene Regeln.
+
+Bei Präfix 24 bleiben acht Hostbits. Ein gewöhnliches solches Netz bietet 254 nutzbare Hostadressen.
+
+Bei Präfix 26 bleiben sechs Hostbits. Das ergibt normalerweise 62 nutzbare Hostadressen.
+
+Eine gültige statische Clientadresse liegt im vorgesehenen Subnetz. Sie darf nicht bereits einem anderen Gerät zugeordnet sein.
+
+Das Standardgateway ist der nächste Router für Ziele außerhalb des lokalen Netzes. Sein lokales Interface muss passend erreichbar sein.
+
+D N S löst Namen in Ressourceninformationen auf. Dazu gehören insbesondere I P-Adressen.
+
+D H C P verteilt Netzwerkkonfigurationen zeitlich verwaltet. Dazu können Adresse, Maske, Gateway und D N S gehören.
+
+Ein D H C P-Lease ist zeitlich begrenzt. Ein ausgeschöpfter Adresspool kann neue Zuweisungen verhindern.
+
+Ein D H C P-Relay vermittelt D H C P-Nachrichten über Netzgrenzen. Ein Router leitet diese Broadcasts nicht einfach unverändert überall weiter.
+
+Eine automatisch vergebene I P Version vier-Link-Local-Adresse beginnt häufig mit 169 Punkt 254. Unter Windows deutet das oft auf fehlende D H C P-Antworten hin.
+
+A R P ermittelt im lokalen I P Version vier-Netz die M A C-Adresse einer Ziel- oder Next-Hop-Adresse. Es ist kein D N S-Dienst.
+
+Für ein entferntes Ziel trägt der erste Ethernet-Frame die M A C des lokalen nächsten Routers. Die I P-Zieladresse bezeichnet weiter das entfernte Ziel.
+
+Private I P Version vier-Bereiche beginnen mit 10, mit 172 Punkt 16 bis 31 und mit 192 Punkt 168. Sie sind nicht direkt öffentlich routbar.
+
+Nicht jede Adresse mit 172 am Anfang ist privat. Der zweite Zahlenblock entscheidet mit.
+
+N A T übersetzt I P-Adressen. Portbasierte Varianten können viele interne Verbindungen über eine öffentliche Adresse abbilden.
+
+N A T ist kein vollständiges Sicherheitskonzept. Zugriffsregeln und weitere Schutzmaßnahmen bleiben nötig.
+
+T C P bietet einen verbindungsorientierten, geordneten und zuverlässigen Bytestrom. U D P bietet diese Zusagen selbst nicht.
+
+Ports ordnen Transportkommunikation Diensten und Endpunkten zu. Eine Portnummer allein beweist nicht den tatsächlichen Anwendungsinhalt.
+
+H T T P S verwendet häufig T C P-Port 443. D N S verwendet häufig Port 53 über U D P oder T C P.
+
+S S H verwendet üblicherweise Port 22. Unverschlüsseltes H T T P verwendet häufig Port 80.
+
+Bei Fehlern wird zuerst der physische Link geprüft. Danach folgen I P-Konfiguration, Routing und Namensauflösung.
+
+Mit ipconfig oder ip addr wird die Konfiguration geprüft. nslookup oder dig helfen bei der D N S-Prüfung.
+
+Ping prüft eine bestimmte I C M P-Erreichbarkeit. Ein fehlender Ping beweist keinen vollständigen Dienstausfall.
+
+Traceroute beziehungsweise tracert hilft bei der Weganalyse. Filter und asymmetrische Wege können die Anzeige beeinflussen.
+
+Wenn externe I P-Adressen funktionieren, Namen aber nicht, ist D N S eine naheliegende Hypothese. Sie wird gezielt überprüft.
+
+Wenn nur lokale Ziele funktionieren, werden Gateway und Routing geprüft. Ein geratenes D N S-Problem erklärt nicht automatisch jede Störung.
+
+Ein logischer Netzplan zeigt Netze, Adressen und Kommunikationsbeziehungen. Ein physischer Netzplan zeigt Standorte, Ports und Verkabelung.
+
+Die sieben O S I-Schichten heißen Bitübertragung, Sicherung und Vermittlung. Danach folgen Transport, Sitzung, Darstellung und Anwendung.
+
+Eine M A C-Adresse identifiziert eine Schnittstelle auf der Sicherungsschicht im jeweiligen Kontext. Sie ist nicht unveränderlich gegen Nachbildung geschützt.
+
+Ein Access-Port ordnet typischerweise Endgeräte einem V L A N zu. Ein Trunk transportiert mehrere entsprechend gekennzeichnete VLANs.
+
+Eine Broadcast-Domäne begrenzt die Verteilung entsprechender Broadcasts. Router und V L A N-Trennung können solche Bereiche abgrenzen.
+
+Eine DMZ ist ein getrennt geschütztes Netz für bestimmte exponierte Dienste. Sie ist kein ungeschützter direkter Zugang ins interne Netz.
+
+Portweiterleitung ordnet eine von außen angesprochene Verbindung einem internen Ziel zu. Damit kann ein interner Dienst von außen erreichbar werden.
+
+Quality of Service priorisiert Verkehr nach Regeln. Es erzeugt keine unbegrenzte zusätzliche Bandbreite.
+
+I C M P dient unter anderem Fehler- und Kontrollmeldungen. Ping nutzt bestimmte I C M P-Nachrichten, aber I C M P besteht nicht nur aus Ping.

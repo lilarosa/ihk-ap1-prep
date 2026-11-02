@@ -1,0 +1,79 @@
+Kapitel 11. Rechenregeln, Einheiten und häufige Zahlenfallen.
+
+Ein Byte besteht aus acht Bit. Von Bit nach Byte wird durch acht geteilt.
+
+Ein dezimales Kilobyte hat tausend Byte. Ein Kibibyte hat 1024 Byte.
+
+Ein Megabyte hat eine Million Byte. Ein Mebibyte hat 1024 mal 1024 Byte.
+
+Gigabyte und Gibibyte sind ebenfalls unterschiedliche Einheiten. Die Aufgabenangabe entscheidet über den richtigen Faktor.
+
+Für eine Übertragungszeit wird Datenmenge durch nutzbare Datenrate geteilt. Beide Größen brauchen zueinander passende Einheiten.
+
+Eine Datenmenge in Byte wird für eine Rate in Bit pro Sekunde zuerst mit acht multipliziert. Sonst entsteht ein Faktor-acht-Fehler.
+
+Die theoretische Linkrate ist nicht automatisch die nutzbare Rate. Overhead und Auslastung können die Übertragungszeit erhöhen.
+
+Unkomprimierte Bildgröße ergibt sich aus Pixelanzahl mal Farbtiefe. Das Ergebnis in Bit wird für Byte durch acht geteilt.
+
+Bei 24 Bit Farbtiefe sind grundsätzlich zwei hoch 24 Farbkombinationen darstellbar. Das sind ungefähr 16,8 Millionen.
+
+Eine rohe Videodatenrate ergibt sich aus Bildgröße mal Bildern pro Sekunde. Kompression verändert anschließend die zu speichernde Rate.
+
+Auf 20 Prozent komprimiert bedeutet Faktor null Komma zwei. Um 20 Prozent reduziert bedeutet dagegen Faktor null Komma acht.
+
+Für Videospeicher wird die Datenrate mit der Zeit multipliziert. Bei mehreren Kameras kommt deren Anzahl hinzu.
+
+Stunden werden für Sekundenraten mit 3600 multipliziert. Erst danach werden Bit, Byte und Speichereinheiten umgerechnet.
+
+Elektrische Leistung ergibt sich aus Spannung mal Stromstärke. Für die Stromstärke wird Leistung durch Spannung geteilt.
+
+Ein Ampere entspricht tausend Milliampere. Ein Ergebnis in Ampere darf nicht unverändert als Milliampere beschriftet werden.
+
+Energie ergibt sich aus Leistung mal Zeit. Kilowatt mal Stunden ergibt Kilowattstunden.
+
+Watt wird für Kilowatt durch tausend geteilt. Kilowattstunden mal Preis pro Kilowattstunde ergibt Energiekosten.
+
+Bei Stromkosten werden unterschiedliche Laufzeiten getrennt gerechnet. Ein Server kann ganzjährig laufen, während Arbeitsplätze nur Arbeitstage zählen.
+
+Ein Jahr mit 365 Tagen hat 8760 Stunden. Das entspricht 525600 Minuten.
+
+Erlaubte Ausfallzeit ergibt sich aus Gesamtzeit mal eins minus Verfügbarkeit als Dezimalzahl. Prozent und Dezimalzahl dürfen nicht verwechselt werden.
+
+neunundneunzig Komma neun Prozent Verfügbarkeit lassen null Komma eins Prozent Ausfall zu. Bei 365 Tagen sind das fünfhundertfünfundzwanzig Komma sechs Minuten.
+
+neunundneunzig Komma neun neun Prozent Verfügbarkeit lassen nur zweiundfünfzig Komma fünf sechs Minuten pro solchem Jahr zu. Eine zusätzliche Neun verkleinert das Ausfallbudget erheblich.
+
+Für ein gewöhnliches I P Version vier-Broadcast-Subnetz gelten zwei hoch Hostbits minus zwei nutzbare Hosts. Sonderfälle wie Punkt-zu-Punkt-Präfixe werden gesondert behandelt.
+
+Die Hostbits ergeben sich aus 32 minus Präfixlänge. Bei Präfix 27 bleiben fünf Hostbits und normalerweise 30 nutzbare Adressen.
+
+Die Blockgröße im relevanten Maskenoktett ergibt sich aus 256 minus Maskenwert. Der Host wird dem passenden Block zugeordnet.
+
+Bei Präfix 26 ist die Blockgröße im letzten Oktett 64. Eine Adresse mit letztem Oktett 150 liegt dann zwischen 128 und 191.
+
+In diesem Block ist 128 die Netzadresse und 191 der Broadcast. Die normalen Hostadressen reichen von 129 bis 190.
+
+Raid 5 mit gleich großen Platten nutzt grundsätzlich Anzahl minus eins mal Plattenkapazität. Hot-Spare und weitere Verluste werden gegebenenfalls zusätzlich berücksichtigt.
+
+Raid 10 mit paarweiser Spiegelung nutzt grundsätzlich die halbe Rohkapazität. Die Plattenzahl muss zum vorgesehenen Aufbau passen.
+
+Bei unterschiedlichen Plattengrößen begrenzt im einfachen Verbund häufig die kleinste Platte. Die konkrete Technik und Aufgabenannahme sind entscheidend.
+
+Ein Preisaufschlag von 20 Prozent entspricht Faktor eins Komma zwei. Die Rückrechnung erfolgt durch diesen Faktor, nicht durch Abzug von 20 Prozent.
+
+Ein Nachlass von zehn Prozent lässt 90 Prozent übrig. Rückwärts wird durch null Komma neun gerechnet.
+
+Prozentuale Änderung ist Differenz geteilt durch Ausgangswert mal hundert. Der Bezugswert muss ausdrücklich stimmen.
+
+Ein effektiver Stundensatz verteilt relevante Gesamtkosten auf produktive Stunden. Bezahlte Stunden sind nicht automatisch vollständig produktiv.
+
+Bei jeder Rechnung stehen Formel, Einsetzen und Ergebnis mit Einheit. Danach folgt die passende Rundung und eine Plausibilitätsprüfung.
+
+Ein Präfix-25-Netz hat normalerweise 126 nutzbare I P Version vier-Hosts. Ein Präfix-28-Netz hat normalerweise 14.
+
+In ein Präfix-24-Netz passen 16 gleich große Präfix-28-Netze. Die zusätzliche Zahl der Netzbits bestimmt die Anzahl.
+
+Bei VLSM werden unterschiedlich große Subnetze passend zum Bedarf vergeben. Häufig werden die größten Bedarfe zuerst eingeplant.
+
+Für Minuten aus Sekunden wird durch 60 geteilt. Ganze Minuten und verbleibende Sekunden werden getrennt angegeben.

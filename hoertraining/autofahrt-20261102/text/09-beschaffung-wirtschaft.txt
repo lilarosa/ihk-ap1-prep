@@ -1,0 +1,97 @@
+Kapitel 9. Beschaffung, Angebote und wirtschaftliches Handeln.
+
+Eine Bedarfsanalyse klärt den tatsächlichen Kundennutzen. Interviews, Beobachtungen und vorhandene Dokumente können dazu beitragen.
+
+Anforderungen werden möglichst messbar formuliert. Eigene technische Annahmen werden als Annahmen gekennzeichnet.
+
+Muss-Kriterien sind zwingend. Kann-Kriterien verbessern die Lösung, ersetzen aber keine fehlende Muss-Anforderung.
+
+Interne Bezugsquellen sind etwa Lieferantenkartei und Bestellhistorie. Externe Quellen sind etwa Herstellerangebote und Branchenverzeichnisse.
+
+Ein quantitativer Angebotsvergleich betrachtet vergleichbare Kosten. Mengen, Rabatt, Skonto und Bezugskosten müssen passend berücksichtigt werden.
+
+Ein qualitativer Vergleich berücksichtigt zusätzliche Kriterien. Dazu zählen Lieferzeit, Kompatibilität, Service und Zuverlässigkeit.
+
+Die Nutzwertanalyse beginnt mit geeigneten Kriterien und Gewichten. Anschließend werden Alternativen auf derselben Skala bewertet.
+
+Gewichtete Punkte werden addiert. Die Gewichte müssen zusammen zur vereinbarten Gesamtskala passen.
+
+Ein hoher Nutzwert heilt kein verletztes Muss-Kriterium. Ungeeignete Alternativen werden vorher ausgeschlossen oder die Anforderung wird ausdrücklich neu abgestimmt.
+
+Ein Rabatt ist ein Preisnachlass. Er kann beispielsweise an Menge oder Kundenkonditionen anknüpfen.
+
+Skonto ist ein Nachlass für Zahlung innerhalb einer vereinbarten kurzen Frist. Nicht genutztes Skonto darf nicht als sichere Ersparnis gerechnet werden.
+
+Rabatt und Skonto haben unterschiedliche Rechenbasen. Ihre Prozentsätze werden nicht einfach addiert.
+
+Vom Listeneinkaufspreis wird Liefererrabatt abgezogen. Das ergibt den Zieleinkaufspreis.
+
+Nach Abzug des Liefererskontos entsteht der Bareinkaufspreis. Dazu kommen die Bezugskosten.
+
+Der Bezugspreis ist die Basis für den vereinbarten Handlungskostenzuschlag. Mit Handlungskosten entstehen die Selbstkosten.
+
+Nach dem Gewinnzuschlag entsteht der Barverkaufspreis. Gegebenenfalls folgen die Rückrechnungen für Kundenskonto und Kundenrabatt.
+
+Kundenskonto wird vom Zielverkaufspreis abgezogen. Deshalb wird beim Hochrechnen vom Barverkaufspreis durch den verbleibenden Faktor geteilt.
+
+Kundenrabatt wird vom Listenverkaufspreis abgezogen. Auch hier wird beim Hochrechnen durch den verbleibenden Faktor geteilt.
+
+Umsatzsteuer wird auf die passende Nettobasis gerechnet. Netto und Brutto dürfen nicht ungeprüft gemischt werden.
+
+Bei Rückwärtskalkulation werden Zuschläge durch Division rückgängig gemacht. Ein Aufschlag von zehn Prozent entspricht dem Faktor eins Komma eins.
+
+Ein Abzug von zwei Prozent lässt 98 Prozent übrig. Rückwärts wird durch null Komma 98 geteilt.
+
+Ein Angebot soll Leistung und Menge eindeutig beschreiben. Preise, Lieferung, Zahlung und Bindung müssen erkennbar sein.
+
+Eine Anfrage ist nicht automatisch ein fertiger Kaufvertrag. Maßgeblich sind passende Willenserklärungen und ihre Bedingungen.
+
+Eine abweichende Bestellung kann ein neues Angebot sein. Eine Auftragsbestätigung ist deshalb anhand ihres Inhalts einzuordnen.
+
+Bei Wareneingang werden Menge, Identität und sichtbarer Zustand geprüft. Danach folgen geeignete Ausstattungs- und Funktionstests.
+
+Bestellung, Lieferschein und Lieferung werden verglichen. Abweichungen werden nachvollziehbar dokumentiert.
+
+Bei beiderseitigen Handelsgeschäften gelten besondere Untersuchungs- und Rügepflichten. Erkennbare Mängel müssen grundsätzlich unverzüglich angezeigt werden.
+
+Später erkennbare Mängel werden nach Entdeckung unverzüglich angezeigt. Eine pauschale starre Tageszahl passt nicht zu jedem Fall.
+
+Bei einer verspäteten Lieferung werden Status und Alternativen geklärt. Auftraggeber und Projektplanung werden frühzeitig informiert.
+
+Rechtliche Verzugsfolgen hängen von den konkreten Voraussetzungen ab. Nicht jede Terminabweichung erlaubt automatisch jede Rechtsfolge.
+
+Ein etwas teurerer Lieferant kann insgesamt wirtschaftlicher sein. Rechtzeitige Lieferung und geringere Ausfallkosten können den Mehrpreis rechtfertigen.
+
+T C O betrachtet die Gesamtkosten der Nutzung. Kaufpreis, Energie, Lizenzen, Wartung, Schulung und Ausfälle gehören dazu.
+
+Leasing überlässt die Nutzung gegen vereinbarte Zahlungen. Eigentümer bleibt grundsätzlich der Leasinggeber.
+
+Eine Kaufoption ist eine vereinbarte Erwerbsmöglichkeit. Eigentum geht beim Leasing nicht automatisch am Ende über.
+
+Leasing kann Liquidität schonen und Zahlungen planbar machen. Laufzeitbindung und Gesamtkosten müssen trotzdem bewertet werden.
+
+Die einfache Amortisationszeit ist Investition geteilt durch periodische Einsparung. Das Ergebnis hat die Zeiteinheit dieser Einsparung.
+
+Ein Einzelkaufmann haftet grundsätzlich auch mit seinem Privatvermögen. Ein gesetzliches Mindestkapital wie bei der regulären G m b H ist dafür nicht vorgeschrieben.
+
+Die reguläre G m b H ist eine eigene juristische Person. Ihr Stammkapital beträgt mindestens 25000 Euro.
+
+Für G m b H-Schulden haftet grundsätzlich das Gesellschaftsvermögen. Persönliche Bürgschaften oder Pflichtverletzungen können zusätzliche persönliche Risiken schaffen.
+
+Stammkapital und sofortige Bareinzahlung sind nicht dieselbe Aussage. Die Gründungsvoraussetzungen müssen sauber unterschieden werden.
+
+Beim Angebotsvergleich zählt die vorgegebene Rundungsregel. Ein zu früh gerundetes Zwischenergebnis kann Folgewerte verändern.
+
+Gesetzliche Mängelhaftung und freiwillige Garantie sind verschieden. Eine Garantie ersetzt die gesetzlichen Rechte nicht automatisch.
+
+Bei einer mangelhaften Kaufsache steht grundsätzlich zunächst Nacherfüllung im Vordergrund. Weitere Rechte hängen von den jeweiligen Voraussetzungen ab.
+
+Eigentumsvorbehalt kann Eigentumsübergang an die vollständige Zahlung knüpfen. Besitz und Eigentum sind deshalb zu unterscheiden.
+
+Eine Mahnung fordert eine fällige Leistung ein. Ob sie für Verzug nötig ist, hängt vom konkreten Fall ab.
+
+Eine Nachfrist gibt zusätzliche Zeit zur ordnungsgemäßen Leistung. Sie ist von der bloßen Feststellung einer Verspätung zu unterscheiden.
+
+Annahmeverzug betrifft eine nicht ordnungsgemäß angenommene angebotene Leistung. Auch dafür müssen die jeweiligen Voraussetzungen vorliegen.
+
+Fixe Kosten ändern sich im betrachteten Bereich nicht direkt mit der Menge. Variable Kosten hängen von der betrachteten Leistungsmenge ab.

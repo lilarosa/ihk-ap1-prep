@@ -1,0 +1,139 @@
+Kapitel 7. Programmierung, Algorithmik, Tests und U M L.
+
+Ein Algorithmus beschreibt eine eindeutige Verarbeitung in einzelnen Schritten. Eingabe, Verarbeitung und Ausgabe werden getrennt betrachtet.
+
+Vor dem Schreiben wird die Anforderung zerlegt. Benötigt werden Eingaben, Zwischenwerte, Bedingungen und das geforderte Ergebnis.
+
+Eine Variable speichert einen Wert mit einem vorgesehenen Datentyp. Der Typ beeinflusst erlaubte Operationen und Wertebereiche.
+
+Ganzzahlen sind nicht automatisch beliebig groß. Ein Überlauf kann ein mathematisch erwartetes Ergebnis verfälschen.
+
+Eine boolesche Variable enthält wahr oder falsch. Sie eignet sich für Bedingungen und Prüfergebnisse.
+
+Zuweisung verändert einen Variablenwert. Ein Vergleich prüft eine Beziehung und liefert einen Wahrheitswert.
+
+Eine Sequenz führt Anweisungen nacheinander aus. Eine Verzweigung wählt einen passenden Ausführungspfad.
+
+UND verlangt beide Bedingungen. ODER verlangt mindestens eine Bedingung.
+
+NICHT kehrt einen Wahrheitswert um. Klammern machen die gewünschte Kombination eindeutig.
+
+Mindestens bedeutet größer oder gleich. Mehr als bedeutet strikt größer.
+
+Höchstens bedeutet kleiner oder gleich. Weniger als bedeutet strikt kleiner.
+
+Ein If-Else unterscheidet zwei Wege. Bei mehreren Regeln muss ihre Reihenfolge zur Spezifikation passen.
+
+Eine While-Schleife prüft die Bedingung vor dem Durchlauf. Sie kann deshalb auch kein einziges Mal laufen.
+
+Eine Do-While-Schleife prüft erst nach dem Schleifenkörper. Sie läuft mindestens einmal.
+
+Eine For-Schleife fasst häufig Initialisierung, Bedingung und Fortschaltung zusammen. Die Abbruchbedingung bleibt trotzdem entscheidend.
+
+Eine Schleife braucht einen nachvollziehbaren Fortschritt. Sonst kann sie unbeabsichtigt unendlich weiterlaufen.
+
+Arrays speichern mehrere Elemente über Indizes. In Java und C# beginnt der erste Index bei null.
+
+Bei vier Elementen sind die gültigen Indizes null bis drei. Die Länge vier ist kein gültiger Elementindex.
+
+Beim Durchlaufen gilt häufig: Index kleiner als Länge. Kleiner oder gleich kann einen Zugriff außerhalb des Arrays auslösen.
+
+Eine Summe startet üblicherweise bei null. Jeder passende Wert wird zur bisherigen Summe addiert.
+
+Eine Zählvariable startet üblicherweise ebenfalls bei null. Pro passendem Eintrag wird sie um eins erhöht.
+
+Summe und Anzahl sind unterschiedliche Größen. Der Wert eines Eintrags ist nicht seine Anzahl.
+
+Beim Maximum kann der erste vorhandene Wert als Anfang dienen. Eine ungeprüfte Null ist bei ausschließlich negativen Werten falsch.
+
+Ein Durchschnitt ergibt sich aus Summe geteilt durch Anzahl. Das leere Array braucht eine ausdrücklich festgelegte Behandlung.
+
+Bei Ganzzahldivision kann der Nachkommateil verloren gehen. Eine nötige Umwandlung erfolgt vor der Division.
+
+Ein Rückgabetyp mit Nachkommastellen repariert keine vorherige Ganzzahldivision. Die Operanden bestimmen die ausgeführte Rechnung.
+
+Eine Methode erhält Parameter und kann einen Wert zurückgeben. Parameter und lokale Variablen haben einen begrenzten Gültigkeitsbereich.
+
+Return beendet die gesamte aktuelle Methode. Es bedeutet nicht nur Ende dieser Schleifenrunde.
+
+Bei einer Existenzsuche darf ein Treffer sofort wahr liefern. Ein nicht passender erster Eintrag beweist noch nicht, dass nichts vorhanden ist.
+
+Die Rückgabe falsch steht bei linearer Existenzsuche normalerweise nach der Schleife. Nur dann wurden alle nötigen Einträge berücksichtigt.
+
+In Java vergleicht equals den Inhalt geeigneter Strings. Ein doppeltes Gleichheitszeichen vergleicht dort Objektreferenzen.
+
+Ein Schreibtischtest führt Code schrittweise von Hand aus. Nach jedem Durchlauf werden die relevanten Variablenwerte notiert.
+
+Nicht ausgeführte Zuweisungen verändern keine Variable. Bei einer falschen If-Bedingung bleibt der bisherige Wert bestehen.
+
+Bei C S V wird zuerst die vereinbarte Struktur gelesen. Feldreihenfolge, Trennzeichen und mögliche Kopfzeile sind entscheidend.
+
+Ein leeres letztes C S V-Feld muss beim Aufteilen erhalten bleiben. In Java kann dafür Split mit negativem Limit verwendet werden.
+
+Ein C S V-Text mit den Buchstaben NULL ist nicht automatisch eine Java-Nullreferenz. Die Zahl null ist außerdem nicht dasselbe wie ein fehlender Preis.
+
+Bei einer Preisprüfung wird zuerst die richtige Artikelnummer verglichen. Erst dann wird das zugehörige Preisfeld bewertet.
+
+Bei der Regel mindestens ein fehlerhafter Eintrag genügt ein passender Fehler. Ein vorheriger gültiger Eintrag darf die Suche nicht zu früh beenden.
+
+Bei begrenztem Dateispeicher wird die Löschreihenfolge beachtet. Wenn älteste zuerst gefordert ist, darf nicht irgendeine große Datei verschwinden.
+
+Strikt unter einem Grenzwert bedeutet: Gleichheit reicht noch nicht. Die Schleife muss bei Gleichheit gegebenenfalls weiterarbeiten.
+
+Nach erfolgreichem Löschen wird die Gesamtgröße aktualisiert. Alle Größen müssen dieselbe Einheit verwenden.
+
+Ein Syntaxfehler verletzt die Sprachregeln. Ein Laufzeitfehler tritt erst bei der Ausführung auf.
+
+Ein logischer Fehler kann gültigen Code mit falschem Ergebnis erzeugen. Er wird durch passende Soll-Ist-Tests sichtbar.
+
+Grenzwerttests prüfen direkt an und neben einer Grenze. Leere Eingaben und fehlende Treffer sind wichtige Sonderfälle.
+
+Äquivalenzklassen bündeln Eingaben mit erwartet gleichem Verhalten. Repräsentative Tests werden aus den relevanten Klassen gewählt.
+
+Blackbox-Tests prüfen Verhalten anhand der Spezifikation. Whitebox-Tests berücksichtigen zusätzlich die interne Programmstruktur.
+
+Ein Struktogramm stellt Kontrollstrukturen verschachtelt dar. Ein Programmablaufplan stellt Abläufe mit Symbolen und Verbindungen dar.
+
+Eine Klasse beschreibt gemeinsame Attribute und Methoden. Ein Objekt ist eine konkrete Instanz mit eigenen Werten.
+
+Kapselung schützt den inneren Zustand durch kontrollierte Zugriffe. Private Attribute werden nicht beliebig von außen verändert.
+
+Vererbung beschreibt eine Ist-ein-Beziehung. Gemeinsames Verhalten kann über eine passende Oberklasse wiederverwendet werden.
+
+Polymorphie erlaubt unterschiedliche konkrete Implementierungen über eine gemeinsame Schnittstelle. Die tatsächlich ausgeführte Methode hängt vom konkreten Objekt ab.
+
+Im U M L-Klassendiagramm bedeutet Plus öffentlich und Minus privat. Attribute haben Typen, Methoden Parameter und gegebenenfalls Rückgabetypen.
+
+Eine Assoziation beschreibt eine Beziehung zwischen Objekten. Multiplizitäten nennen die erlaubte Anzahl zugeordneter Objekte.
+
+Eine Komposition beschreibt eine starke Teil-Ganzes-Beziehung. Ihre Teile sind an den Lebenszyklus des Ganzen gebunden.
+
+Ein Use-Case-Diagramm zeigt Akteure und fachliche Anwendungsfälle. Es zeigt nicht die genaue Reihenfolge einzelner Codeanweisungen.
+
+Ein Aktivitätsdiagramm beschreibt einen Ablauf. Ein Sequenzdiagramm beschreibt zeitlich geordnete Nachrichten zwischen Beteiligten.
+
+Versionsverwaltung macht Änderungen nachvollziehbar. Aussagekräftige Commits und passende Reviews helfen bei Fehlersuche und Zusammenarbeit.
+
+Ein Off-by-one-Fehler verschiebt eine Grenze um eins. Typische Folgen sind ein ausgelassenes letztes Element oder ein ungültiger Index.
+
+Kurzschlussauswertung prüft nicht immer beide Teilbedingungen. Bei UND kann ein falscher erster Teil bereits entscheiden.
+
+Bei ODER kann ein wahrer erster Teil bereits entscheiden. Das ist bei Schutzprüfungen vor weiteren Zugriffen wichtig.
+
+Break verlässt die betreffende Schleife. Continue überspringt den Rest des aktuellen Schleifendurchlaufs.
+
+Ein Konstruktor initialisiert ein neues Objekt. Er ist keine beliebige Methode mit Rückgabewert.
+
+Ein Interface beschreibt einen Vertrag für angebotene Funktionen. Eine abstrakte Klasse kann zusätzlich gemeinsamen Zustand und Implementierung bereitstellen.
+
+Rekursion bedeutet einen direkten oder indirekten Selbstaufruf. Sie braucht eine passende Abbruchbedingung und Fortschritt zum Abbruch.
+
+Bei U M L steht die leere Raute für Aggregation. Die ausgefüllte Raute bezeichnet Komposition mit stärkerer Lebenszyklusbindung.
+
+Multiplizität eins bedeutet genau eins, null bis eins bedeutet optional. Eins bis beliebig verlangt mindestens ein zugeordnetes Objekt.
+
+Include bezeichnet im Use Case eine eingebundene Teilfunktion. Extend beschreibt eine bedingte Erweiterung unter den modellierten Voraussetzungen.
+
+Ein Zustandsdiagramm zeigt Zustände und Übergänge. Es ist besonders für ereignisabhängiges Verhalten geeignet.
+
+Methoden zerlegen Aufgaben und vermeiden unnötige Wiederholung. Gute Namen und klar begrenzte Aufgaben erleichtern das Verstehen.

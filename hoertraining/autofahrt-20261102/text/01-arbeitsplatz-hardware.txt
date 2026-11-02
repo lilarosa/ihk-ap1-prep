@@ -1,0 +1,75 @@
+Kapitel 1. Arbeitsplatz, Hardware und Schnittstellen.
+
+Die C P U führt Befehle aus und verarbeitet Daten. Ihre Eignung hängt von der konkreten Anwendung ab.
+
+Mehr Prozessorkerne helfen bei parallelisierbaren Aufgaben. Ein hoher Takt allein beweist keine höhere Gesamtleistung.
+
+Ein logischer Thread ist kein zusätzlicher physischer Kern. Mehrere Threads können sich die Ressourcen eines Kerns teilen.
+
+Der Cache hält häufig benötigte Daten nahe an der C P U. Er verkürzt bestimmte Speicherzugriffe.
+
+Der RAM hält aktive Programme und Daten bereit. Sein Inhalt geht ohne Strom normalerweise verloren.
+
+Zu wenig RAM führt häufig zu zusätzlicher Auslagerung. Das kann Anwendungen deutlich verlangsamen.
+
+Die S S D speichert Daten dauerhaft. Sie arbeitet ohne bewegliche Schreib- und Leseköpfe.
+
+Eine H D D speichert magnetisch auf rotierenden Scheiben. Sie bietet häufig viel Kapazität pro Euro.
+
+Eine S S D bietet meist kurze Zugriffszeiten und ist unempfindlicher gegen Erschütterungen. Trotzdem benötigt sie Backups.
+
+M.2 bezeichnet eine Bauform. M.2 bedeutet nicht automatisch N V M Express.
+
+Sata und P C I Express sind unterschiedliche Anbindungen. N V M Express ist ein Protokoll für geeignete P C I Express-Speicher.
+
+Bei einer Aufrüstung müssen Sockel, Chipsatz und Firmware passen. Auch Kühlung und Stromversorgung sind zu prüfen.
+
+RAM-Generation und Mainboard müssen kompatibel sein. Die Kapazität muss zum Bedarf passen.
+
+Für Dual Channel gilt die Slotbelegung des Mainboard-Handbuchs. Zwei beliebige belegte Slots garantieren ihn nicht.
+
+Vor dem Komponenteneinbau wird die Stromversorgung sicher getrennt. Geeigneter E S D-Schutz reduziert Schäden durch statische Entladung.
+
+Wärmeleitpaste verbessert den Wärmeübergang zwischen Prozessor und Kühler. Sie ersetzt keinen korrekt montierten Kühler.
+
+Das Netzteil muss passende Anschlüsse und ausreichende Leistung bieten. Wirkungsgrad und Leistungsreserve sind zusätzlich wichtig.
+
+U S B Typ C beschreibt zuerst die Steckerform. Die Form garantiert weder hohe Datenrate noch Laden oder Bildausgabe.
+
+Für ein Dock müssen Notebook, Dock und Kabel zusammenpassen. Ladeleistung und gleichzeitige Monitorauflösungen werden getrennt geprüft.
+
+H D M I und DisplayPort übertragen digitale Bildsignale und üblicherweise Ton. Die unterstützte Kombination hängt von Geräten, Versionen und Kabeln ab.
+
+Ethernet über Kupfer verwendet häufig achtpolige Steckverbindungen. Kabelkategorie, Länge und Installation beeinflussen die erreichbare Verbindung.
+
+Power over Ethernet versorgt geeignete Geräte über die Netzwerkleitung mit Energie. Gleichzeitig werden Daten übertragen.
+
+Bei Power over Ethernet zählen Portleistung und Gesamtbudget des Switches. Viele einzeln passende Geräte können gemeinsam das Budget überschreiten.
+
+Eine U S V überbrückt begrenzte Stromunterbrechungen. Sie ermöglicht auch ein kontrolliertes Herunterfahren.
+
+Ein großer Monitor allein ist noch kein ergonomischer Arbeitsplatz. Höhe, Abstand, Beleuchtung und Reflexionen müssen passen.
+
+Stuhl und Tisch werden zur Person eingestellt. Füße stehen stabil, Arme liegen entspannt und die Haltung wechselt regelmäßig.
+
+Bei der Geräteauswahl zählen Anforderungen und Kompatibilität. Ein teureres Gerät ist nicht automatisch die passendere Lösung.
+
+Zur Inbetriebnahme gehören Betriebssystem, Treiber und Updates. Danach folgen Sicherheitskonfiguration, Funktionstests und Dokumentation.
+
+Ein gutes Testprotokoll nennt Gerät, Konfiguration und Testfall. Es vergleicht Soll und Ist und dokumentiert Abweichungen.
+
+Bei gemeinsam genutzten Schreibtischen werden Personen und Arbeitsplätze getrennt gezählt. Nicht jede Person benötigt eine eigene Dockingstation am Standort.
+
+Auflösung beschreibt die Anzahl der Bildpunkte. Bildwiederholrate beschreibt Aktualisierungen pro Sekunde.
+
+DisplayPort-M S T kann mehrere Bildschirme über eine geeignete Verbindung ansteuern. Geräte, Verkabelung und verfügbare Bandbreite müssen das unterstützen.
+
+Ein Mainboard-Chipsatz koordiniert wichtige Anschluss- und Kommunikationsfunktionen. Er begrenzt mit der Plattform mögliche Erweiterungen.
+
+E C C-Speicher kann bestimmte Speicherfehler erkennen und korrigieren. Prozessor und Mainboard müssen diese Funktion unterstützen.
+
+Ein T P M unterstützt den geschützten Umgang mit kryptografischen Schlüsseln. Es ersetzt weder Zugriffsschutz noch Datensicherung.
+
+Thunderbolt kann mehrere Übertragungsfunktionen über geeignete Anschlüsse bündeln. Eine U S B Typ C-Buchse allein beweist keine Thunderbolt-Unterstützung.
+
+Die Wattangabe eines Netzteils ist keine dauerhaft verbrauchte Energiemenge. Tatsächliche Last, Wirkungsgrad und Betriebszeit bestimmen den Verbrauch.
