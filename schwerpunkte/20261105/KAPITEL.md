@@ -10,8 +10,8 @@
 - 17:48 WLAN: Leistung, Sicherheit und Auswahl
 - 20:17 SLA, Meldungsarten und Priorität
 - 22:23 Organigramm, Stellenarten und GmbH
-- 24:12 Stromkosten und Einsparung
-- 25:13 Separates Zusatzsignal aus dem Sommer-2026-Material
+- 24:33 Stromkosten und Einsparung
+- 25:33 Separates Zusatzsignal aus dem Sommer-2026-Material
 
 ## DE_ZH
 
@@ -23,5 +23,5 @@
 - 24:21 WLAN: Leistung, Sicherheit und Auswahl
 - 27:44 SLA, Meldungsarten und Priorität
 - 30:28 Organigramm, Stellenarten und GmbH
-- 32:54 Stromkosten und Einsparung
-- 34:17 Separates Zusatzsignal aus dem Sommer-2026-Material
+- 33:14 Stromkosten und Einsparung
+- 34:37 Separates Zusatzsignal aus dem Sommer-2026-Material

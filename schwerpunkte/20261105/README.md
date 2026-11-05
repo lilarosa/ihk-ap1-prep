@@ -12,8 +12,8 @@
 
 ## 直接听
 
-- [德中解释版：37.3 分钟](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_ZH_Gesamt.mp3)。德语答案后接一句中文提示。
-- [纯德语背诵版：27.4 分钟](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_Gesamt.mp3)。适合熟悉后重复听。
+- [德中解释版：37.6 分钟](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_ZH_Gesamt.mp3)。德语答案后接一句中文提示。
+- [纯德语背诵版：27.8 分钟](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_Gesamt.mp3)。适合熟悉后重复听。
 - [你关注的三主题：Schutzbedarf＋Angebot＋WLAN，14.6 分钟](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Top3_Schutzbedarf_Angebot_WLAN_DE_ZH.mp3)。德中版，便于重点循环。
 - [完整离线包：PDF＋全部音频＋文本](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_Komplettpaket.zip)。
 
@@ -30,7 +30,7 @@
 |Beschaffung, Angebot und Kalkulation|7|[3.6 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/05-angebote-DE.mp3)|[4.9 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/05-angebote-DE_ZH.mp3)|
 |WLAN: Leistung, Sicherheit und Auswahl|5|[2.5 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/06-wlan-DE.mp3)|[3.4 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/06-wlan-DE_ZH.mp3)|
 |SLA, Meldungsarten und Priorität|4|[2.1 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/07-service-DE.mp3)|[2.7 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/07-service-DE_ZH.mp3)|
-|Organigramm, Stellenarten und GmbH|3|[1.8 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/08-organisation-DE.mp3)|[2.4 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/08-organisation-DE_ZH.mp3)|
+|Organigramm, Stellenarten und GmbH|3|[2.2 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/08-organisation-DE.mp3)|[2.8 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/08-organisation-DE_ZH.mp3)|
 |Stromkosten und Einsparung|2|[1.0 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/09-energie-DE.mp3)|[1.4 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/09-energie-DE_ZH.mp3)|
 |Separates Zusatzsignal aus dem Sommer-2026-Material|4|[2.2 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/10-zusatz-2026-DE.mp3)|[3.0 min](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/10-zusatz-2026-DE_ZH.mp3)|
 
@@ -46,6 +46,6 @@
 
 实际出现位置、核心样本和2026补充的区别详见排序文件及[结构化频次表](haeufigkeit.json)。技术检查见[PRUEFBERICHT.json](PRUEFBERICHT.json)。
 
-核对用公共来源：[GmbHG §5](https://www.gesetze-im-internet.de/gmbhg/__5.html)、[§13](https://www.gesetze-im-internet.de/gmbhg/__13.html)、[DSK 视频监控说明](https://www.datenschutzkonferenz-online.de/orientierungshilfen.html)。
+核对用公共来源：[GmbHG §5](https://www.gesetze-im-internet.de/gmbhg/__5.html)、[§13](https://www.gesetze-im-internet.de/gmbhg/__13.html)、[IHK 商业登记](https://www.ihk.de/rhein-neckar/recht/wirtschaftsrecht/HandReg/Eintragung_ins_Handelsregister/EintragungHandelsregister/)、[DSK 视频监控说明](https://www.datenschutzkonferenz-online.de/orientierungshilfen.html)。
 
 Stand: 05.11.2026.

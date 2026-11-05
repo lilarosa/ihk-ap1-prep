@@ -6,8 +6,8 @@
     "voice_zh": null,
     "rate_zh": null,
     "full_file": "AP1_Schwerpunkte_DE_Gesamt.mp3",
-    "duration_seconds": 1646.904,
-    "full_sha256": "b88f9d1b5206123c17aa789960e9e43028fc0243239fdb36a65fbcce0e7605b4",
+    "duration_seconds": 1667.712,
+    "full_sha256": "8dc20c2ac5f046ab0c8501fddef369617349200d6c7bf166a3183114f5f55a94",
     "chapters": [
       {
         "file": "01-netzwerk-DE.mp3",
@@ -263,7 +263,7 @@
         "file": "08-organisation-DE.mp3",
         "title": "Organigramm, Stellenarten und GmbH",
         "start_seconds": 1343.064,
-        "duration_seconds": 109.8,
+        "duration_seconds": 130.608,
         "markers": [
           {
             "id": "08.01",
@@ -278,13 +278,13 @@
             "seconds": 69.048
           }
         ],
-        "sha256": "06a4ae2c6faa9b493f399b48cd4dcecce28528ac98d96e70eebd5ff35cf48465",
-        "bytes": 1098813
+        "sha256": "d1e98e602de95ad5ee34da76e8bdc7e23792e8aec8fd62f201375ca11c459abb",
+        "bytes": 1306893
       },
       {
         "file": "09-energie-DE.mp3",
         "title": "Stromkosten und Einsparung",
-        "start_seconds": 1452.864,
+        "start_seconds": 1473.672,
         "duration_seconds": 60.216,
         "markers": [
           {
@@ -302,7 +302,7 @@
       {
         "file": "10-zusatz-2026-DE.mp3",
         "title": "Separates Zusatzsignal aus dem Sommer-2026-Material",
-        "start_seconds": 1513.08,
+        "start_seconds": 1533.888,
         "duration_seconds": 133.824,
         "markers": [
           {
@@ -335,8 +335,8 @@
     "voice_zh": "zh-CN-XiaoxiaoNeural",
     "rate_zh": "-5%",
     "full_file": "AP1_Schwerpunkte_DE_ZH_Gesamt.mp3",
-    "duration_seconds": 2236.104,
-    "full_sha256": "a528df0acd366e6cd916bbc9f8c1617a40c619fd2baf69ae9343875e075c0823",
+    "duration_seconds": 2256.12,
+    "full_sha256": "dfb2bdbc6f33be1789b06be2c69bc63f9dfce1aa6ec832c7e029d6dd57f6d009",
     "chapters": [
       {
         "file": "01-netzwerk-DE_ZH.mp3",
@@ -592,7 +592,7 @@
         "file": "08-organisation-DE_ZH.mp3",
         "title": "Organigramm, Stellenarten und GmbH",
         "start_seconds": 1828.848,
-        "duration_seconds": 145.344,
+        "duration_seconds": 165.36,
         "markers": [
           {
             "id": "08.01",
@@ -607,13 +607,13 @@
             "seconds": 90.672
           }
         ],
-        "sha256": "0cedfe5017afc99173154473c86b3212dba814ea61c06a7d5b4830e3c1b05760",
-        "bytes": 1454256
+        "sha256": "fabda7df4a5fa4c1c40f9a7596a510614516a7ee5ec1425b37f544cce19ff162",
+        "bytes": 1654416
       },
       {
         "file": "09-energie-DE_ZH.mp3",
         "title": "Stromkosten und Einsparung",
-        "start_seconds": 1974.192,
+        "start_seconds": 1994.208,
         "duration_seconds": 83.424,
         "markers": [
           {
@@ -631,7 +631,7 @@
       {
         "file": "10-zusatz-2026-DE_ZH.mp3",
         "title": "Separates Zusatzsignal aus dem Sommer-2026-Material",
-        "start_seconds": 2057.616,
+        "start_seconds": 2077.632,
         "duration_seconds": 178.488,
         "markers": [
           {

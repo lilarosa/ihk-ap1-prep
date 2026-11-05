@@ -6,7 +6,7 @@
 
 Mit Belegmatrix: WLAN 3/5; Schutzbedarfs-/Gefährdungsanalyse 4/5; Beschaffung 4/5. Die markierte Sommer-2026-Unterlage wird getrennt eingeordnet. Neuronale Conrad-Stimme in langsamerem Deutsch, optional mit kurzen chinesischen Erklärungen.
 
-[Deutsch mit Chinesisch, 37 Minuten](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_ZH_Gesamt.mp3) · [Schutzbedarf, Angebot und WLAN, 15 Minuten](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Top3_Schutzbedarf_Angebot_WLAN_DE_ZH.mp3)
+[Deutsch mit Chinesisch, rund 38 Minuten](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_ZH_Gesamt.mp3) · [Schutzbedarf, Angebot und WLAN, 15 Minuten](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Top3_Schutzbedarf_Angebot_WLAN_DE_ZH.mp3)
 
 ## Neu: AP1-Wissen für die Autofahrt, ohne Quizpausen
 

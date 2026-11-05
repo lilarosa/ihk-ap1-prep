@@ -602,13 +602,13 @@
 
 ### 08.03 e.K. und reguläre GmbH
 
-**考法（概括）：** Vergleichen Sie e.K. und reguläre GmbH bezüglich Haftung, Kapital und Führung und formulieren Sie eine begründete Empfehlung.
+**考法（概括）：** Vergleichen Sie e.K. und reguläre GmbH nach Handelsregister, Haftung, Kapital und Führung und formulieren Sie eine begründete Empfehlung.
 
-**德语背诵答案：** Der Einzelkaufmann haftet grundsätzlich persönlich und hat kein gesetzliches Mindestkapital. Die reguläre GmbH ist eine juristische Person mit mindestens 25000 Euro Stammkapital und bestellter Geschäftsführung. Für Gesellschaftsschulden haftet grundsätzlich das Gesellschaftsvermögen. Eine GmbH kann bei Beteiligungswunsch und Risikobegrenzung passen; Gründungsaufwand und Kapitalbedarf sind abzuwägen. Ausnahmen persönlicher Haftung und persönliche Bürgschaften bleiben gesondert zu prüfen.
+**德语背诵答案：** Der Einzelkaufmann haftet grundsätzlich persönlich, führt sein Unternehmen und hat kein gesetzliches Mindestkapital. Er steht im Handelsregister in Abteilung A. Die reguläre GmbH ist eine juristische Person mit mindestens 25000 Euro Stammkapital und bestellter Geschäftsführung. Sie steht in Abteilung B und führt den Zusatz GmbH. Ihre Eintragung ist für die Entstehung notwendig, also konstitutiv. Beim Istkaufmann bestätigt die Eintragung eine bereits bestehende Kaufmannseigenschaft, also deklaratorisch. Für GmbH-Schulden haftet grundsätzlich das Gesellschaftsvermögen. Beteiligungswunsch und Risikobegrenzung sind gegen Kapitalbedarf und Gründungsaufwand abzuwägen. Persönliche Bürgschaften und Pflichtverletzungen können weitere Haftungsrisiken schaffen.
 
-**中文提示：** 背个人无限责任对公司财产责任、无最低资本对2.5万注册资本、本人经营对经理。不要说 GmbH 在任何情况下绝不个人负责。
+**中文提示：** 登记A对B，GmbH登记才成立；Istkaufmann的登记确认已有身份，别推广到所有个体经营者。再比较责任、资本、经营权。
 
-**答题关键词：** Haftung; 25000 Euro Stammkapital; begründete Abwägung
+**答题关键词：** A/B und Registerwirkung; Haftung/Kapital/Führung; begründete Abwägung
 
 **试卷依据：** S23 IT1.2; W23 IT3.2
 
