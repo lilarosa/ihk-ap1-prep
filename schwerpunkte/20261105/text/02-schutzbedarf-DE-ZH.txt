@@ -1,0 +1,28 @@
+Schutzziele, Schutzbedarf und Sicherheit.
+
+Die drei Schutzziele. Vertraulichkeit schützt Informationen vor unberechtigtem Lesen. Integrität schützt ihre Richtigkeit und vor unberechtigter Veränderung. Verfügbarkeit bedeutet, dass berechtigte Personen die Informationen rechtzeitig nutzen können. Bei einer Kundenverwaltung bedrohen Datenabfluss, manipulierte Aufträge und ein Systemausfall jeweils unterschiedliche Schutzziele.
+保密看谁能读，完整性看有没有被改，可用性看需要时能不能用。解释题要加业务后果，不只列三个名词。
+
+Hohe Vertraulichkeit und Integrität begründen. Die Vertraulichkeit ist hoch, wenn der Missbrauch der Kundendaten einen großen Schaden verursacht. Die Integrität ist hoch, wenn manipulierte Mengen oder Preise zu hohen finanziellen Verlusten und Ansehensschäden führen. Die Einstufung wird mit den Schadensgrenzen der Anlage abgeglichen. Ich nenne immer Schutzziel, möglichen Schaden und dessen Größenordnung.
+2023 夏范例：客户数据泄露与订单金额被改，都要说明“大损失”。具体等级依据附件阈值，不能只写“数据重要”。
+
+Normale Verfügbarkeit trotz wichtiger Daten. Die Schutzziele werden getrennt beurteilt. Wenn die Daten zentral vorhanden sind und die Arbeit auf einem Ersatzgerät fortgesetzt werden kann, ist ein längerer Ausfall dieses Laptops möglicherweise hinnehmbar. Dann kann seine Verfügbarkeit nach der vorgegebenen Tabelle normal sein. Daraus folgt keine niedrige Anforderung an die Vertraulichkeit.
+客户数据很敏感，不代表这台笔记本必须随时在线。能换设备继续干活时，可用性可以正常；三个目标不能一刀切。
+
+Maximumprinzip. Nach dem Maximumprinzip übernimmt das System je Schutzziel die höchste relevante Anforderung seiner Anwendungen. Ein Mittelwert würde die kritischere Anwendung unzureichend schützen. Abhängigkeiten werden berücksichtigt. Besondere Kumulations- oder Verteilungseffekte müssen zusätzlich begründet werden; sie sind keine pauschale Ausnahme.
+每个目标分别取最高，不是给整台机器算一个平均分。先保密取最高，再完整性取最高，再可用性取最高。
+
+Serverraum: sehr hoher Schutzbedarf. Unberechtigter Zutritt kann vertrauliche Geschäfts- und Kundendaten offenlegen. Manipulierte Server oder Daten können zentrale Entscheidungen und Abläufe verfälschen. Ein Ausfall kann wesentliche Geschäftsprozesse gleichzeitig stoppen. Die Kategorie sehr hoch ist dann begründbar, wenn diese Folgen die entsprechenden außergewöhnlich schweren Schadenskriterien der Anlage erfüllen.
+用“泄露、被改、停业务”分别解释。不能只因它叫服务器机房，就自动判三项都是非常高。
+
+Vier Verfügbarkeitsrisiken und Maßnahmen. Stromausfall wird durch eine passend dimensionierte USV begrenzt. Hardwareausfall wird durch geeignete Redundanz abgefedert. Überhitzung wird durch kontrollierte Kühlung und Temperaturüberwachung reduziert. Datenverlust durch Schadsoftware oder Fehlbedienung erfordert geschützte Backups und getestete Wiederherstellung. Jede Maßnahme muss zum genannten Risiko passen.
+一一对应背：停电配 USV，硬件坏配冗余，过热配散热监控，数据丢失配备份恢复。只列四项措施不够。
+
+Ransomware: Folgen und Verhalten. Verschlüsselte unbrauchbare Dateien beeinträchtigen Verfügbarkeit und Integrität. Die Vertraulichkeit ist zusätzlich betroffen, wenn Daten ausgespäht oder veröffentlicht werden. Mitarbeitende prüfen verdächtige Absender, Links und Anhänge über einen unabhängigen Kanal und umgehen keine Schutzmaßnahmen. Updates, minimale Rechte und geschützte Backups ergänzen die Schulung; Verdachtsfälle werden sofort gemeldet.
+勒索加密会影响可用和完整性；保密性要看是否泄露。不要把“攻击者加密了”误当成正常的保密措施。
+
+Daten richtig kategorisieren. Geburtsdatum oder Sozialversicherungsnummer einer identifizierbaren Person sind personenbezogene Daten. Nicht öffentliche Konstruktionsunterlagen oder Lieferantenabsprachen können Geschäftsgeheimnisse sein, wenn die rechtlichen Schutzvoraussetzungen erfüllt sind. Öffentlich bekannte Kantinenpreise ohne Personenbezug sind hier Sachinformationen. Nicht jeder vertrauliche Inhalt fällt deshalb automatisch unter dieselbe Datenkategorie.
+个人数据与商业秘密是两回事。供应商协议可能是秘密，但不是因此自动变成个人数据；公开饭菜价格通常是普通信息。
+
+Videoüberwachung und passender Schutzbedarf. Für die Aufnahmen werden Zweck, Rechtsgrundlage, Erforderlichkeit und Interessenabwägung geprüft. Der Bildausschnitt wird auf den nötigen Bereich begrenzt; Zugriff und Speicherdauer werden geregelt. Öffentliche Gehwege dürfen nicht pauschal durch Private überwacht werden. Ein Hinweisschild ersetzt keine Rechtsgrundlage. Die Schutzbedarfskategorien werden anschließend nach der konkreten Anlage begründet, nicht pauschal alle auf hoch gesetzt.
+背用途、法律基础、必要性、利益衡量，再说缩小画面、访问权和保存期。不能简单背“每个路人同意就够了”。

@@ -1,0 +1,13 @@
+Separates Zusatzsignal aus dem Sommer-2026-Material.
+
+Verfügbarkeit in Minuten. Bei 365 Tagen hat das Jahr 525600 Minuten. Die erlaubte Ausfallzeit ist diese Gesamtzeit mal eins minus Verfügbarkeit als Dezimalzahl. Bei 99,9 Prozent sind das 525,6 Minuten. Bei 99,99 Prozent sind es 52,56 Minuten. Die Prozentangabe muss vor der Rechnung richtig umgewandelt werden.
+99.9%不是99.9小时。先变0.999，再算1减它；最后结果带分钟单位。
+
+RAID 5 und RAID 10. RAID 5 nutzt grundsätzlich die Kapazität von Anzahl minus eins Platten und toleriert einen Plattenausfall. RAID 10 nutzt bei paarweiser Spiegelung die halbe Rohkapazität. Mehrere Ausfälle sind dort nur möglich, solange kein ganzes Spiegelpaar verloren geht. Bei sechs Platten mit je zwanzig Terabyte ergeben sich hundert Terabyte beziehungsweise sechzig Terabyte nutzbar, ohne weitere Verwaltungsverluste.
+6块20TB：RAID5是100TB，RAID10是60TB。RAID10能坏几块要看坏在哪对，不能背“任意坏一半”。
+
+RAID ersetzt kein Backup. RAID verbessert die Verfügbarkeit bei bestimmten Laufwerksausfällen. Es schützt nicht allgemein gegen Fehlbedienung, Schadsoftware oder Standortverlust und ersetzt deshalb kein Backup. Ein 3-2-1-Konzept sieht drei Kopien insgesamt, zwei Medientypen und eine räumlich getrennte Kopie vor. Eine offline oder unveränderlich geschützte Kopie und regelmäßige Wiederherstellungstests erhöhen die Robustheit.
+镜像会把误删也同步过去。背3份总副本、2种介质、1份异地，再加离线或不可改写和恢复测试。
+
+CSV nach fehlendem Preis durchsuchen. Ich teile jede Zeile nach der vorgegebenen Struktur auf und erhalte leere Endfelder. Nur bei passender Artikel-ID prüfe ich das Preisfeld auf leeren Inhalt oder den vereinbarten Text NULL. Sobald ein solcher Fehler gefunden ist, liefere ich true. False folgt erst nach der vollständig erfolglosen Suche. Ein vorhandener Preis in einer anderen Zeile beendet die Suche nicht vorzeitig.
+先匹配商品编号，再看对应价格。NULL文字、空字段和数字0不同；有一条正常价格，也不能跳过后面可能缺价的记录。

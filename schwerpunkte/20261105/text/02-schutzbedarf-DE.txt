@@ -1,0 +1,19 @@
+Schutzziele, Schutzbedarf und Sicherheit.
+
+Die drei Schutzziele. Vertraulichkeit schützt Informationen vor unberechtigtem Lesen. Integrität schützt ihre Richtigkeit und vor unberechtigter Veränderung. Verfügbarkeit bedeutet, dass berechtigte Personen die Informationen rechtzeitig nutzen können. Bei einer Kundenverwaltung bedrohen Datenabfluss, manipulierte Aufträge und ein Systemausfall jeweils unterschiedliche Schutzziele.
+
+Hohe Vertraulichkeit und Integrität begründen. Die Vertraulichkeit ist hoch, wenn der Missbrauch der Kundendaten einen großen Schaden verursacht. Die Integrität ist hoch, wenn manipulierte Mengen oder Preise zu hohen finanziellen Verlusten und Ansehensschäden führen. Die Einstufung wird mit den Schadensgrenzen der Anlage abgeglichen. Ich nenne immer Schutzziel, möglichen Schaden und dessen Größenordnung.
+
+Normale Verfügbarkeit trotz wichtiger Daten. Die Schutzziele werden getrennt beurteilt. Wenn die Daten zentral vorhanden sind und die Arbeit auf einem Ersatzgerät fortgesetzt werden kann, ist ein längerer Ausfall dieses Laptops möglicherweise hinnehmbar. Dann kann seine Verfügbarkeit nach der vorgegebenen Tabelle normal sein. Daraus folgt keine niedrige Anforderung an die Vertraulichkeit.
+
+Maximumprinzip. Nach dem Maximumprinzip übernimmt das System je Schutzziel die höchste relevante Anforderung seiner Anwendungen. Ein Mittelwert würde die kritischere Anwendung unzureichend schützen. Abhängigkeiten werden berücksichtigt. Besondere Kumulations- oder Verteilungseffekte müssen zusätzlich begründet werden; sie sind keine pauschale Ausnahme.
+
+Serverraum: sehr hoher Schutzbedarf. Unberechtigter Zutritt kann vertrauliche Geschäfts- und Kundendaten offenlegen. Manipulierte Server oder Daten können zentrale Entscheidungen und Abläufe verfälschen. Ein Ausfall kann wesentliche Geschäftsprozesse gleichzeitig stoppen. Die Kategorie sehr hoch ist dann begründbar, wenn diese Folgen die entsprechenden außergewöhnlich schweren Schadenskriterien der Anlage erfüllen.
+
+Vier Verfügbarkeitsrisiken und Maßnahmen. Stromausfall wird durch eine passend dimensionierte USV begrenzt. Hardwareausfall wird durch geeignete Redundanz abgefedert. Überhitzung wird durch kontrollierte Kühlung und Temperaturüberwachung reduziert. Datenverlust durch Schadsoftware oder Fehlbedienung erfordert geschützte Backups und getestete Wiederherstellung. Jede Maßnahme muss zum genannten Risiko passen.
+
+Ransomware: Folgen und Verhalten. Verschlüsselte unbrauchbare Dateien beeinträchtigen Verfügbarkeit und Integrität. Die Vertraulichkeit ist zusätzlich betroffen, wenn Daten ausgespäht oder veröffentlicht werden. Mitarbeitende prüfen verdächtige Absender, Links und Anhänge über einen unabhängigen Kanal und umgehen keine Schutzmaßnahmen. Updates, minimale Rechte und geschützte Backups ergänzen die Schulung; Verdachtsfälle werden sofort gemeldet.
+
+Daten richtig kategorisieren. Geburtsdatum oder Sozialversicherungsnummer einer identifizierbaren Person sind personenbezogene Daten. Nicht öffentliche Konstruktionsunterlagen oder Lieferantenabsprachen können Geschäftsgeheimnisse sein, wenn die rechtlichen Schutzvoraussetzungen erfüllt sind. Öffentlich bekannte Kantinenpreise ohne Personenbezug sind hier Sachinformationen. Nicht jeder vertrauliche Inhalt fällt deshalb automatisch unter dieselbe Datenkategorie.
+
+Videoüberwachung und passender Schutzbedarf. Für die Aufnahmen werden Zweck, Rechtsgrundlage, Erforderlichkeit und Interessenabwägung geprüft. Der Bildausschnitt wird auf den nötigen Bereich begrenzt; Zugriff und Speicherdauer werden geregelt. Öffentliche Gehwege dürfen nicht pauschal durch Private überwacht werden. Ein Hinweisschild ersetzt keine Rechtsgrundlage. Die Schutzbedarfskategorien werden anschließend nach der konkreten Anlage begründet, nicht pauschal alle auf hoch gesetzt.

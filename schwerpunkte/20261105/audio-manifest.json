@@ -1,0 +1,660 @@
+[
+  {
+    "version": "DE",
+    "voice_de": "de-DE-ConradNeural",
+    "rate_de": "-10%",
+    "voice_zh": null,
+    "rate_zh": null,
+    "full_file": "AP1_Schwerpunkte_DE_Gesamt.mp3",
+    "duration_seconds": 1646.904,
+    "full_sha256": "b88f9d1b5206123c17aa789960e9e43028fc0243239fdb36a65fbcce0e7605b4",
+    "chapters": [
+      {
+        "file": "01-netzwerk-DE.mp3",
+        "title": "Netzwerkkonfiguration und Diagnose",
+        "start_seconds": 0.0,
+        "duration_seconds": 212.352,
+        "markers": [
+          {
+            "id": "01.01",
+            "seconds": 3.672
+          },
+          {
+            "id": "01.02",
+            "seconds": 29.232
+          },
+          {
+            "id": "01.03",
+            "seconds": 59.472
+          },
+          {
+            "id": "01.04",
+            "seconds": 87.888
+          },
+          {
+            "id": "01.05",
+            "seconds": 116.376
+          },
+          {
+            "id": "01.06",
+            "seconds": 151.488
+          },
+          {
+            "id": "01.07",
+            "seconds": 185.4
+          }
+        ],
+        "sha256": "c73c43fdc78f4be7f06f7bc53c52da7af86dca1f57c147085f10b201ba2f1964",
+        "bytes": 2124333
+      },
+      {
+        "file": "02-schutzbedarf-DE.mp3",
+        "title": "Schutzziele, Schutzbedarf und Sicherheit",
+        "start_seconds": 212.352,
+        "duration_seconds": 275.832,
+        "markers": [
+          {
+            "id": "02.01",
+            "seconds": 3.912
+          },
+          {
+            "id": "02.02",
+            "seconds": 32.184
+          },
+          {
+            "id": "02.03",
+            "seconds": 61.296
+          },
+          {
+            "id": "02.04",
+            "seconds": 89.28
+          },
+          {
+            "id": "02.05",
+            "seconds": 115.392
+          },
+          {
+            "id": "02.06",
+            "seconds": 144.72
+          },
+          {
+            "id": "02.07",
+            "seconds": 175.272
+          },
+          {
+            "id": "02.08",
+            "seconds": 208.344
+          },
+          {
+            "id": "02.09",
+            "seconds": 240.984
+          }
+        ],
+        "sha256": "83b6bff4604bdfa8dd639613e80e15b638263a4ad9e2aba580dac69ae0bbf2d8",
+        "bytes": 2759139
+      },
+      {
+        "file": "03-datenbanken-DE.mp3",
+        "title": "Datenbanken, Datenmodell und SQL",
+        "start_seconds": 488.184,
+        "duration_seconds": 205.464,
+        "markers": [
+          {
+            "id": "03.01",
+            "seconds": 3.984
+          },
+          {
+            "id": "03.02",
+            "seconds": 34.152
+          },
+          {
+            "id": "03.03",
+            "seconds": 60.84
+          },
+          {
+            "id": "03.04",
+            "seconds": 94.896
+          },
+          {
+            "id": "03.05",
+            "seconds": 121.584
+          },
+          {
+            "id": "03.06",
+            "seconds": 147.6
+          },
+          {
+            "id": "03.07",
+            "seconds": 176.904
+          }
+        ],
+        "sha256": "1b50cb221779db671f4d52203f1bf0e419d704efdc3df461a5d24f15148e8ad4",
+        "bytes": 2055451
+      },
+      {
+        "file": "04-programmierung-DE.mp3",
+        "title": "Programmierlogik und Fehlerkorrektur",
+        "start_seconds": 693.648,
+        "duration_seconds": 160.872,
+        "markers": [
+          {
+            "id": "04.01",
+            "seconds": 3.456
+          },
+          {
+            "id": "04.02",
+            "seconds": 29.544
+          },
+          {
+            "id": "04.03",
+            "seconds": 53.112
+          },
+          {
+            "id": "04.04",
+            "seconds": 78.816
+          },
+          {
+            "id": "04.05",
+            "seconds": 107.568
+          },
+          {
+            "id": "04.06",
+            "seconds": 135.792
+          }
+        ],
+        "sha256": "edf0ee6fad51301c66c74ff86ac4c3e6b0e3f75d31cd95173a9478026134fd72",
+        "bytes": 1609535
+      },
+      {
+        "file": "05-angebote-DE.mp3",
+        "title": "Beschaffung, Angebot und Kalkulation",
+        "start_seconds": 854.52,
+        "duration_seconds": 214.056,
+        "markers": [
+          {
+            "id": "05.01",
+            "seconds": 3.792
+          },
+          {
+            "id": "05.02",
+            "seconds": 31.776
+          },
+          {
+            "id": "05.03",
+            "seconds": 62.472
+          },
+          {
+            "id": "05.04",
+            "seconds": 94.32
+          },
+          {
+            "id": "05.05",
+            "seconds": 123.144
+          },
+          {
+            "id": "05.06",
+            "seconds": 151.416
+          },
+          {
+            "id": "05.07",
+            "seconds": 183.456
+          }
+        ],
+        "sha256": "78f34fc71f26b339190e88764a3881d60cb5f78d8e5db4caf01f5e4f4aa82eb5",
+        "bytes": 2141375
+      },
+      {
+        "file": "06-wlan-DE.mp3",
+        "title": "WLAN: Leistung, Sicherheit und Auswahl",
+        "start_seconds": 1068.576,
+        "duration_seconds": 149.208,
+        "markers": [
+          {
+            "id": "06.01",
+            "seconds": 4.344
+          },
+          {
+            "id": "06.02",
+            "seconds": 30.384
+          },
+          {
+            "id": "06.03",
+            "seconds": 59.928
+          },
+          {
+            "id": "06.04",
+            "seconds": 91.992
+          },
+          {
+            "id": "06.05",
+            "seconds": 119.592
+          }
+        ],
+        "sha256": "ef346640d946fe6909846b238f60d3fe0ba4fb9242c18ab20088fbcc26ed5a25",
+        "bytes": 1492897
+      },
+      {
+        "file": "07-service-DE.mp3",
+        "title": "SLA, Meldungsarten und Priorität",
+        "start_seconds": 1217.784,
+        "duration_seconds": 125.28,
+        "markers": [
+          {
+            "id": "07.01",
+            "seconds": 3.816
+          },
+          {
+            "id": "07.02",
+            "seconds": 32.328
+          },
+          {
+            "id": "07.03",
+            "seconds": 65.064
+          },
+          {
+            "id": "07.04",
+            "seconds": 95.928
+          }
+        ],
+        "sha256": "866f77b922cfac46d125708a253fe5cde2f430dec0352f60e7952bb1acd16531",
+        "bytes": 1253612
+      },
+      {
+        "file": "08-organisation-DE.mp3",
+        "title": "Organigramm, Stellenarten und GmbH",
+        "start_seconds": 1343.064,
+        "duration_seconds": 109.8,
+        "markers": [
+          {
+            "id": "08.01",
+            "seconds": 4.008
+          },
+          {
+            "id": "08.02",
+            "seconds": 36.624
+          },
+          {
+            "id": "08.03",
+            "seconds": 69.048
+          }
+        ],
+        "sha256": "06a4ae2c6faa9b493f399b48cd4dcecce28528ac98d96e70eebd5ff35cf48465",
+        "bytes": 1098813
+      },
+      {
+        "file": "09-energie-DE.mp3",
+        "title": "Stromkosten und Einsparung",
+        "start_seconds": 1452.864,
+        "duration_seconds": 60.216,
+        "markers": [
+          {
+            "id": "09.01",
+            "seconds": 3.072
+          },
+          {
+            "id": "09.02",
+            "seconds": 31.728
+          }
+        ],
+        "sha256": "56a8df3971431e30e36e59a719f673be931cdbd3b8df2b9cd9cfb4defc68a696",
+        "bytes": 602965
+      },
+      {
+        "file": "10-zusatz-2026-DE.mp3",
+        "title": "Separates Zusatzsignal aus dem Sommer-2026-Material",
+        "start_seconds": 1513.08,
+        "duration_seconds": 133.824,
+        "markers": [
+          {
+            "id": "10.01",
+            "seconds": 6.432
+          },
+          {
+            "id": "10.02",
+            "seconds": 40.656
+          },
+          {
+            "id": "10.03",
+            "seconds": 70.92
+          },
+          {
+            "id": "10.04",
+            "seconds": 101.904
+          }
+        ],
+        "sha256": "ec2a171788e3573c91e700f7d896269c157d2863fd87d96f423246d651a8104b",
+        "bytes": 1339070
+      }
+    ],
+    "inserted_study_pause_seconds": 0
+  },
+  {
+    "version": "DE_ZH",
+    "voice_de": "de-DE-ConradNeural",
+    "rate_de": "-10%",
+    "voice_zh": "zh-CN-XiaoxiaoNeural",
+    "rate_zh": "-5%",
+    "full_file": "AP1_Schwerpunkte_DE_ZH_Gesamt.mp3",
+    "duration_seconds": 2236.104,
+    "full_sha256": "a528df0acd366e6cd916bbc9f8c1617a40c619fd2baf69ae9343875e075c0823",
+    "chapters": [
+      {
+        "file": "01-netzwerk-DE_ZH.mp3",
+        "title": "Netzwerkkonfiguration und Diagnose",
+        "start_seconds": 0.0,
+        "duration_seconds": 288.72,
+        "markers": [
+          {
+            "id": "01.01",
+            "seconds": 3.672
+          },
+          {
+            "id": "01.02",
+            "seconds": 39.576
+          },
+          {
+            "id": "01.03",
+            "seconds": 81.24
+          },
+          {
+            "id": "01.04",
+            "seconds": 121.368
+          },
+          {
+            "id": "01.05",
+            "seconds": 160.896
+          },
+          {
+            "id": "01.06",
+            "seconds": 207.816
+          },
+          {
+            "id": "01.07",
+            "seconds": 251.232
+          }
+        ],
+        "sha256": "373d7b33a9d35f732bca20490a6570a7e438a89e07c715598c9c65961b527566",
+        "bytes": 2888016
+      },
+      {
+        "file": "02-schutzbedarf-DE_ZH.mp3",
+        "title": "Schutzziele, Schutzbedarf und Sicherheit",
+        "start_seconds": 288.72,
+        "duration_seconds": 377.832,
+        "markers": [
+          {
+            "id": "02.01",
+            "seconds": 3.912
+          },
+          {
+            "id": "02.02",
+            "seconds": 43.248
+          },
+          {
+            "id": "02.03",
+            "seconds": 84.36
+          },
+          {
+            "id": "02.04",
+            "seconds": 124.128
+          },
+          {
+            "id": "02.05",
+            "seconds": 161.352
+          },
+          {
+            "id": "02.06",
+            "seconds": 200.472
+          },
+          {
+            "id": "02.07",
+            "seconds": 242.568
+          },
+          {
+            "id": "02.08",
+            "seconds": 286.152
+          },
+          {
+            "id": "02.09",
+            "seconds": 331.584
+          }
+        ],
+        "sha256": "b2d84d911e0351f9e95d3a126dd528c5139d7dda6ee8146ef9677b3b1e4443b2",
+        "bytes": 3779142
+      },
+      {
+        "file": "03-datenbanken-DE_ZH.mp3",
+        "title": "Datenbanken, Datenmodell und SQL",
+        "start_seconds": 666.552,
+        "duration_seconds": 276.648,
+        "markers": [
+          {
+            "id": "03.01",
+            "seconds": 3.984
+          },
+          {
+            "id": "03.02",
+            "seconds": 45.216
+          },
+          {
+            "id": "03.03",
+            "seconds": 80.784
+          },
+          {
+            "id": "03.04",
+            "seconds": 124.704
+          },
+          {
+            "id": "03.05",
+            "seconds": 161.184
+          },
+          {
+            "id": "03.06",
+            "seconds": 196.824
+          },
+          {
+            "id": "03.07",
+            "seconds": 238.512
+          }
+        ],
+        "sha256": "d85895ad4c0351fe88276ef26d4edef6b86cc5da03fdacd7a9c1895e19e721cb",
+        "bytes": 2767294
+      },
+      {
+        "file": "04-programmierung-DE_ZH.mp3",
+        "title": "Programmierlogik und Fehlerkorrektur",
+        "start_seconds": 943.2,
+        "duration_seconds": 222.024,
+        "markers": [
+          {
+            "id": "04.01",
+            "seconds": 3.456
+          },
+          {
+            "id": "04.02",
+            "seconds": 39.936
+          },
+          {
+            "id": "04.03",
+            "seconds": 74.712
+          },
+          {
+            "id": "04.04",
+            "seconds": 111.672
+          },
+          {
+            "id": "04.05",
+            "seconds": 150.648
+          },
+          {
+            "id": "04.06",
+            "seconds": 188.064
+          }
+        ],
+        "sha256": "a80b8494025dc55074c84ead1cde5f15d785748884d61f402466598580d2d986",
+        "bytes": 2221058
+      },
+      {
+        "file": "05-angebote-DE_ZH.mp3",
+        "title": "Beschaffung, Angebot und Kalkulation",
+        "start_seconds": 1165.224,
+        "duration_seconds": 296.448,
+        "markers": [
+          {
+            "id": "05.01",
+            "seconds": 3.792
+          },
+          {
+            "id": "05.02",
+            "seconds": 44.688
+          },
+          {
+            "id": "05.03",
+            "seconds": 85.656
+          },
+          {
+            "id": "05.04",
+            "seconds": 128.28
+          },
+          {
+            "id": "05.05",
+            "seconds": 167.976
+          },
+          {
+            "id": "05.06",
+            "seconds": 208.392
+          },
+          {
+            "id": "05.07",
+            "seconds": 254.328
+          }
+        ],
+        "sha256": "a3cf1aee7cca1ffa560060f5446de58d6c0ae87e9a6a748b51e9d0be52798f4f",
+        "bytes": 2965298
+      },
+      {
+        "file": "06-wlan-DE_ZH.mp3",
+        "title": "WLAN: Leistung, Sicherheit und Auswahl",
+        "start_seconds": 1461.672,
+        "duration_seconds": 203.256,
+        "markers": [
+          {
+            "id": "06.01",
+            "seconds": 4.344
+          },
+          {
+            "id": "06.02",
+            "seconds": 39.888
+          },
+          {
+            "id": "06.03",
+            "seconds": 81.912
+          },
+          {
+            "id": "06.04",
+            "seconds": 125.664
+          },
+          {
+            "id": "06.05",
+            "seconds": 162.888
+          }
+        ],
+        "sha256": "75f2a88e70a5aad9ca6542c46d58c0688bc7ea36d61f0b40253b9705188e6c3c",
+        "bytes": 2033380
+      },
+      {
+        "file": "07-service-DE_ZH.mp3",
+        "title": "SLA, Meldungsarten und Priorität",
+        "start_seconds": 1664.928,
+        "duration_seconds": 163.92,
+        "markers": [
+          {
+            "id": "07.01",
+            "seconds": 3.816
+          },
+          {
+            "id": "07.02",
+            "seconds": 41.712
+          },
+          {
+            "id": "07.03",
+            "seconds": 84.0
+          },
+          {
+            "id": "07.04",
+            "seconds": 125.04
+          }
+        ],
+        "sha256": "67c1566815d3f890e769a638b29b72ebba9d5dcd1d50e7bd12a5f8dadb0a8349",
+        "bytes": 1640015
+      },
+      {
+        "file": "08-organisation-DE_ZH.mp3",
+        "title": "Organigramm, Stellenarten und GmbH",
+        "start_seconds": 1828.848,
+        "duration_seconds": 145.344,
+        "markers": [
+          {
+            "id": "08.01",
+            "seconds": 4.008
+          },
+          {
+            "id": "08.02",
+            "seconds": 47.76
+          },
+          {
+            "id": "08.03",
+            "seconds": 90.672
+          }
+        ],
+        "sha256": "0cedfe5017afc99173154473c86b3212dba814ea61c06a7d5b4830e3c1b05760",
+        "bytes": 1454256
+      },
+      {
+        "file": "09-energie-DE_ZH.mp3",
+        "title": "Stromkosten und Einsparung",
+        "start_seconds": 1974.192,
+        "duration_seconds": 83.424,
+        "markers": [
+          {
+            "id": "09.01",
+            "seconds": 3.072
+          },
+          {
+            "id": "09.02",
+            "seconds": 43.704
+          }
+        ],
+        "sha256": "f131dd812ef222c7e4a96c3349359d2fb4829f6cf3cfa1c3fd75cc905f06289c",
+        "bytes": 835048
+      },
+      {
+        "file": "10-zusatz-2026-DE_ZH.mp3",
+        "title": "Separates Zusatzsignal aus dem Sommer-2026-Material",
+        "start_seconds": 2057.616,
+        "duration_seconds": 178.488,
+        "markers": [
+          {
+            "id": "10.01",
+            "seconds": 6.432
+          },
+          {
+            "id": "10.02",
+            "seconds": 50.712
+          },
+          {
+            "id": "10.03",
+            "seconds": 92.256
+          },
+          {
+            "id": "10.04",
+            "seconds": 134.088
+          }
+        ],
+        "sha256": "f01a83321d9aa12921df9bbf87663754aff895095227310d7d93275f9743369b",
+        "bytes": 1785713
+      }
+    ],
+    "inserted_study_pause_seconds": 0
+  }
+]

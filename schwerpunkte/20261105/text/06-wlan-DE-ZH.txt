@@ -1,0 +1,16 @@
+WLAN: Leistung, Sicherheit und Auswahl.
+
+Brutto ist nicht Netto. Die Bruttodatenrate enthält nicht nur nutzbare Anwendungsdaten. Protokolloverhead, geteilte Funkzeit, Störungen und erneute Übertragungen senken die Nutzdatenrate. Deshalb beweist eine niedrigere Messung allein keinen Defekt. Ich bewerte die tatsächliche Auslastung, Funkbedingungen und benötigte Anwendungsleistung.
+2022 夏不是让你背“50%永远正常”，而是解释为什么无线净速率低，再结合场景判断。
+
+2,4 und 5 Gigahertz vergleichen. 2,4 Gigahertz erreicht häufig größere Entfernungen und durchdringt Hindernisse besser. Das Band ist jedoch oft stark belegt und bietet weniger überlappungsfreie Kanaloptionen. 5 Gigahertz bietet mehr Kanaloptionen und häufig höhere nutzbare Kapazität bei geeigneter Abdeckung. Seine Reichweite und Hindernisdurchdringung sind typischerweise geringer.
+2.4：通常穿墙远，但拥挤、可用独立频道少。5：频道多、容量好，但覆盖距离要检查；别只写“5总是更好”。
+
+Vier WLAN-Sicherheitsmaßnahmen. Ich verwende WPA3 mit geeigneter Authentifizierung, soweit Geräte und Einsatzvorgaben das unterstützen. Standardzugänge werden geändert und die Administration wird geschützt. Firmware wird gepflegt und unnötige Dienste werden deaktiviert. Gästezugänge werden vom internen Netz getrennt und mit passenden Zugriffsregeln begrenzt. Eine versteckte SSID ersetzt diese Maßnahmen nicht.
+四组有用措施：加密认证、改默认管理员入口、更新并关多余服务、访客隔离加规则。隐藏名字不等于安全。
+
+Wi-Fi 6 und Wi-Fi 6E. Wi-Fi 6 basiert auf IEEE 802.11ax. Wi-Fi 6E erweitert geeignete Geräte um den 6-Gigahertz-Bereich. Dadurch stehen zusätzliche Funkressourcen zur Verfügung. Die Erweiterung garantiert aber keine bestimmte Nutzdatenrate für jeden Client. Access Point, Endgerät und erlaubte Konfiguration müssen zusammenpassen.
+2023 夏问的关键是 6E 增加6GHz。不要误背成“所有 Wi-Fi 6 都必然支持6GHz”。
+
+PoE und eigenes WLAN-Subnetz. PoE versorgt geeignete Access Points über die Netzwerkleitung mit Daten und Energie. Portleistung und gesamtes Leistungsbudget müssen dafür ausreichen. Ein getrenntes WLAN-Subnetz vereinfacht Verwaltung und eigene Zugriffsregeln. Eine wirksame Zugriffstrennung entsteht erst durch passende technische Regeln; eine andere Netznummer allein genügt nicht.
+PoE省去额外电源布线，但要核单端口和总功率。不同子网只是划分，真正隔离还要防火墙或 ACL。

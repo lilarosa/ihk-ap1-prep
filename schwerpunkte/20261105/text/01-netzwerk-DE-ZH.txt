@@ -1,0 +1,22 @@
+Netzwerkkonfiguration und Diagnose.
+
+Standardgateway und DNS. Das Standardgateway leitet Pakete in andere IP-Netze weiter. Der DNS-Server löst Namen in passende Ressourceninformationen auf, zum Beispiel IP-Adressen. Beide Einträge erfüllen unterschiedliche Aufgaben. Für externe Websites müssen sowohl der Netzwerkweg als auch die Namensauflösung funktionieren.
+网关负责去别的网络，DNS 负责名字解析。二者不能互换；“网页打不开”不能直接断定是 DNS。
+
+Gültige Clientkonfiguration. Ich verwende eine freie, eindeutige Hostadresse im vorgesehenen Subnetz. Dazu gehören die passende Subnetzmaske beziehungsweise Präfixlänge, das erreichbare Standardgateway und der vorgesehene DNS-Server. Netz- und Broadcastadresse werden im gewöhnlichen IPv4-Broadcast-Subnetz nicht als Clientadresse vergeben. Die Werte werden aus dem Netzplan abgeleitet.
+背四项：IP、掩码或前缀、网关、DNS。题目给了网络图，就从图里取值，不凭记忆随便填地址。
+
+Lokales Netz funktioniert, Internet nicht. Ich vergleiche das eingetragene Standardgateway mit dem zuständigen Routerinterface im Netzplan. Ein falsches Gateway kann die Kommunikation mit fremden Netzen verhindern, obwohl das lokale Netz funktioniert. Ich trage die richtige Routeradresse ein und prüfe danach den externen Zugriff erneut. Die DNS-Konfiguration wird getrennt bewertet.
+先说原因，再说检查和修复。2024 夏图里的路由器是 .254，客户端却填了 .1，能确认的是网关错误。
+
+Private IP und falsches Subnetz. Private IPv4-Adressen werden nicht direkt über das öffentliche Internet geroutet. Für einen entfernten Zugriff ist deshalb eine geeignete Lösung wie ein korrekt abgesichertes VPN nötig. Liegt die Kamera in einem anderen Subnetz, ist sie nicht automatisch lokal erreichbar. Adressierung und erforderliches Routing müssen zur Netzplanung passen.
+私网地址不能直接从公网访问；“同一根交换机上”也不等于同一 IP 子网。不要把网络不同一概归咎于坏网线。
+
+IPv6-Adresstypen und Kurzform. Link-Local-Adressen gelten nur auf dem lokalen Link und stammen aus dem Bereich fe80::/10. Global-Unicast-Adressen sind für netzübergreifende Kommunikation vorgesehen. Führende Nullen eines Blocks dürfen entfallen; eine zusammenhängende Nullfolge darf einmal mit einem doppelten Doppelpunkt gekürzt werden. Das Beispielpräfix 2001:db8::/32 ist reserviert und nicht real öffentlich routbar.
+Link-Local 只在本地链路有效。双冒号一次；2001:db8 是练习文档用地址，别直接说它真能上互联网。
+
+MAC und IP im Datenrahmen. Eine klassische Ethernet-MAC-Adresse hat 48 Bit und gehört zur Sicherungsschicht, also OSI-Schicht zwei. Auf dem ersten LAN-Abschnitt ist die Ziel-MAC die Adresse des nächsten Routers. Die IP-Zieladresse bezeichnet dagegen den entfernten Server. Der Client liefert dort die Quell-MAC und vor einer möglichen Adressumsetzung auch die Quell-IP. Ethernet adressiert den lokalen nächsten Schritt, IP das entfernte Ziel.
+核心对比：MAC 看本地下一跳，IP 看最终目标。不要把交换机自动当成数据帧的目标 MAC。
+
+Logischer und physischer Netzplan. Ein logischer Netzplan zeigt die logische Zuordnung der Geräte, Netze und Adressen sowie Kommunikationsbeziehungen. Ein physischer Netzplan zeigt vor allem Standorte, Ports und Verkabelungswege. Der logische Plan hilft bei Adressierung und Routing. Der physische Plan hilft, Geräte und Leitungen vor Ort zu finden und zu prüfen.
+逻辑图看谁能和谁通信、怎么分网；物理图看设备在哪、线怎么接。按题目要求写两个明确区别。

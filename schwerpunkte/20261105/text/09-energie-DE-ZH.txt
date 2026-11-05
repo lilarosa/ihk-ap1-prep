@@ -1,0 +1,7 @@
+Stromkosten und Einsparung.
+
+Jährliche Stromkosten. Ich rechne Watt in Kilowatt um und multipliziere Leistung, Gerätezahl und jeweilige Betriebsstunden. Das ergibt Kilowattstunden. Danach multipliziere ich mit dem Preis pro Kilowattstunde und addiere die Teilkosten. Dauerläufer und Geräte mit Arbeitstagsbetrieb werden getrennt gerechnet. Einheiten und vorgegebene Rundungsregeln bleiben sichtbar.
+W先除1000变kW，再乘小时和数量，最后乘每kWh价格。服务器全年开与员工电脑只算工作日别混。
+
+Einsparung richtig bewerten. Zuerst bestimme ich die tatsächlich entfallenden Kilowattstunden beziehungsweise Kosten. Die Ersparnis wird durch die vorgegebenen ursprünglichen Gesamtkosten geteilt und mit hundert multipliziert. Weiterlaufende Server und Netzwerkgeräte sparen dadurch nicht automatisch mit. Die Kostenwirkung wird deshalb nur auf die tatsächlich geänderten Geräte und Zeiten bezogen.
+居家办公减少的是相应工位的运行，不是全公司所有设备一起按同一比例少耗电。百分比的分母要看题目。

@@ -1,0 +1,13 @@
+Programmierlogik und Fehlerkorrektur.
+
+Suchalgorithmus im Array. Ich durchlaufe das Array und vergleiche jeden Eintrag mit dem Suchwert. Bei einem Treffer gebe ich sofort true zurück. False wird erst nach der vollständig erfolglosen Suche zurückgegeben. Steht diese Rückgabe beim ersten nicht passenden Eintrag, endet die Suche zu früh. Auch das leere Array wird so korrekt behandelt.
+
+Durchschnitt korrekt berechnen. Die Schleife darf nur gültige Indizes verwenden und muss alle Werte addieren. Die Summe wird nicht in jeder Runde überschrieben. Für einen exakten Durchschnitt wird vor der Division ein Operand in eine Gleitkommazahl umgewandelt. Das leere Array wird vor einer Division durch null gesondert behandelt.
+
+Login über einen Rückgabecode. Ich rufe die Hilfsmethode mit den übergebenen Zugangsdaten auf und speichere ihren Rückgabecode. Bei Code 0 gebe ich true zurück. Bei einem anderen Code gebe ich die geforderte Fehlermeldung aus und liefere false. Entscheidend ist die vorgegebene Bedeutung des Codes; die Zahl 0 bedeutet in dieser Aufgabe Erfolg.
+
+Tarif und Grenzen. Zuerst prüfe ich ungültige Eingaben und die zulässigen Höchstwerte. Danach wähle ich anhand der exakten Grenze den Grundpreis. Anschließend ergänze ich den variablen Preisanteil und liefere das Ergebnis. Wörter wie bis einschließlich und maximal müssen sich im Vergleichsoperator wiederfinden. Ein Grenztest prüft die Stufe und den direkt benachbarten Wert.
+
+Älteste Dateien bis zum Ziel löschen. Ich ermittle die Gesamtgröße und lösche jeweils die älteste verbleibende Datei. Nach erfolgreichem Löschen wird die Gesamtgröße aktualisiert. Die Schleife läuft weiter, solange die Größe mindestens dem Grenzwert entspricht. Erst bei einer strikt kleineren Restgröße stoppe ich. Die Löschreihenfolge und ein sicherer Abbruch bleiben erhalten.
+
+Fehler nachvollziehbar beschreiben. Ich nenne die fehlerhafte Stelle, erkläre ihre Auswirkung und gebe die richtige Bedingung oder Anweisung an. Danach prüfe ich den korrigierten Ablauf mit geeigneten Testdaten. Ein Schreibtischtest notiert die Variablen nach jedem Schritt. Besonders wichtig sind Grenzen, fehlende Treffer und leere Eingaben.

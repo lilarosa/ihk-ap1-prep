@@ -1,0 +1,22 @@
+Datenbanken, Datenmodell und SQL.
+
+Primär- und Fremdschlüssel. Ein Primärschlüssel identifiziert einen Datensatz eindeutig und darf nicht fehlen. Ein Fremdschlüssel verweist auf einen passenden Schlüssel einer anderen Tabelle und sichert referenzielle Integrität. Eine bereits verwendete Primärschlüsselkennung darf nicht erneut eingefügt werden. Ein neuer Datensatz braucht eine freie Kennung; eine Änderung des vorhandenen Datensatzes erfolgt gezielt per Update.
+主键唯一且不能为空；外键指向关联记录。重复 ID 的报错通常不是 SQL 拼写问题，而是违反唯一性。
+
+Beziehungen und Zuordnungstabellen. Bei einer Eins-zu-viele-Beziehung steht der Fremdschlüssel häufig auf der Viele-Seite. Eine Viele-zu-viele-Beziehung wird durch eine Zuordnungstabelle mit beiden Fremdschlüsseln aufgelöst. Ihre Kombination kann als Primärschlüssel doppelte Zuordnungen verhindern. Zusätzlich wird geprüft, ob eine Teilnahme zwingend oder optional ist.
+一对多的外键通常放“多”的一边；多对多加中间表。0..1 与 1、0..n 与 1..n 不要混。
+
+CSV, XML und JSON in Tabellen überführen. Ich identifiziere die fachlichen Objekte, ihre Attribute und wiederkehrenden Kennungen. Danach trenne ich die Entitäten und bestimme Beziehungen, Primärschlüssel und Fremdschlüssel. Passende Datentypen werden ergänzt. CSV ist tabellarisch, XML arbeitet mit Elementen und Attributen, JSON mit strukturierten Schlüssel-Wert-Daten. Das Format allein ersetzt kein relationales Modell.
+先找“员工、设备、项目”等对象，再找 ID 和关系，不是给每个 CSV 文本字段都单独建一张表。
+
+Filtern und sortieren. Select wählt die geforderten Spalten, From die Tabelle und Where die passenden Datensätze. Für einen Namen mit bestimmtem Anfang verwende ich Like mit dem Anfang und anschließendem Prozentzeichen. Order by legt die Reihenfolge fest. Asc bedeutet aufsteigend, Desc absteigend; ohne Order by ist die gewünschte Reihenfolge nicht garantiert.
+顺序记 SELECT、FROM、WHERE、ORDER BY。名字“以 M 开头”是 M 后跟百分号，不是把百分号放前面。
+
+Anzahl und fehlende Werte. Count Stern zählt Datensätze. Ein fehlender Datenbankwert wird mit Is null geprüft, nicht mit Gleich null. Ein leerer Text ist ein anderer Wert. Wenn die Aufgabe beide Darstellungen als fehlend definiert, verbinde ich die Prüfungen mit Oder. Count einer bestimmten Spalte überspringt deren SQL-Nullwerte.
+COUNT(*) 计行；IS NULL 查缺失。空字符串与数据库 NULL 不同，是否两个都查取决于题目。
+
+Bilddaten verwalten: fünf SQL-Muster. Delete mit einer eindeutigen Where-Bedingung entfernt den gewünschten Datensatz. Sum addiert Dateigrößen und Count Stern zählt die Bilder. Absteigende Sortierung nach dem Zeitstempel zeigt neue Bilder zuerst. Insert mit expliziten Spalten ergänzt einen Datensatz. Das Löschen der Datenbankzeile entfernt nicht automatisch die eigentliche Bilddatei.
+2024 夏这一组是固定五模板：DELETE、SUM、COUNT、ORDER BY DESC、INSERT。真正的文件删除与数据库删行是两件事。
+
+Neue abhängige Relation ergänzen. Ich lege eine eigene Ereignistabelle mit einer eindeutigen Ereigniskennung an. Sie enthält die geforderten Ereignisattribute und einen Fremdschlüssel auf das Gerät. Ein Gerät kann mehrere Ereignisse besitzen, jedes Ereignis gehört hier genau zu einem Gerät. Dadurch muss ich nicht wiederholte Spalten wie Ereignis eins und Ereignis zwei an das Gerät anhängen.
+“一台设备多次记录”要加事件表，带设备外键，不要在设备表横向加记录1、记录2、记录3。

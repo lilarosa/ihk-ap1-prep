@@ -1,0 +1,11 @@
+WLAN: Leistung, Sicherheit und Auswahl.
+
+Brutto ist nicht Netto. Die Bruttodatenrate enthält nicht nur nutzbare Anwendungsdaten. Protokolloverhead, geteilte Funkzeit, Störungen und erneute Übertragungen senken die Nutzdatenrate. Deshalb beweist eine niedrigere Messung allein keinen Defekt. Ich bewerte die tatsächliche Auslastung, Funkbedingungen und benötigte Anwendungsleistung.
+
+2,4 und 5 Gigahertz vergleichen. 2,4 Gigahertz erreicht häufig größere Entfernungen und durchdringt Hindernisse besser. Das Band ist jedoch oft stark belegt und bietet weniger überlappungsfreie Kanaloptionen. 5 Gigahertz bietet mehr Kanaloptionen und häufig höhere nutzbare Kapazität bei geeigneter Abdeckung. Seine Reichweite und Hindernisdurchdringung sind typischerweise geringer.
+
+Vier WLAN-Sicherheitsmaßnahmen. Ich verwende WPA3 mit geeigneter Authentifizierung, soweit Geräte und Einsatzvorgaben das unterstützen. Standardzugänge werden geändert und die Administration wird geschützt. Firmware wird gepflegt und unnötige Dienste werden deaktiviert. Gästezugänge werden vom internen Netz getrennt und mit passenden Zugriffsregeln begrenzt. Eine versteckte SSID ersetzt diese Maßnahmen nicht.
+
+Wi-Fi 6 und Wi-Fi 6E. Wi-Fi 6 basiert auf IEEE 802.11ax. Wi-Fi 6E erweitert geeignete Geräte um den 6-Gigahertz-Bereich. Dadurch stehen zusätzliche Funkressourcen zur Verfügung. Die Erweiterung garantiert aber keine bestimmte Nutzdatenrate für jeden Client. Access Point, Endgerät und erlaubte Konfiguration müssen zusammenpassen.
+
+PoE und eigenes WLAN-Subnetz. PoE versorgt geeignete Access Points über die Netzwerkleitung mit Daten und Energie. Portleistung und gesamtes Leistungsbudget müssen dafür ausreichen. Ein getrenntes WLAN-Subnetz vereinfacht Verwaltung und eigene Zugriffsregeln. Eine wirksame Zugriffstrennung entsteht erst durch passende technische Regeln; eine andere Netznummer allein genügt nicht.

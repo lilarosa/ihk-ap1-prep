@@ -1,0 +1,320 @@
+{
+  "core_exams": [
+    {
+      "id": "S22",
+      "label": "Sommer 2022",
+      "ocr_file": "bw2022s.txt",
+      "sha256_ocr": "1972cf9ca377a10b0355f5dbd7dab116e628bc3b816c4809e8799da85826c42b"
+    },
+    {
+      "id": "W22",
+      "label": "Winter 2022/23",
+      "ocr_file": "bw2022w.txt",
+      "sha256_ocr": "3df3c4897c1d6e1457749d514bee0e4010f71174b161eb6aa95e4b28f449812f"
+    },
+    {
+      "id": "S23",
+      "label": "Sommer 2023",
+      "ocr_file": "bw2023s.txt",
+      "sha256_ocr": "c6353d3e362fb6b640d668c596e8b60ce65e1c55002e64b7489950418fc5f4c3"
+    },
+    {
+      "id": "W23",
+      "label": "Winter 2023/24",
+      "ocr_file": "bw2023w.txt",
+      "sha256_ocr": "1f8d56d74706cc7df72e50135d41f143573a4c67d701760d851796e133823378"
+    },
+    {
+      "id": "S24",
+      "label": "Sommer 2024",
+      "ocr_file": "bw2024.txt",
+      "sha256_ocr": "604ca124adfae7b3430db7bbef80d929699df47f6c1ae85332120533d798f1fb"
+    }
+  ],
+  "topics": [
+    {
+      "id": "NET",
+      "de": "Netzwerkkonfiguration und Diagnose",
+      "zh": "网络配置与排错",
+      "references": {
+        "S22": "IT2.1, S.2: IPv4-Konfiguration und Frame-Adressen",
+        "W22": "IT2.3, S.3: IPv6-Konfiguration",
+        "S23": "IT3.1-3.2, S.3-4: Netzplan und IP-Konfiguration",
+        "W23": "IT2.1, S.4: fehlerhaftes Gateway und IPv4-Adresstypen",
+        "S24": "IT4.1-4.4, S.3-4: private IP, Subnetz, Gateway, IPv6"
+      },
+      "count": 5,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "SEC",
+      "de": "IT-Sicherheit, Schutzziele und Schutzbedarf",
+      "zh": "安全、CIA 与保护需求",
+      "references": {
+        "S22": "IT2.3.1-2.3.2, S.3: Verfügbarkeitsgefährdungen und Maßnahmen",
+        "W22": "IT3.2-3.3, S.4: Ransomware und drei Schutzziele",
+        "S23": "IT2.1-2.2, S.3: Kategorien und Maximumprinzip",
+        "W23": "IT1.1, IT2.2 und IT2.4, S.2/4/5: Datenkategorien, Firewall, Serverraum",
+        "S24": "IT4.5, S.4: Bilddaten-Schutzbedarf und Videoüberwachung"
+      },
+      "count": 5,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "DB",
+      "de": "Datenbanken und Datenmodellierung",
+      "zh": "数据库、关系模型与 SQL",
+      "references": {
+        "S22": "IT4, S.4: JSON in ERM überführen",
+        "W22": "IT4.1-4.3, S.4: Kardinalitäten, SQL, doppelter Primärschlüssel",
+        "S23": "IT4.1-4.2, S.4: ERM und Relationen mit Schlüsseln",
+        "W23": "IT1.2.1-1.2.3, S.2-3: SQL, Export und zusätzliche Relation",
+        "S24": "IT3.1-3.5, S.3: fünf SQL-Anweisungen"
+      },
+      "count": 5,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "PROG",
+      "de": "Programmierung und Algorithmik",
+      "zh": "编程逻辑、找错与实现",
+      "references": {
+        "S22": "IT3, S.4: MAC-Adresse im Array suchen",
+        "W22": "IT5, S.5: Durchschnittsberechnung korrigieren",
+        "S23": "IT5, S.5: Login über Rückgabecode einer Hilfsmethode",
+        "W23": "IT1.3.1-1.3.2, S.3-4: Struktogramm korrigieren und Tarif codieren",
+        "S24": "IT2.1, S.2: älteste Dateien bis zum Speicherziel löschen"
+      },
+      "count": 5,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "BES",
+      "de": "Beschaffung, Angebote und Verkaufskalkulation",
+      "zh": "采购、报价与销售计算",
+      "references": {
+        "S22": "IT1.1-1.2, S.2: Anforderungen und Wareneingang",
+        "W22": "IT1.1-1.3, S.2-3: Nutzwert, Kalkulation und Angebot",
+        "S23": "IT1.3.1-1.3.2, S.2-3: Angebotslücken und Gewinn/Verlust",
+        "S24": "IT1.1-1.4, S.2: Bezugsquellen, Angebotsvergleich und Wareneingang"
+      },
+      "count": 4,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "SERVICE",
+      "de": "Service, SLA und Tickets",
+      "zh": "服务、SLA 与工单",
+      "references": {
+        "S22": "IT2.4, S.3: Jahresverfügbarkeit und Entstördauer",
+        "W22": "IT3.1, S.3: Dringlichkeitsstufen",
+        "S23": "IT1.4.1-1.4.2, S.3: SLA-Inhalte und Event/Request/Incident"
+      },
+      "count": 3,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "ORG",
+      "de": "Aufbauorganisation und Rechtsformen",
+      "zh": "组织结构与公司法律形式",
+      "references": {
+        "S23": "IT1.1-1.2, S.2: Organigramm und Wechsel zur GmbH",
+        "W23": "IT3.1-3.2, S.5-6: Organigramm und e.K./GmbH"
+      },
+      "count": 2,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "ENERGIE",
+      "de": "Stromkosten und Energieeinsparung",
+      "zh": "电费与节能计算",
+      "references": {
+        "W23": "IT2.3.1-2.3.2, S.5: Jahreskosten und Einsparung"
+      },
+      "count": 1,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Hauptthema"
+    },
+    {
+      "id": "IPV4",
+      "de": "IPv4-Konfiguration, Subnetz oder Gatewayfehler",
+      "zh": "IPv4 配置、子网与网关错误",
+      "references": {
+        "S22": "IT2.1.1-2.1.2, S.2",
+        "S23": "IT3.2.4-3.2.5, S.4",
+        "W23": "IT2.1.1-2.1.3, S.4",
+        "S24": "IT4.1-4.3, S.3-4"
+      },
+      "count": 4,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "ERM",
+      "de": "ERM, Kardinalitäten oder Relationen erweitern",
+      "zh": "ER 模型、基数与关系表设计",
+      "references": {
+        "S22": "IT4, S.4",
+        "W22": "IT4.1, S.4",
+        "S23": "IT4.1-4.2, S.4",
+        "W23": "IT1.2.3, S.3"
+      },
+      "count": 4,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "SCHUTZ",
+      "de": "Schutzbedarfs-/Gefährdungsanalyse mit Fallbezug",
+      "zh": "保护需求或按保护目标分析风险",
+      "references": {
+        "S22": "IT2.3, S.3: Gefährdungen für Verfügbarkeit; keine vollständige CIA-Einstufung",
+        "S23": "IT2.1-2.2, S.3",
+        "W23": "IT2.4, S.5",
+        "S24": "IT4.5.1, S.4"
+      },
+      "count": 4,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "WLAN",
+      "de": "WLAN-Leistung, Frequenzen, Sicherheit oder Standard",
+      "zh": "无线速率、频段、安全与标准",
+      "references": {
+        "S22": "IT2.2, S.3: Brutto-/Nettodatenrate",
+        "W22": "IT1.1 und IT2.1-2.2, S.2-3: Auswahl, Schutz, Frequenzen",
+        "S23": "IT3.2.1, S.4: Wi-Fi-6E-Neuerung"
+      },
+      "count": 3,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "IPV6",
+      "de": "IPv6-Konfiguration oder Adresstypen",
+      "zh": "IPv6 配置与地址类型",
+      "references": {
+        "W22": "IT2.3, S.3",
+        "S23": "IT3.2.3, S.4",
+        "S24": "IT4.4, S.4"
+      },
+      "count": 3,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "SQL",
+      "de": "SQL selbst formulieren oder analysieren",
+      "zh": "实际编写或分析 SQL",
+      "references": {
+        "W22": "IT4.2-4.3, S.4",
+        "W23": "IT1.2.1, S.2",
+        "S24": "IT3.1-3.5, S.3"
+      },
+      "count": 3,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "ANGEBOT",
+      "de": "Angebot erstellen, prüfen oder vergleichen",
+      "zh": "填写、检查或比较报价单",
+      "references": {
+        "W22": "IT1.3, S.3: Angebot vervollständigen",
+        "S23": "IT1.3.1, S.2: fehlende Bestandteile",
+        "S24": "IT1.2, S.2: quantitativer Angebotsvergleich"
+      },
+      "count": 3,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "SCHUTZ_KAT",
+      "de": "Schutzbedarf einstufen oder Einstufung begründen",
+      "zh": "正式分类或解释既定等级",
+      "references": {
+        "S23": "IT2.1-2.2, S.3: Kategorien vorgegeben",
+        "W23": "IT2.4, S.5: sehr hoch vorgegeben, begründen",
+        "S24": "IT4.5.1, S.4: Bilddaten anhand Anlage einstufen"
+      },
+      "count": 3,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "SLA",
+      "de": "SLA-Inhalte oder Einhaltung ausdrücklich prüfen",
+      "zh": "明确询问 SLA 内容或是否达标",
+      "references": {
+        "S22": "IT2.4, S.3",
+        "S23": "IT1.4.1, S.3"
+      },
+      "count": 2,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "KALK",
+      "de": "Handels-/Differenzkalkulation",
+      "zh": "商业计算与利润差额",
+      "references": {
+        "W22": "IT1.2, S.2",
+        "S23": "IT1.3.2, S.3"
+      },
+      "count": 2,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "WARE",
+      "de": "Wareneingangsprüfung",
+      "zh": "验收进货",
+      "references": {
+        "S22": "IT1.2, S.2",
+        "S24": "IT1.4, S.2"
+      },
+      "count": 2,
+      "denominator": 5,
+      "additional_2026": false,
+      "kind": "Unterthema"
+    },
+    {
+      "id": "RAID",
+      "de": "RAID und Backup fachlich vergleichen",
+      "zh": "RAID 与备份的专门考问",
+      "references": {},
+      "count": 0,
+      "denominator": 5,
+      "additional_2026": true,
+      "kind": "Zusatzsignal"
+    }
+  ],
+  "supplement": "Mit Sommer 2026 beschriftetes FA-230-Material; separat, nicht im Nenner 5",
+  "count_rule": "Je Thema und Prüfung höchstens ein Treffer, nur ausdrückliche Aufgaben, nicht reine Nennung im Szenario. Themen können sich überlappen."
+}

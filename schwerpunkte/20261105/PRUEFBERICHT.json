@@ -1,0 +1,210 @@
+{
+  "core_exams": 5,
+  "core_periods": [
+    "Sommer 2022",
+    "Winter 2022/23",
+    "Sommer 2023",
+    "Winter 2023/24",
+    "Sommer 2024"
+  ],
+  "duplicate_rule": "ein Treffer je Thema und Prüfung; Duplikate und Antworten nicht extra",
+  "cards": 54,
+  "pdf_pages": 22,
+  "sql_patterns_executed": 10,
+  "audio_files": 23,
+  "duration_minutes_de": 27.4,
+  "duration_minutes_de_zh": 37.3,
+  "duration_minutes_focus": 14.6,
+  "voice_de": "de-DE-ConradNeural",
+  "rate_de": "-10%",
+  "voice_zh": "zh-CN-XiaoxiaoNeural",
+  "rate_zh": "-5%",
+  "inserted_study_pauses_seconds": 0,
+  "validation": "all streams fully decoded; durations, SHA-256, non-silent mean level and peak headroom checked; PDF rendered and visually reviewed",
+  "files": [
+    {
+      "file": "AP1_Schwerpunkte_DE_Gesamt.mp3",
+      "seconds": 1646.95,
+      "bytes": 16469841,
+      "mean_db": -16.9,
+      "peak_db": -1.4,
+      "sha256": "b88f9d1b5206123c17aa789960e9e43028fc0243239fdb36a65fbcce0e7605b4"
+    },
+    {
+      "file": "AP1_Schwerpunkte_DE_ZH_Gesamt.mp3",
+      "seconds": 2236.15,
+      "bytes": 22361844,
+      "mean_db": -16.8,
+      "peak_db": -1.4,
+      "sha256": "a528df0acd366e6cd916bbc9f8c1617a40c619fd2baf69ae9343875e075c0823"
+    },
+    {
+      "file": "01-netzwerk-DE.mp3",
+      "seconds": 212.4,
+      "bytes": 2124333,
+      "mean_db": -16.9,
+      "peak_db": -1.7,
+      "sha256": "c73c43fdc78f4be7f06f7bc53c52da7af86dca1f57c147085f10b201ba2f1964"
+    },
+    {
+      "file": "01-netzwerk-DE_ZH.mp3",
+      "seconds": 288.77,
+      "bytes": 2888016,
+      "mean_db": -16.8,
+      "peak_db": -1.7,
+      "sha256": "373d7b33a9d35f732bca20490a6570a7e438a89e07c715598c9c65961b527566"
+    },
+    {
+      "file": "02-schutzbedarf-DE.mp3",
+      "seconds": 275.88,
+      "bytes": 2759139,
+      "mean_db": -16.8,
+      "peak_db": -1.7,
+      "sha256": "83b6bff4604bdfa8dd639613e80e15b638263a4ad9e2aba580dac69ae0bbf2d8"
+    },
+    {
+      "file": "02-schutzbedarf-DE_ZH.mp3",
+      "seconds": 377.88,
+      "bytes": 3779142,
+      "mean_db": -16.7,
+      "peak_db": -1.7,
+      "sha256": "b2d84d911e0351f9e95d3a126dd528c5139d7dda6ee8146ef9677b3b1e4443b2"
+    },
+    {
+      "file": "03-datenbanken-DE.mp3",
+      "seconds": 205.51,
+      "bytes": 2055451,
+      "mean_db": -16.8,
+      "peak_db": -1.4,
+      "sha256": "1b50cb221779db671f4d52203f1bf0e419d704efdc3df461a5d24f15148e8ad4"
+    },
+    {
+      "file": "03-datenbanken-DE_ZH.mp3",
+      "seconds": 276.7,
+      "bytes": 2767294,
+      "mean_db": -16.7,
+      "peak_db": -1.7,
+      "sha256": "d85895ad4c0351fe88276ef26d4edef6b86cc5da03fdacd7a9c1895e19e721cb"
+    },
+    {
+      "file": "04-programmierung-DE.mp3",
+      "seconds": 160.92000000000002,
+      "bytes": 1609535,
+      "mean_db": -17.0,
+      "peak_db": -1.7,
+      "sha256": "edf0ee6fad51301c66c74ff86ac4c3e6b0e3f75d31cd95173a9478026134fd72"
+    },
+    {
+      "file": "04-programmierung-DE_ZH.mp3",
+      "seconds": 222.07,
+      "bytes": 2221058,
+      "mean_db": -16.9,
+      "peak_db": -1.7,
+      "sha256": "a80b8494025dc55074c84ead1cde5f15d785748884d61f402466598580d2d986"
+    },
+    {
+      "file": "05-angebote-DE.mp3",
+      "seconds": 214.1,
+      "bytes": 2141375,
+      "mean_db": -16.9,
+      "peak_db": -1.6,
+      "sha256": "78f34fc71f26b339190e88764a3881d60cb5f78d8e5db4caf01f5e4f4aa82eb5"
+    },
+    {
+      "file": "05-angebote-DE_ZH.mp3",
+      "seconds": 296.5,
+      "bytes": 2965298,
+      "mean_db": -16.8,
+      "peak_db": -1.1,
+      "sha256": "a3cf1aee7cca1ffa560060f5446de58d6c0ae87e9a6a748b51e9d0be52798f4f"
+    },
+    {
+      "file": "06-wlan-DE.mp3",
+      "seconds": 149.26,
+      "bytes": 1492897,
+      "mean_db": -16.8,
+      "peak_db": -1.7,
+      "sha256": "ef346640d946fe6909846b238f60d3fe0ba4fb9242c18ab20088fbcc26ed5a25"
+    },
+    {
+      "file": "06-wlan-DE_ZH.mp3",
+      "seconds": 203.3,
+      "bytes": 2033380,
+      "mean_db": -16.7,
+      "peak_db": -1.8,
+      "sha256": "75f2a88e70a5aad9ca6542c46d58c0688bc7ea36d61f0b40253b9705188e6c3c"
+    },
+    {
+      "file": "07-service-DE.mp3",
+      "seconds": 125.33,
+      "bytes": 1253612,
+      "mean_db": -17.1,
+      "peak_db": -1.2,
+      "sha256": "866f77b922cfac46d125708a253fe5cde2f430dec0352f60e7952bb1acd16531"
+    },
+    {
+      "file": "07-service-DE_ZH.mp3",
+      "seconds": 163.97,
+      "bytes": 1640015,
+      "mean_db": -16.9,
+      "peak_db": -1.2,
+      "sha256": "67c1566815d3f890e769a638b29b72ebba9d5dcd1d50e7bd12a5f8dadb0a8349"
+    },
+    {
+      "file": "08-organisation-DE.mp3",
+      "seconds": 109.85,
+      "bytes": 1098813,
+      "mean_db": -17.1,
+      "peak_db": -1.7,
+      "sha256": "06a4ae2c6faa9b493f399b48cd4dcecce28528ac98d96e70eebd5ff35cf48465"
+    },
+    {
+      "file": "08-organisation-DE_ZH.mp3",
+      "seconds": 145.39,
+      "bytes": 1454256,
+      "mean_db": -16.8,
+      "peak_db": -1.7,
+      "sha256": "0cedfe5017afc99173154473c86b3212dba814ea61c06a7d5b4830e3c1b05760"
+    },
+    {
+      "file": "09-energie-DE.mp3",
+      "seconds": 60.26,
+      "bytes": 602965,
+      "mean_db": -16.9,
+      "peak_db": -1.7,
+      "sha256": "56a8df3971431e30e36e59a719f673be931cdbd3b8df2b9cd9cfb4defc68a696"
+    },
+    {
+      "file": "09-energie-DE_ZH.mp3",
+      "seconds": 83.47,
+      "bytes": 835048,
+      "mean_db": -16.6,
+      "peak_db": -1.7,
+      "sha256": "f131dd812ef222c7e4a96c3349359d2fb4829f6cf3cfa1c3fd75cc905f06289c"
+    },
+    {
+      "file": "10-zusatz-2026-DE.mp3",
+      "seconds": 133.87,
+      "bytes": 1339070,
+      "mean_db": -16.7,
+      "peak_db": -1.6,
+      "sha256": "ec2a171788e3573c91e700f7d896269c157d2863fd87d96f423246d651a8104b"
+    },
+    {
+      "file": "10-zusatz-2026-DE_ZH.mp3",
+      "seconds": 178.54,
+      "bytes": 1785713,
+      "mean_db": -16.6,
+      "peak_db": -1.6,
+      "sha256": "f01a83321d9aa12921df9bbf87663754aff895095227310d7d93275f9743369b"
+    },
+    {
+      "file": "AP1_Top3_Schutzbedarf_Angebot_WLAN_DE_ZH.mp3",
+      "seconds": 877.58,
+      "bytes": 8776124,
+      "mean_db": -16.8,
+      "peak_db": -1.7,
+      "sha256": "3c577e71d633db9dde211c40963fd91f49083fe4516fa3bc30241276563832a3"
+    }
+  ]
+}

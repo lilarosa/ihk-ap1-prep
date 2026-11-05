@@ -1,0 +1,15 @@
+Datenbanken, Datenmodell und SQL.
+
+Primär- und Fremdschlüssel. Ein Primärschlüssel identifiziert einen Datensatz eindeutig und darf nicht fehlen. Ein Fremdschlüssel verweist auf einen passenden Schlüssel einer anderen Tabelle und sichert referenzielle Integrität. Eine bereits verwendete Primärschlüsselkennung darf nicht erneut eingefügt werden. Ein neuer Datensatz braucht eine freie Kennung; eine Änderung des vorhandenen Datensatzes erfolgt gezielt per Update.
+
+Beziehungen und Zuordnungstabellen. Bei einer Eins-zu-viele-Beziehung steht der Fremdschlüssel häufig auf der Viele-Seite. Eine Viele-zu-viele-Beziehung wird durch eine Zuordnungstabelle mit beiden Fremdschlüsseln aufgelöst. Ihre Kombination kann als Primärschlüssel doppelte Zuordnungen verhindern. Zusätzlich wird geprüft, ob eine Teilnahme zwingend oder optional ist.
+
+CSV, XML und JSON in Tabellen überführen. Ich identifiziere die fachlichen Objekte, ihre Attribute und wiederkehrenden Kennungen. Danach trenne ich die Entitäten und bestimme Beziehungen, Primärschlüssel und Fremdschlüssel. Passende Datentypen werden ergänzt. CSV ist tabellarisch, XML arbeitet mit Elementen und Attributen, JSON mit strukturierten Schlüssel-Wert-Daten. Das Format allein ersetzt kein relationales Modell.
+
+Filtern und sortieren. Select wählt die geforderten Spalten, From die Tabelle und Where die passenden Datensätze. Für einen Namen mit bestimmtem Anfang verwende ich Like mit dem Anfang und anschließendem Prozentzeichen. Order by legt die Reihenfolge fest. Asc bedeutet aufsteigend, Desc absteigend; ohne Order by ist die gewünschte Reihenfolge nicht garantiert.
+
+Anzahl und fehlende Werte. Count Stern zählt Datensätze. Ein fehlender Datenbankwert wird mit Is null geprüft, nicht mit Gleich null. Ein leerer Text ist ein anderer Wert. Wenn die Aufgabe beide Darstellungen als fehlend definiert, verbinde ich die Prüfungen mit Oder. Count einer bestimmten Spalte überspringt deren SQL-Nullwerte.
+
+Bilddaten verwalten: fünf SQL-Muster. Delete mit einer eindeutigen Where-Bedingung entfernt den gewünschten Datensatz. Sum addiert Dateigrößen und Count Stern zählt die Bilder. Absteigende Sortierung nach dem Zeitstempel zeigt neue Bilder zuerst. Insert mit expliziten Spalten ergänzt einen Datensatz. Das Löschen der Datenbankzeile entfernt nicht automatisch die eigentliche Bilddatei.
+
+Neue abhängige Relation ergänzen. Ich lege eine eigene Ereignistabelle mit einer eindeutigen Ereigniskennung an. Sie enthält die geforderten Ereignisattribute und einen Fremdschlüssel auf das Gerät. Ein Gerät kann mehrere Ereignisse besitzen, jedes Ereignis gehört hier genau zu einem Gerät. Dadurch muss ich nicht wiederholte Spalten wie Ereignis eins und Ereignis zwei an das Gerät anhängen.

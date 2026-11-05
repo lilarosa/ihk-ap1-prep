@@ -1,0 +1,15 @@
+Beschaffung, Angebot und Kalkulation.
+
+Interne und externe Bezugsquellen. Interne Quellen sind die Lieferantenkartei im Warenwirtschaftssystem und dokumentierte Erfahrungen aus früheren Bestellungen oder Reklamationen. Externe Quellen sind Hersteller- beziehungsweise Lieferantenangebote und geeignete Fachmessen oder Branchenverzeichnisse. Die Informationen werden auf Aktualität und Eignung für den konkreten Bedarf geprüft.
+
+Anforderungen und Nutzwertanalyse. Ich formuliere zuerst messbare Muss- und Kann-Kriterien. Alternativen mit verletzten Muss-Kriterien scheiden aus. Danach gewichte ich die Bewertungskriterien, bewerte alle geeigneten Alternativen auf derselben Skala und addiere die gewichteten Punkte. Die Auswahl wird mit dem Kundennutzen begründet. Eigene Annahmen werden nicht als ausdrücklich genannte Kundenwünsche ausgegeben.
+
+Angebot auf Vollständigkeit prüfen. Ich prüfe genaue Produkt- oder Leistungsbeschreibung, Menge und technische Ausstattung. Preise müssen als netto oder brutto eindeutig erkennbar sein. Hinzu kommen die einschlägigen Liefer- und Zahlungsbedingungen sowie eine gegebenenfalls angegebene Bindung. Fehlende Angaben benenne ich konkret anhand des vorliegenden Angebots. Nicht jede denkbare Angabe ist in jedem Fall zwingend vorgeschrieben.
+
+Quantitativer Angebotsvergleich. Ich rechne zuerst dieselbe benötigte Menge. Vom Listeneinkaufspreis ziehe ich Rabatt ab und erhalte den Zieleinkaufspreis. Danach ziehe ich nutzbares Skonto ab und erhalte den Bareinkaufspreis. Mit den Bezugskosten entsteht der Bezugspreis. Erst diese vergleichbaren Endwerte werden gegenübergestellt; die vorgeschriebene Rundung wird eingehalten.
+
+Nicht nur den billigsten Lieferanten wählen. Eine schnelle und verlässliche Lieferung kann Projektverzug und Stillstandskosten verhindern. Gute bisherige Erfahrungen, passende Qualität und erreichbarer Service senken Risiken. Günstige Zahlungsbedingungen können ebenfalls relevant sein. Ich wäge diese Vorteile gegen den Mehrpreis ab und verknüpfe die Entscheidung mit dem konkreten Kundenauftrag.
+
+Rabatt, Skonto und Rückwärtskalkulation. Rabatt ist ein vereinbarter Preisnachlass, etwa aufgrund der Menge. Skonto setzt die Zahlung innerhalb der vereinbarten Frist voraus. Beide werden nacheinander auf ihre jeweilige Basis gerechnet. Zuschläge für Handlungskosten und Gewinn beziehen sich auf die angegebenen Ausgangswerte. Rückwärts werden Zuschläge durch den Faktor eins plus Satz und Abzüge durch eins minus Satz zurückgerechnet.
+
+Wareneingang in vier Schritten. Ich vergleiche Bestellung und Lieferschein hinsichtlich Produkt und Menge. Danach prüfe ich Verpackung und sichtbare Schäden. Ich kontrolliere Identität, Ausstattung und geeignete Funktionen der gelieferten Geräte. Abweichungen und Liefertermin werden dokumentiert und an die zuständige Stelle weitergegeben. Unbeschädigte Verpackung beweist keine vollständige und richtige Lieferung.

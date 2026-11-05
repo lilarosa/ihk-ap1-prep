@@ -1,0 +1,10 @@
+Organigramm, Stellenarten und GmbH.
+
+Organisationsformen erklären. In der Einlinienorganisation hat eine Stelle einen eindeutigen vorgesetzten Weisungsweg. In der Mehrlinienorganisation wirken mehrere fachliche Weisungswege. Eine Stablinienorganisation ergänzt die Linie um beratende Stellen. Eine Matrix verbindet zwei Gliederungsdimensionen, etwa Funktion und Projekt. Die Auswahl wird anhand der tatsächlich gezeichneten Weisungs- und Beratungsbeziehungen erklärt.
+看箭头和权力关系，不凭图长得像什么就猜。一个上级、多专业上级、参谋顾问、项目加职能四类要分开。
+
+Stabsstelle, Instanz und Ausführungsstelle. Eine Instanz besitzt Leitungs- und Weisungsbefugnis. Eine Ausführungsstelle erledigt operative Aufgaben ohne entsprechende Leitungsfunktion. Eine Stabsstelle berät und unterstützt eine Leitung, hat gegenüber der Linie grundsätzlich kein eigenes Weisungsrecht. Klare Zuständigkeiten erleichtern die Zuordnung von Verantwortung; längere Entscheidungswege können jedoch die Zusammenarbeit verzögern.
+Instanz能指挥，执行岗干具体工作，Stab提供建议不直接指挥业务线。优点和缺点都要联系这张图。
+
+e.K. und reguläre GmbH. Der Einzelkaufmann haftet grundsätzlich persönlich und hat kein gesetzliches Mindestkapital. Die reguläre GmbH ist eine juristische Person mit mindestens 25000 Euro Stammkapital und bestellter Geschäftsführung. Für Gesellschaftsschulden haftet grundsätzlich das Gesellschaftsvermögen. Eine GmbH kann bei Beteiligungswunsch und Risikobegrenzung passen; Gründungsaufwand und Kapitalbedarf sind abzuwägen. Ausnahmen persönlicher Haftung und persönliche Bürgschaften bleiben gesondert zu prüfen.
+背个人无限责任对公司财产责任、无最低资本对2.5万注册资本、本人经营对经理。不要说 GmbH 在任何情况下绝不个人负责。

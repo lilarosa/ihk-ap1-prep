@@ -1,0 +1,13 @@
+SLA, Meldungsarten und Priorität.
+
+SLA-Inhalte. Ein SLA kann Leistungsumfang, Servicezeiten, Zielverfügbarkeit und Reaktions- beziehungsweise Wiederherstellungsziele festlegen. Kommunikations- und Eskalationswege können ergänzt werden. Messbeginn, Messzeitraum und Ausnahmen müssen eindeutig sein. Allgemeine Aussagen wie guter Support sind ohne messbare Definition kaum überprüfbar.
+背范围、服务时间、可用率、响应或恢复目标。要有可检查的标准，不能只写“服务好”。
+
+Reaktion, Entstörung und Jahresverfügbarkeit. Die erlaubte Gesamtausfallzeit ergibt sich aus Gesamtzeit mal eins minus Zielverfügbarkeit als Dezimalzahl. Alle relevanten Ausfälle werden für den Messzeitraum addiert. Eine Entstörfrist je Vorfall wird zusätzlich separat geprüft. Reaktionszeit ist nicht gleich Wiederherstellungszeit. Ein eingehaltenes Jahresbudget kann eine einzelne Fristverletzung nicht automatisch ausgleichen.
+一年总停机、单次修复时限、首次响应是三件事。总预算合格，也可能某次修复超时。
+
+Event, Request oder Incident. Die automatische Lizenzwarnung ist ein Event, also ein für den Betrieb relevantes beobachtetes Ereignis. Die Mausbestellung ist ein Service Request, eine standardisierte Leistungsanfrage. Der ausgefallene Access Point ist ein Incident, weil ein Service ungeplant beeinträchtigt ist. Entscheidend sind Inhalt und Auswirkung der Meldung, nicht nur die Tatsache, dass ein Ticket existiert.
+自动状态警告是Event；申请鼠标是Request；AP坏了是Incident。有工单不代表一定是故障。
+
+Ticketpriorität begründen. Ich bewerte Auswirkung und zeitliche Dringlichkeit anhand der vorgegebenen Matrix. Zahl der Betroffenen, betroffener Geschäftsprozess und vorhandene Ausweichmöglichkeiten sind wichtige Kriterien. Ein vollständiger Ausfall eines kritischen Dienstes kann höher priorisiert werden als ein einzelnes Komfortproblem. Die konkrete Einstufung wird mit den Fallinformationen begründet.
+按影响和紧急程度，不按谁职位高、催得响。给定矩阵优先于自己随便设“高、中、低”。

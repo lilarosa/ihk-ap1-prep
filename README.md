@@ -1,5 +1,13 @@
 # ihk-ap1-prep
 
+## Neu: BaWü-Themenranking und deutsch-chinesische Merkantworten
+
+[Auswertung von fünf Kernprüfungen, 54 Antwortkarten und 22-seitiges Druckheft](schwerpunkte/20261105/README.md)
+
+Mit Belegmatrix: WLAN 3/5; Schutzbedarfs-/Gefährdungsanalyse 4/5; Beschaffung 4/5. Die markierte Sommer-2026-Unterlage wird getrennt eingeordnet. Neuronale Conrad-Stimme in langsamerem Deutsch, optional mit kurzen chinesischen Erklärungen.
+
+[Deutsch mit Chinesisch, 37 Minuten](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Schwerpunkte_DE_ZH_Gesamt.mp3) · [Schutzbedarf, Angebot und WLAN, 15 Minuten](https://github.com/lilarosa/ihk-ap1-prep/releases/download/ap1-schwerpunkte-2026-11-05/AP1_Top3_Schutzbedarf_Angebot_WLAN_DE_ZH.mp3)
+
 ## Neu: AP1-Wissen für die Autofahrt, ohne Quizpausen
 
 [12 Kapitel, 518 kurze Lernpunkte, rund 80 Minuten deutsche Hörfassung](hoertraining/autofahrt-20261102/README.md)

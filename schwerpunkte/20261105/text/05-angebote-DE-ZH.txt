@@ -1,0 +1,22 @@
+Beschaffung, Angebot und Kalkulation.
+
+Interne und externe Bezugsquellen. Interne Quellen sind die Lieferantenkartei im Warenwirtschaftssystem und dokumentierte Erfahrungen aus früheren Bestellungen oder Reklamationen. Externe Quellen sind Hersteller- beziehungsweise Lieferantenangebote und geeignete Fachmessen oder Branchenverzeichnisse. Die Informationen werden auf Aktualität und Eignung für den konkreten Bedarf geprüft.
+内部：ERP 供应商记录、过去订货或投诉经验。外部：厂家报价、展会或行业名录。问两个就各写两个确定的。
+
+Anforderungen und Nutzwertanalyse. Ich formuliere zuerst messbare Muss- und Kann-Kriterien. Alternativen mit verletzten Muss-Kriterien scheiden aus. Danach gewichte ich die Bewertungskriterien, bewerte alle geeigneten Alternativen auf derselben Skala und addiere die gewichteten Punkte. Die Auswahl wird mit dem Kundennutzen begründet. Eigene Annahmen werden nicht als ausdrücklich genannte Kundenwünsche ausgegeben.
+先排除不满足硬条件的，再算权重乘分数。不能用很高总分掩盖“必须支持 PoE 但不支持”这种硬伤。
+
+Angebot auf Vollständigkeit prüfen. Ich prüfe genaue Produkt- oder Leistungsbeschreibung, Menge und technische Ausstattung. Preise müssen als netto oder brutto eindeutig erkennbar sein. Hinzu kommen die einschlägigen Liefer- und Zahlungsbedingungen sowie eine gegebenenfalls angegebene Bindung. Fehlende Angaben benenne ich konkret anhand des vorliegenden Angebots. Nicht jede denkbare Angabe ist in jedem Fall zwingend vorgeschrieben.
+2023 夏重点是净价毛价不清、技术配置不清等。不要把“我通常想看到的项目”说成每一项都是法定必备。
+
+Quantitativer Angebotsvergleich. Ich rechne zuerst dieselbe benötigte Menge. Vom Listeneinkaufspreis ziehe ich Rabatt ab und erhalte den Zieleinkaufspreis. Danach ziehe ich nutzbares Skonto ab und erhalte den Bareinkaufspreis. Mit den Bezugskosten entsteht der Bezugspreis. Erst diese vergleichbaren Endwerte werden gegenübergestellt; die vorgeschriebene Rundung wird eingehalten.
+同样数量、同样净毛价基础再比较。顺序：减 Rabatt、减 Skonto、加运费等 Bezugskosten；别只看标价。
+
+Nicht nur den billigsten Lieferanten wählen. Eine schnelle und verlässliche Lieferung kann Projektverzug und Stillstandskosten verhindern. Gute bisherige Erfahrungen, passende Qualität und erreichbarer Service senken Risiken. Günstige Zahlungsbedingungen können ebenfalls relevant sein. Ich wäge diese Vorteile gegen den Mehrpreis ab und verknüpfe die Entscheidung mit dem konkreten Kundenauftrag.
+写价格以外的明确理由，并说业务后果：及时到货避免延期，服务好减少停机，付款条件更合适。不是只写“质量好”。
+
+Rabatt, Skonto und Rückwärtskalkulation. Rabatt ist ein vereinbarter Preisnachlass, etwa aufgrund der Menge. Skonto setzt die Zahlung innerhalb der vereinbarten Frist voraus. Beide werden nacheinander auf ihre jeweilige Basis gerechnet. Zuschläge für Handlungskosten und Gewinn beziehen sich auf die angegebenen Ausgangswerte. Rückwärts werden Zuschläge durch den Faktor eins plus Satz und Abzüge durch eins minus Satz zurückgerechnet.
+Rabatt 不是付款速度折扣，Skonto 才是。反算加价10%要除1.10，不是从结果减10%；反算减价2%要除0.98。
+
+Wareneingang in vier Schritten. Ich vergleiche Bestellung und Lieferschein hinsichtlich Produkt und Menge. Danach prüfe ich Verpackung und sichtbare Schäden. Ich kontrolliere Identität, Ausstattung und geeignete Funktionen der gelieferten Geräte. Abweichungen und Liefertermin werden dokumentiert und an die zuständige Stelle weitergegeben. Unbeschädigte Verpackung beweist keine vollständige und richtige Lieferung.
+记：对单和数量、看损坏、核型号配置功能、记录并反馈。题目给了少送、错型号或延期，要明确指出。
